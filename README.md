@@ -39,3 +39,14 @@ Before running the project, make sure you have the following installed:
    ```bash
    git clone https://github.com/yourusername/nba-analysis.git
    cd nba-analysis
+
+2 **Start the Docker Environment**
+
+Use `docker-compose` to build and run all containers in detached mode:
+
+```bash
+docker-compose up -d
+
+Wait some time and then run:
+docker ps
+
