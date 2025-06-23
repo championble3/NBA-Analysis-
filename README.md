@@ -52,7 +52,8 @@ Wait some time and then run:
 ### Then you can check localhost:8080 for airflow GUI 
    login: admin
    password: admin
-3. **Accessing Services**
+   
+### **Accessing Services**
    Database: PostgreSQL is available at localhost:5432 (credentials configurable in .env)
 
    Database: nbadatabase
