@@ -62,4 +62,4 @@ Wait some time and then run:
    
    ETL Scripts: Automatically triggered on container startup or can be run manually
    
-   BI Tool (optional): Available at http://localhost:3000 if Metabase is included in the setup
+   BI Tool (optional): Available at http://localhost:3000 if Metabase is included in the setup - it is not available on default as right now it is running locally
