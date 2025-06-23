@@ -45,8 +45,8 @@ Before running the project, make sure you have the following installed:
 Use `docker-compose` to build and run all containers in detached mode:
 
 ```bash
-docker-compose up -d
-
+   docker-compose up -d
+   ```
 Wait some time and then run:
-docker ps
+  ``` docker ps```
 
