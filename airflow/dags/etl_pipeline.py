@@ -845,7 +845,6 @@ with DAG(
             task_id='transform_shot_chart', 
             python_callable=fetch_transform_shot_chart)
         
-        # Zależności wewnątrz grupy Transform
         [transform_schedule, transform_team] >> transform_roster >> transform_shot_chart
 
     with TaskGroup(group_id='dwh_load_tasks') as dwh_load_group:
