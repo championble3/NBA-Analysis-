@@ -1,0 +1,119 @@
+[2025-06-16T13:24:53.783+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-06-16T13:24:53.852+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: nba_etl_to_postgres.fetch_pbp_and_load_to_postgres manual__2025-06-16T09:40:48.983471+00:00 [queued]>
+[2025-06-16T13:24:54.398+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: nba_etl_to_postgres.fetch_pbp_and_load_to_postgres manual__2025-06-16T09:40:48.983471+00:00 [queued]>
+[2025-06-16T13:24:54.399+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-06-16T13:24:54.479+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): fetch_pbp_and_load_to_postgres> on 2025-06-16 09:40:48.983471+00:00
+[2025-06-16T13:24:54.492+0000] {standard_task_runner.py:63} INFO - Started process 3178 to run task
+[2025-06-16T13:24:54.496+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'nba_etl_to_postgres', 'fetch_pbp_and_load_to_postgres', 'manual__2025-06-16T09:40:48.983471+00:00', '--job-id', '20', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/tmp/tmpb2vh5v5l']
+[2025-06-16T13:24:54.498+0000] {standard_task_runner.py:91} INFO - Job 20: Subtask fetch_pbp_and_load_to_postgres
+[2025-06-16T13:24:54.613+0000] {task_command.py:426} INFO - Running <TaskInstance: nba_etl_to_postgres.fetch_pbp_and_load_to_postgres manual__2025-06-16T09:40:48.983471+00:00 [running]> on host 11d91b3c2b82
+[2025-06-16T13:24:54.829+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='nba_etl_to_postgres' AIRFLOW_CTX_TASK_ID='fetch_pbp_and_load_to_postgres' AIRFLOW_CTX_EXECUTION_DATE='2025-06-16T09:40:48.983471+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-16T09:40:48.983471+00:00'
+[2025-06-16T13:24:54.830+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-06-16T13:24:54.874+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/etl_pipeline.py:195 UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+[2025-06-16T13:24:59.281+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-16T13:24:59.453+0000] {logging_mixin.py:188} INFO - Processed game on 2024-10-22 between BOS and NYK.
+[2025-06-16T13:25:06.656+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-16T13:25:06.767+0000] {logging_mixin.py:188} INFO - Processed game on 2024-10-22 between LAL and MIN.
+[2025-06-16T13:25:13.636+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-16T13:25:13.730+0000] {logging_mixin.py:188} INFO - Processed game on 2024-10-23 between DET and IND.
+[2025-06-16T13:25:20.632+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-16T13:25:20.716+0000] {logging_mixin.py:188} INFO - Processed game on 2024-10-23 between ATL and BRK.
+[2025-06-16T13:25:26.774+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-16T13:25:26.851+0000] {logging_mixin.py:188} INFO - Processed game on 2024-10-23 between MIA and ORL.
+[2025-06-16T13:25:33.832+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-16T13:25:33.934+0000] {logging_mixin.py:188} INFO - Processed game on 2024-10-23 between PHI and MIL.
+[2025-06-16T13:25:40.786+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-16T13:25:40.874+0000] {logging_mixin.py:188} INFO - Processed game on 2024-10-23 between TOR and CLE.
+[2025-06-16T13:25:47.972+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-16T13:25:48.053+0000] {logging_mixin.py:188} INFO - Processed game on 2024-10-23 between HOU and CHO.
+[2025-06-16T13:25:54.073+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-16T13:25:54.178+0000] {logging_mixin.py:188} INFO - Processed game on 2024-10-23 between NOP and CHI.
+[2025-06-16T13:26:01.258+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-16T13:26:01.347+0000] {logging_mixin.py:188} INFO - Processed game on 2024-10-23 between UTA and MEM.
+[2025-06-16T13:26:08.291+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-16T13:26:08.374+0000] {logging_mixin.py:188} INFO - Processed game on 2024-10-23 between LAC and PHO.
+[2025-06-16T13:26:15.321+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-16T13:26:15.456+0000] {logging_mixin.py:188} INFO - Processed game on 2024-10-23 between POR and GSW.
+[2025-06-16T13:26:21.661+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-16T13:26:21.742+0000] {logging_mixin.py:188} INFO - Processed game on 2024-10-24 between WAS and BOS.
+[2025-06-16T13:26:28.478+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-16T13:26:28.563+0000] {logging_mixin.py:188} INFO - Processed game on 2024-10-24 between DAL and SAS.
+[2025-06-16T13:26:35.638+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-16T13:26:35.717+0000] {logging_mixin.py:188} INFO - Processed game on 2024-10-24 between DEN and OKC.
+[2025-06-16T13:26:42.694+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-16T13:26:42.780+0000] {logging_mixin.py:188} INFO - Processed game on 2024-10-24 between SAC and MIN.
+[2025-06-16T13:26:49.037+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-16T13:26:49.140+0000] {logging_mixin.py:188} INFO - Processed game on 2024-10-25 between ORL and BRK.
+[2025-06-16T13:26:56.011+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-16T13:26:56.099+0000] {logging_mixin.py:188} INFO - Processed game on 2024-10-25 between TOR and PHI.
+[2025-06-16T13:27:03.284+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-16T13:27:03.376+0000] {logging_mixin.py:188} INFO - Processed game on 2024-10-25 between ATL and CHO.
+[2025-06-16T13:27:10.533+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-16T13:27:10.614+0000] {logging_mixin.py:188} INFO - Processed game on 2024-10-25 between CLE and DET.
+[2025-06-16T13:27:17.383+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-16T13:27:17.454+0000] {logging_mixin.py:188} INFO - Processed game on 2024-10-25 between NYK and IND.
+[2025-06-16T13:27:23.885+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-16T13:27:23.981+0000] {logging_mixin.py:188} INFO - Processed game on 2024-10-25 between HOU and MEM.
+[2025-06-16T13:27:30.920+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-16T13:27:30.995+0000] {logging_mixin.py:188} INFO - Processed game on 2024-10-25 between MIL and CHI.
+[2025-06-16T13:27:37.959+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-16T13:27:38.042+0000] {logging_mixin.py:188} INFO - Processed game on 2024-10-25 between UTA and GSW.
+[2025-06-16T13:27:44.764+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-16T13:27:44.844+0000] {logging_mixin.py:188} INFO - Processed game on 2024-10-25 between LAL and PHO.
+[2025-06-16T13:27:50.920+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-16T13:27:51.010+0000] {logging_mixin.py:188} INFO - Processed game on 2024-10-25 between POR and NOP.
+[2025-06-16T13:27:57.990+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-16T13:27:58.070+0000] {logging_mixin.py:188} INFO - Processed game on 2024-10-26 between DEN and LAC.
+[2025-06-16T13:28:05.031+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-16T13:28:05.129+0000] {logging_mixin.py:188} INFO - Processed game on 2024-10-26 between CHO and MIA.
+[2025-06-16T13:28:11.906+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-16T13:28:11.984+0000] {logging_mixin.py:188} INFO - Processed game on 2024-10-26 between DET and BOS.
+[2025-06-16T13:28:18.328+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-16T13:28:18.417+0000] {logging_mixin.py:188} INFO - Processed game on 2024-10-26 between WAS and CLE.
+[2025-06-16T13:28:25.343+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-16T13:28:25.436+0000] {logging_mixin.py:188} INFO - Processed game on 2024-10-26 between CHI and OKC.
+[2025-06-16T13:28:32.218+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-16T13:28:32.309+0000] {logging_mixin.py:188} INFO - Processed game on 2024-10-26 between MEM and ORL.
+[2025-06-16T13:28:39.248+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-16T13:28:39.353+0000] {logging_mixin.py:188} INFO - Processed game on 2024-10-26 between MIN and TOR.
+[2025-06-16T13:28:45.376+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-16T13:28:45.459+0000] {logging_mixin.py:188} INFO - Processed game on 2024-10-26 between SAS and HOU.
+[2025-06-16T13:28:49.425+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-16T13:28:49.516+0000] {logging_mixin.py:188} INFO - Processed game on 2024-10-26 between PHO and DAL.
+[2025-06-16T13:28:56.357+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-16T13:28:56.436+0000] {logging_mixin.py:188} INFO - Processed game on 2024-10-26 between LAL and SAC.
+[2025-06-16T13:29:03.465+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-16T13:29:03.556+0000] {logging_mixin.py:188} INFO - Processed game on 2024-10-27 between IND and PHI.
+[2025-06-16T13:29:10.342+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-16T13:29:10.418+0000] {logging_mixin.py:188} INFO - Processed game on 2024-10-27 between BRK and MIL.
+[2025-06-16T13:29:16.659+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-16T13:29:16.742+0000] {logging_mixin.py:188} INFO - Processed game on 2024-10-27 between POR and NOP.
+[2025-06-16T13:29:23.674+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-16T13:29:23.756+0000] {logging_mixin.py:188} INFO - Processed game on 2024-10-27 between OKC and ATL.
+[2025-06-16T13:29:30.622+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-16T13:29:30.698+0000] {logging_mixin.py:188} INFO - Processed game on 2024-10-27 between GSW and LAC.
+[2025-06-16T13:29:37.774+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-16T13:29:37.853+0000] {logging_mixin.py:188} INFO - Processed game on 2024-10-28 between ORL and IND.
+[2025-06-16T13:29:43.950+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-16T13:29:44.026+0000] {logging_mixin.py:188} INFO - Processed game on 2024-10-28 between ATL and WAS.
+[2025-06-16T13:29:47.987+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-16T13:29:48.061+0000] {logging_mixin.py:188} INFO - Processed game on 2024-10-28 between BOS and MIL.
+[2025-06-16T13:29:54.861+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-16T13:29:54.938+0000] {logging_mixin.py:188} INFO - Processed game on 2024-10-28 between MIA and DET.
+[2025-06-16T13:30:01.937+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-16T13:30:02.044+0000] {logging_mixin.py:188} INFO - Processed game on 2024-10-28 between NYK and CLE.
+[2025-06-16T13:30:08.912+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-16T13:30:09.017+0000] {logging_mixin.py:188} INFO - Processed game on 2024-10-28 between TOR and DEN.
+[2025-06-16T13:30:15.343+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-16T13:30:15.430+0000] {logging_mixin.py:188} INFO - Processed game on 2024-10-28 between MEM and CHI.
+[2025-06-16T13:30:22.281+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-16T13:30:22.363+0000] {logging_mixin.py:188} INFO - Processed game on 2024-10-28 between SAS and HOU.
+[2025-06-16T13:30:29.299+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-16T13:30:29.379+0000] {logging_mixin.py:188} INFO - Processed game on 2024-10-28 between DAL and UTA.
+[2025-06-16T13:30:29.618+0000] {local_task_job_runner.py:310} WARNING - State of this instance has been externally set to success. Terminating instance.
+[2025-06-16T13:30:29.621+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2025-06-16T13:30:29.630+0000] {process_utils.py:132} INFO - Sending 15 to group 3178. PIDs of all processes in the group: [3178]
+[2025-06-16T13:30:29.631+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 3178
+[2025-06-16T13:30:29.632+0000] {taskinstance.py:2611} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-06-16T13:30:29.632+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-06-16T13:30:29.725+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=3178, status='terminated', exitcode=0, started='13:24:53') (3178) terminated with exit code 0

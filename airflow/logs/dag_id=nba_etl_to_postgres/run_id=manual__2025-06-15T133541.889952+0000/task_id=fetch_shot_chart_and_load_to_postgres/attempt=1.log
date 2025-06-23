@@ -1,0 +1,20 @@
+[2025-06-15T13:35:44.750+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-06-15T13:35:44.832+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: nba_etl_to_postgres.fetch_shot_chart_and_load_to_postgres manual__2025-06-15T13:35:41.889952+00:00 [queued]>
+[2025-06-15T13:35:44.854+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: nba_etl_to_postgres.fetch_shot_chart_and_load_to_postgres manual__2025-06-15T13:35:41.889952+00:00 [queued]>
+[2025-06-15T13:35:44.855+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-06-15T13:35:44.957+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): fetch_shot_chart_and_load_to_postgres> on 2025-06-15 13:35:41.889952+00:00
+[2025-06-15T13:35:44.967+0000] {standard_task_runner.py:63} INFO - Started process 812 to run task
+[2025-06-15T13:35:44.974+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'nba_etl_to_postgres', 'fetch_shot_chart_and_load_to_postgres', 'manual__2025-06-15T13:35:41.889952+00:00', '--job-id', '22', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/tmp/tmpo0ozziti']
+[2025-06-15T13:35:44.976+0000] {standard_task_runner.py:91} INFO - Job 22: Subtask fetch_shot_chart_and_load_to_postgres
+[2025-06-15T13:35:45.093+0000] {task_command.py:426} INFO - Running <TaskInstance: nba_etl_to_postgres.fetch_shot_chart_and_load_to_postgres manual__2025-06-15T13:35:41.889952+00:00 [running]> on host e9ac9ffe8f89
+[2025-06-15T13:35:45.288+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='nba_etl_to_postgres' AIRFLOW_CTX_TASK_ID='fetch_shot_chart_and_load_to_postgres' AIRFLOW_CTX_EXECUTION_DATE='2025-06-15T13:35:41.889952+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-15T13:35:41.889952+00:00'
+[2025-06-15T13:35:45.289+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-06-15T13:35:45.322+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/etl_pipeline.py:193 UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+[2025-06-15T13:35:45.627+0000] {logging_mixin.py:188} INFO - Retrying after 3528 sec...
+[2025-06-15T13:36:45.898+0000] {local_task_job_runner.py:310} WARNING - State of this instance has been externally set to skipped. Terminating instance.
+[2025-06-15T13:36:45.902+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2025-06-15T13:36:45.907+0000] {process_utils.py:132} INFO - Sending 15 to group 812. PIDs of all processes in the group: [812]
+[2025-06-15T13:36:45.908+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 812
+[2025-06-15T13:36:45.909+0000] {taskinstance.py:2611} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-06-15T13:36:45.910+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-06-15T13:36:46.043+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=812, status='terminated', exitcode=0, started='13:35:44') (812) terminated with exit code 0

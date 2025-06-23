@@ -1,0 +1,17 @@
+[2025-06-20T15:24:12.038+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-06-20T15:24:12.067+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: nba_transform_to_dwh.load_fc_shoot manual__2025-06-20T15:24:01.598337+00:00 [queued]>
+[2025-06-20T15:24:12.077+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: nba_transform_to_dwh.load_fc_shoot manual__2025-06-20T15:24:01.598337+00:00 [queued]>
+[2025-06-20T15:24:12.078+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-06-20T15:24:12.125+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): load_fc_shoot> on 2025-06-20 15:24:01.598337+00:00
+[2025-06-20T15:24:12.132+0000] {standard_task_runner.py:63} INFO - Started process 2859 to run task
+[2025-06-20T15:24:12.136+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'nba_transform_to_dwh', 'load_fc_shoot', 'manual__2025-06-20T15:24:01.598337+00:00', '--job-id', '250', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/tmp/tmpvkitdvhr']
+[2025-06-20T15:24:12.138+0000] {standard_task_runner.py:91} INFO - Job 250: Subtask load_fc_shoot
+[2025-06-20T15:24:12.258+0000] {task_command.py:426} INFO - Running <TaskInstance: nba_transform_to_dwh.load_fc_shoot manual__2025-06-20T15:24:01.598337+00:00 [running]> on host 5ea278fdf3a6
+[2025-06-20T15:24:12.510+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='nba_transform_to_dwh' AIRFLOW_CTX_TASK_ID='load_fc_shoot' AIRFLOW_CTX_EXECUTION_DATE='2025-06-20T15:24:01.598337+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-20T15:24:01.598337+00:00'
+[2025-06-20T15:24:12.512+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-06-20T15:24:12.544+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-06-20T15:24:12.547+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-06-20T15:24:12.560+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=nba_transform_to_dwh, task_id=load_fc_shoot, run_id=manual__2025-06-20T15:24:01.598337+00:00, execution_date=20250620T152401, start_date=20250620T152412, end_date=20250620T152412
+[2025-06-20T15:24:12.632+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-06-20T15:24:12.663+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-06-20T15:24:12.691+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

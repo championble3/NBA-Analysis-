@@ -1,0 +1,44 @@
+[2025-06-15T20:52:32.361+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-06-15T20:52:32.457+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: nba_etl_to_postgres.fetch_roster_and_load_to_postgres manual__2025-06-15T20:52:29.551940+00:00 [queued]>
+[2025-06-15T20:52:32.476+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: nba_etl_to_postgres.fetch_roster_and_load_to_postgres manual__2025-06-15T20:52:29.551940+00:00 [queued]>
+[2025-06-15T20:52:32.477+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-06-15T20:52:32.544+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): fetch_roster_and_load_to_postgres> on 2025-06-15 20:52:29.551940+00:00
+[2025-06-15T20:52:32.575+0000] {standard_task_runner.py:63} INFO - Started process 1040 to run task
+[2025-06-15T20:52:32.584+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'nba_etl_to_postgres', 'fetch_roster_and_load_to_postgres', 'manual__2025-06-15T20:52:29.551940+00:00', '--job-id', '17', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/tmp/tmp8gawwbv2']
+[2025-06-15T20:52:32.588+0000] {standard_task_runner.py:91} INFO - Job 17: Subtask fetch_roster_and_load_to_postgres
+[2025-06-15T20:52:32.729+0000] {task_command.py:426} INFO - Running <TaskInstance: nba_etl_to_postgres.fetch_roster_and_load_to_postgres manual__2025-06-15T20:52:29.551940+00:00 [running]> on host 1c61638087f1
+[2025-06-15T20:52:32.924+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='nba_etl_to_postgres' AIRFLOW_CTX_TASK_ID='fetch_roster_and_load_to_postgres' AIRFLOW_CTX_EXECUTION_DATE='2025-06-15T20:52:29.551940+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-15T20:52:29.551940+00:00'
+[2025-06-15T20:52:32.925+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-06-15T20:52:32.945+0000] {logging_mixin.py:188} INFO - Fetching roster for Atlanta Hawks (ATL)...
+[2025-06-15T20:52:33.171+0000] {logging_mixin.py:188} INFO - Retrying after 2786 sec...
+[2025-06-15T20:59:16.669+0000] {local_task_job_runner.py:124} ERROR - Received SIGTERM. Terminating subprocesses
+[2025-06-15T20:59:17.057+0000] {process_utils.py:132} INFO - Sending 15 to group 1040. PIDs of all processes in the group: [1040]
+[2025-06-15T20:59:17.222+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 1040
+[2025-06-15T20:59:17.224+0000] {taskinstance.py:2611} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-06-15T20:59:17.225+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-06-15T20:59:17.306+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/etl_pipeline.py", line 243, in fetch_and_load_roster_to_stage
+    roster = get_roster(team_code, '2025')
+  File "/opt/airflow/plugins/nba_lib/teams.py", line 15, in get_roster
+    r = get_wrapper(
+  File "/opt/airflow/plugins/nba_lib/request_utils.py", line 41, in get_wrapper
+    sleep(retry_time)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 2613, in signal_handler
+    raise AirflowTaskTerminated("Task received SIGTERM signal")
+airflow.exceptions.AirflowTaskTerminated: Task received SIGTERM signal
+[2025-06-15T20:59:17.534+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=nba_etl_to_postgres, task_id=fetch_roster_and_load_to_postgres, run_id=manual__2025-06-15T20:52:29.551940+00:00, execution_date=20250615T205229, start_date=20250615T205232, end_date=20250615T205917
+[2025-06-15T20:59:17.674+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=1040, status='terminated', exitcode=2, started='20:52:32') (1040) terminated with exit code 2
+[2025-06-15T20:59:17.675+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 143
+[2025-06-15T20:59:17.691+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-06-15T20:59:17.996+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

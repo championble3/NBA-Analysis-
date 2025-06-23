@@ -1,0 +1,1303 @@
+home_team,away_team,date,arena,city,state,game_type
+BOS,NYK,2024-10-22,TD Garden,Boston,MA,Regular Season
+LAL,MIN,2024-10-22,Crypto.com Arena,Los Angeles,CA,Regular Season
+DET,IND,2024-10-23,Little Caesars Arena,Detroit,MI,Regular Season
+ATL,BRK,2024-10-23,State Farm Arena,Atlanta,GA,Regular Season
+MIA,ORL,2024-10-23,Kaseya Center,Miami,FL,Regular Season
+PHI,MIL,2024-10-23,Wells Fargo Center,Philadelphia,PA,Regular Season
+TOR,CLE,2024-10-23,Scotiabank Arena,Toronto,ON,Regular Season
+HOU,CHO,2024-10-23,Toyota Center,Houston,TX,Regular Season
+NOP,CHI,2024-10-23,Smoothie King Center,New Orleans,LA,Regular Season
+UTA,MEM,2024-10-23,Delta Center,Salt Lake City,UT,Regular Season
+LAC,PHO,2024-10-23,Intuit Dome,Inglewood,CA,Regular Season
+POR,GSW,2024-10-23,Moda Center,Portland,OR,Regular Season
+WAS,BOS,2024-10-24,Capital One Arena,Washington,DC,Regular Season
+DAL,SAS,2024-10-24,American Airlines Center,Dallas,TX,Regular Season
+DEN,OKC,2024-10-24,Ball Arena,Denver,CO,Regular Season
+SAC,MIN,2024-10-24,Golden 1 Center,Sacramento,CA,Regular Season
+ORL,BRK,2024-10-25,Kia Center,Orlando,FL,Regular Season
+TOR,PHI,2024-10-25,Scotiabank Arena,Toronto,ON,Regular Season
+ATL,CHO,2024-10-25,State Farm Arena,Atlanta,GA,Regular Season
+CLE,DET,2024-10-25,Rocket Mortgage FieldHouse,Cleveland,OH,Regular Season
+NYK,IND,2024-10-25,Madison Square Garden,New York,NY,Regular Season
+HOU,MEM,2024-10-25,Toyota Center,Houston,TX,Regular Season
+MIL,CHI,2024-10-25,Fiserv Forum,Milwaukee,WI,Regular Season
+UTA,GSW,2024-10-25,Delta Center,Salt Lake City,UT,Regular Season
+LAL,PHO,2024-10-25,Crypto.com Arena,Los Angeles,CA,Regular Season
+POR,NOP,2024-10-25,Moda Center,Portland,OR,Regular Season
+DEN,LAC,2024-10-26,Ball Arena,Denver,CO,Regular Season
+CHO,MIA,2024-10-26,Spectrum Center,Charlotte,NC,Regular Season
+DET,BOS,2024-10-26,Little Caesars Arena,Detroit,MI,Regular Season
+WAS,CLE,2024-10-26,Capital One Arena,Washington,DC,Regular Season
+CHI,OKC,2024-10-26,United Center,Chicago,IL,Regular Season
+MEM,ORL,2024-10-26,FedExForum,Memphis,TN,Regular Season
+MIN,TOR,2024-10-26,Target Center,Minneapolis,MN,Regular Season
+SAS,HOU,2024-10-26,Frost Bank Center,San Antonio,TX,Regular Season
+PHO,DAL,2024-10-26,Footprint Center,Phoenix,AZ,Regular Season
+LAL,SAC,2024-10-26,Crypto.com Arena,Los Angeles,CA,Regular Season
+IND,PHI,2024-10-27,Gainbridge Fieldhouse,Indianapolis,IN,Regular Season
+BRK,MIL,2024-10-27,Barclays Center,Brooklyn,NY,Regular Season
+POR,NOP,2024-10-27,Moda Center,Portland,OR,Regular Season
+OKC,ATL,2024-10-27,Paycom Center,Oklahoma City,OK,Regular Season
+GSW,LAC,2024-10-27,Chase Center,San Francisco,CA,Regular Season
+ORL,IND,2024-10-28,Kia Center,Orlando,FL,Regular Season
+ATL,WAS,2024-10-28,State Farm Arena,Atlanta,GA,Regular Season
+BOS,MIL,2024-10-28,TD Garden,Boston,MA,Regular Season
+MIA,DET,2024-10-28,Kaseya Center,Miami,FL,Regular Season
+NYK,CLE,2024-10-28,Madison Square Garden,New York,NY,Regular Season
+TOR,DEN,2024-10-28,Scotiabank Arena,Toronto,ON,Regular Season
+MEM,CHI,2024-10-28,FedExForum,Memphis,TN,Regular Season
+SAS,HOU,2024-10-28,Frost Bank Center,San Antonio,TX,Regular Season
+DAL,UTA,2024-10-28,American Airlines Center,Dallas,TX,Regular Season
+PHO,LAL,2024-10-28,Footprint Center,Phoenix,AZ,Regular Season
+SAC,POR,2024-10-28,Golden 1 Center,Sacramento,CA,Regular Season
+BRK,DEN,2024-10-29,Barclays Center,Brooklyn,NY,Regular Season
+MIN,DAL,2024-10-29,Target Center,Minneapolis,MN,Regular Season
+UTA,SAC,2024-10-29,Delta Center,Salt Lake City,UT,Regular Season
+GSW,NOP,2024-10-29,Chase Center,San Francisco,CA,Regular Season
+CHO,TOR,2024-10-30,Spectrum Center,Charlotte,NC,Regular Season
+CLE,LAL,2024-10-30,Rocket Mortgage FieldHouse,Cleveland,OH,Regular Season
+IND,BOS,2024-10-30,Gainbridge Fieldhouse,Indianapolis,IN,Regular Season
+PHI,DET,2024-10-30,Wells Fargo Center,Philadelphia,PA,Regular Season
+WAS,ATL,2024-10-30,Capital One Arena,Washington,DC,Regular Season
+MIA,NYK,2024-10-30,Kaseya Center,Miami,FL,Regular Season
+CHI,ORL,2024-10-30,United Center,Chicago,IL,Regular Season
+MEM,BRK,2024-10-30,FedExForum,Memphis,TN,Regular Season
+OKC,SAS,2024-10-30,Paycom Center,Oklahoma City,OK,Regular Season
+GSW,NOP,2024-10-30,Chase Center,San Francisco,CA,Regular Season
+LAC,POR,2024-10-30,Intuit Dome,Inglewood,CA,Regular Season
+MEM,MIL,2024-10-31,FedExForum,Memphis,TN,Regular Season
+DAL,HOU,2024-10-31,American Airlines Center,Dallas,TX,Regular Season
+UTA,SAS,2024-10-31,Delta Center,Salt Lake City,UT,Regular Season
+LAC,PHO,2024-10-31,Intuit Dome,Inglewood,CA,Regular Season
+CHO,BOS,2024-11-01,Spectrum Center,Charlotte,NC,Regular Season
+CLE,ORL,2024-11-01,Rocket Mortgage FieldHouse,Cleveland,OH,Regular Season
+DET,NYK,2024-11-01,Little Caesars Arena,Detroit,MI,Regular Season
+ATL,SAC,2024-11-01,State Farm Arena,Atlanta,GA,Regular Season
+BRK,CHI,2024-11-01,Barclays Center,Brooklyn,NY,Regular Season
+TOR,LAL,2024-11-01,Scotiabank Arena,Toronto,ON,Regular Season
+NOP,IND,2024-11-01,Smoothie King Center,New Orleans,LA,Regular Season
+MIN,DEN,2024-11-01,Target Center,Minneapolis,MN,Regular Season
+POR,OKC,2024-11-01,Moda Center,Portland,OR,Regular Season
+CHO,BOS,2024-11-02,Spectrum Center,Charlotte,NC,Regular Season
+PHI,MEM,2024-11-02,Wells Fargo Center,Philadelphia,PA,Regular Season
+TOR,SAC,2024-11-02,Scotiabank Arena,Toronto,ON,Regular Season
+HOU,GSW,2024-11-02,Toyota Center,Houston,TX,Regular Season
+MIL,CLE,2024-11-02,Fiserv Forum,Milwaukee,WI,Regular Season
+SAS,MIN,2024-11-02,Frost Bank Center,San Antonio,TX,Regular Season
+WAS,MIA,2024-11-02,Arena CDMX,Mexico City,MX,NBA Mexico City Game
+DEN,UTA,2024-11-02,Ball Arena,Denver,CO,Regular Season
+PHO,POR,2024-11-02,Footprint Center,Phoenix,AZ,Regular Season
+LAC,OKC,2024-11-02,Intuit Dome,Inglewood,CA,Regular Season
+BRK,DET,2024-11-03,Barclays Center,Brooklyn,NY,Regular Season
+NOP,ATL,2024-11-03,Smoothie King Center,New Orleans,LA,Regular Season
+DAL,ORL,2024-11-03,American Airlines Center,Dallas,TX,Regular Season
+CLE,MIL,2024-11-04,Rocket Mortgage FieldHouse,Cleveland,OH,Regular Season
+WAS,GSW,2024-11-04,Capital One Arena,Washington,DC,Regular Season
+DET,LAL,2024-11-04,Little Caesars Arena,Detroit,MI,Regular Season
+ATL,BOS,2024-11-04,State Farm Arena,Atlanta,GA,Regular Season
+BRK,MEM,2024-11-04,Barclays Center,Brooklyn,NY,Regular Season
+MIA,SAC,2024-11-04,Kaseya Center,Miami,FL,Regular Season
+CHI,UTA,2024-11-04,United Center,Chicago,IL,Regular Season
+HOU,NYK,2024-11-04,Toyota Center,Houston,TX,Regular Season
+MIN,CHO,2024-11-04,Target Center,Minneapolis,MN,Regular Season
+OKC,ORL,2024-11-04,Paycom Center,Oklahoma City,OK,Regular Season
+NOP,POR,2024-11-04,Smoothie King Center,New Orleans,LA,Regular Season
+DAL,IND,2024-11-04,American Airlines Center,Dallas,TX,Regular Season
+DEN,TOR,2024-11-04,Ball Arena,Denver,CO,Regular Season
+PHO,PHI,2024-11-04,Footprint Center,Phoenix,AZ,Regular Season
+LAC,SAS,2024-11-04,Intuit Dome,Inglewood,CA,Regular Season
+CHO,DET,2024-11-06,Spectrum Center,Charlotte,NC,Regular Season
+IND,ORL,2024-11-06,Gainbridge Fieldhouse,Indianapolis,IN,Regular Season
+ATL,NYK,2024-11-06,State Farm Arena,Atlanta,GA,Regular Season
+BOS,GSW,2024-11-06,TD Garden,Boston,MA,Regular Season
+HOU,SAS,2024-11-06,Toyota Center,Houston,TX,Regular Season
+MEM,LAL,2024-11-06,FedExForum,Memphis,TN,Regular Season
+NOP,CLE,2024-11-06,Smoothie King Center,New Orleans,LA,Regular Season
+DAL,CHI,2024-11-06,American Airlines Center,Dallas,TX,Regular Season
+DEN,OKC,2024-11-06,Ball Arena,Denver,CO,Regular Season
+PHO,MIA,2024-11-06,Footprint Center,Phoenix,AZ,Regular Season
+LAC,PHI,2024-11-06,Intuit Dome,Inglewood,CA,Regular Season
+SAC,TOR,2024-11-06,Golden 1 Center,Sacramento,CA,Regular Season
+CHI,MIN,2024-11-07,United Center,Chicago,IL,Regular Season
+MIL,UTA,2024-11-07,Fiserv Forum,Milwaukee,WI,Regular Season
+SAS,POR,2024-11-07,Frost Bank Center,San Antonio,TX,Regular Season
+CHO,IND,2024-11-08,Spectrum Center,Charlotte,NC,Regular Season
+DET,ATL,2024-11-08,Little Caesars Arena,Detroit,MI,Regular Season
+ORL,NOP,2024-11-08,Kia Center,Orlando,FL,Regular Season
+BOS,BRK,2024-11-08,TD Garden,Boston,MA,Regular Season
+CLE,GSW,2024-11-08,Rocket Mortgage FieldHouse,Cleveland,OH,Regular Season
+NYK,MIL,2024-11-08,Madison Square Garden,New York,NY,Regular Season
+DAL,PHO,2024-11-08,American Airlines Center,Dallas,TX,Regular Season
+MEM,WAS,2024-11-08,FedExForum,Memphis,TN,Regular Season
+OKC,HOU,2024-11-08,Paycom Center,Oklahoma City,OK,Regular Season
+MIN,POR,2024-11-08,Target Center,Minneapolis,MN,Regular Season
+DEN,MIA,2024-11-08,Ball Arena,Denver,CO,Regular Season
+LAL,PHI,2024-11-08,Crypto.com Arena,Los Angeles,CA,Regular Season
+SAC,LAC,2024-11-08,Golden 1 Center,Sacramento,CA,Regular Season
+SAS,UTA,2024-11-09,Frost Bank Center,San Antonio,TX,Regular Season
+ATL,CHI,2024-11-09,State Farm Arena,Atlanta,GA,Regular Season
+CLE,BRK,2024-11-09,Rocket Mortgage FieldHouse,Cleveland,OH,Regular Season
+LAC,TOR,2024-11-09,Intuit Dome,Inglewood,CA,Regular Season
+DET,HOU,2024-11-10,Little Caesars Arena,Detroit,MI,Regular Season
+MIL,BOS,2024-11-10,Fiserv Forum,Milwaukee,WI,Regular Season
+IND,NYK,2024-11-10,Gainbridge Fieldhouse,Indianapolis,IN,Regular Season
+ORL,WAS,2024-11-10,Kia Center,Orlando,FL,Regular Season
+PHI,CHO,2024-11-10,Wells Fargo Center,Philadelphia,PA,Regular Season
+MIN,MIA,2024-11-10,Target Center,Minneapolis,MN,Regular Season
+OKC,GSW,2024-11-10,Paycom Center,Oklahoma City,OK,Regular Season
+DEN,DAL,2024-11-10,Ball Arena,Denver,CO,Regular Season
+PHO,SAC,2024-11-10,Footprint Center,Phoenix,AZ,Regular Season
+POR,MEM,2024-11-10,Moda Center,Portland,OR,Regular Season
+LAL,TOR,2024-11-10,Crypto.com Arena,Los Angeles,CA,Regular Season
+CHI,CLE,2024-11-11,United Center,Chicago,IL,Regular Season
+HOU,WAS,2024-11-11,Toyota Center,Houston,TX,Regular Season
+NOP,BRK,2024-11-11,Smoothie King Center,New Orleans,LA,Regular Season
+OKC,LAC,2024-11-11,Paycom Center,Oklahoma City,OK,Regular Season
+SAS,SAC,2024-11-11,Frost Bank Center,San Antonio,TX,Regular Season
+BOS,ATL,2024-11-12,TD Garden,Boston,MA,Emirates NBA Cup
+DET,MIA,2024-11-12,Little Caesars Arena,Detroit,MI,Emirates NBA Cup
+ORL,CHO,2024-11-12,Kia Center,Orlando,FL,Emirates NBA Cup
+PHI,NYK,2024-11-12,Wells Fargo Center,Philadelphia,PA,Emirates NBA Cup
+MIL,TOR,2024-11-12,Fiserv Forum,Milwaukee,WI,Emirates NBA Cup
+UTA,PHO,2024-11-12,Delta Center,Salt Lake City,UT,Emirates NBA Cup
+GSW,DAL,2024-11-12,Chase Center,San Francisco,CA,Emirates NBA Cup
+POR,MIN,2024-11-12,Moda Center,Portland,OR,Emirates NBA Cup
+ORL,IND,2024-11-13,Kia Center,Orlando,FL,Regular Season
+BRK,BOS,2024-11-13,Barclays Center,Brooklyn,NY,Regular Season
+NYK,CHI,2024-11-13,Madison Square Garden,New York,NY,Regular Season
+PHI,CLE,2024-11-13,Wells Fargo Center,Philadelphia,PA,Regular Season
+OKC,NOP,2024-11-13,Paycom Center,Oklahoma City,OK,Regular Season
+HOU,LAC,2024-11-13,Toyota Center,Houston,TX,Regular Season
+MIL,DET,2024-11-13,Fiserv Forum,Milwaukee,WI,Regular Season
+SAS,WAS,2024-11-13,Frost Bank Center,San Antonio,TX,Regular Season
+LAL,MEM,2024-11-13,Crypto.com Arena,Los Angeles,CA,Regular Season
+POR,MIN,2024-11-13,Moda Center,Portland,OR,Regular Season
+SAC,PHO,2024-11-13,Golden 1 Center,Sacramento,CA,Regular Season
+UTA,DAL,2024-11-14,Delta Center,Salt Lake City,UT,Regular Season
+IND,MIA,2024-11-15,Gainbridge Fieldhouse,Indianapolis,IN,Emirates NBA Cup
+ORL,PHI,2024-11-15,Kia Center,Orlando,FL,Emirates NBA Cup
+TOR,DET,2024-11-15,Scotiabank Arena,Toronto,ON,Emirates NBA Cup
+ATL,WAS,2024-11-15,State Farm Arena,Atlanta,GA,Emirates NBA Cup
+CLE,CHI,2024-11-15,Rocket Mortgage FieldHouse,Cleveland,OH,Emirates NBA Cup
+NYK,BRK,2024-11-15,Madison Square Garden,New York,NY,Emirates NBA Cup
+SAS,LAL,2024-11-15,Frost Bank Center,San Antonio,TX,Emirates NBA Cup
+HOU,LAC,2024-11-15,Toyota Center,Houston,TX,Emirates NBA Cup
+NOP,DEN,2024-11-15,Smoothie King Center,New Orleans,LA,Emirates NBA Cup
+OKC,PHO,2024-11-15,Paycom Center,Oklahoma City,OK,Emirates NBA Cup
+GSW,MEM,2024-11-15,Chase Center,San Francisco,CA,Emirates NBA Cup
+SAC,MIN,2024-11-15,Golden 1 Center,Sacramento,CA,Emirates NBA Cup
+CHO,MIL,2024-11-16,Spectrum Center,Charlotte,NC,Regular Season
+BOS,TOR,2024-11-16,TD Garden,Boston,MA,Regular Season
+NOP,LAL,2024-11-16,Smoothie King Center,New Orleans,LA,Regular Season
+DAL,SAS,2024-11-16,American Airlines Center,Dallas,TX,Regular Season
+SAC,UTA,2024-11-16,Golden 1 Center,Sacramento,CA,Regular Season
+MIN,PHO,2024-11-17,Target Center,Minneapolis,MN,Regular Season
+IND,MIA,2024-11-17,Gainbridge Fieldhouse,Indianapolis,IN,Regular Season
+CLE,CHO,2024-11-17,Rocket Mortgage FieldHouse,Cleveland,OH,Regular Season
+WAS,DET,2024-11-17,Capital One Arena,Washington,DC,Regular Season
+MEM,DEN,2024-11-17,FedExForum,Memphis,TN,Regular Season
+POR,ATL,2024-11-17,Moda Center,Portland,OR,Regular Season
+NYK,BRK,2024-11-17,Madison Square Garden,New York,NY,Regular Season
+CHI,HOU,2024-11-17,United Center,Chicago,IL,Regular Season
+OKC,DAL,2024-11-17,Paycom Center,Oklahoma City,OK,Regular Season
+LAC,UTA,2024-11-17,Intuit Dome,Inglewood,CA,Regular Season
+DET,CHI,2024-11-18,Little Caesars Arena,Detroit,MI,Regular Season
+MIA,PHI,2024-11-18,Kaseya Center,Miami,FL,Regular Season
+NYK,WAS,2024-11-18,Madison Square Garden,New York,NY,Regular Season
+TOR,IND,2024-11-18,Scotiabank Arena,Toronto,ON,Regular Season
+MIL,HOU,2024-11-18,Fiserv Forum,Milwaukee,WI,Regular Season
+PHO,ORL,2024-11-18,Footprint Center,Phoenix,AZ,Regular Season
+SAC,ATL,2024-11-18,Golden 1 Center,Sacramento,CA,Regular Season
+LAC,GSW,2024-11-18,Intuit Dome,Inglewood,CA,Regular Season
+BOS,CLE,2024-11-19,TD Garden,Boston,MA,Emirates NBA Cup
+BRK,CHO,2024-11-19,Barclays Center,Brooklyn,NY,Emirates NBA Cup
+MEM,DEN,2024-11-19,FedExForum,Memphis,TN,Emirates NBA Cup
+DAL,NOP,2024-11-19,American Airlines Center,Dallas,TX,Emirates NBA Cup
+SAS,OKC,2024-11-19,Frost Bank Center,San Antonio,TX,Emirates NBA Cup
+LAL,UTA,2024-11-19,Crypto.com Arena,Los Angeles,CA,Emirates NBA Cup
+CLE,NOP,2024-11-20,Rocket Mortgage FieldHouse,Cleveland,OH,Regular Season
+MIL,CHI,2024-11-20,Fiserv Forum,Milwaukee,WI,Regular Season
+HOU,IND,2024-11-20,Toyota Center,Houston,TX,Regular Season
+MEM,PHI,2024-11-20,FedExForum,Memphis,TN,Regular Season
+OKC,POR,2024-11-20,Paycom Center,Oklahoma City,OK,Regular Season
+PHO,NYK,2024-11-20,Footprint Center,Phoenix,AZ,Regular Season
+GSW,ATL,2024-11-20,Chase Center,San Francisco,CA,Regular Season
+LAC,ORL,2024-11-20,Intuit Dome,Inglewood,CA,Regular Season
+CHO,DET,2024-11-21,Spectrum Center,Charlotte,NC,Regular Season
+TOR,MIN,2024-11-21,Scotiabank Arena,Toronto,ON,Regular Season
+SAS,UTA,2024-11-21,Frost Bank Center,San Antonio,TX,Regular Season
+LAL,ORL,2024-11-21,Crypto.com Arena,Los Angeles,CA,Regular Season
+PHI,BRK,2024-11-22,Wells Fargo Center,Philadelphia,PA,Emirates NBA Cup
+WAS,BOS,2024-11-22,Capital One Arena,Washington,DC,Emirates NBA Cup
+MIL,IND,2024-11-22,Fiserv Forum,Milwaukee,WI,Emirates NBA Cup
+CHI,ATL,2024-11-22,United Center,Chicago,IL,Emirates NBA Cup
+HOU,POR,2024-11-22,Toyota Center,Houston,TX,Emirates NBA Cup
+NOP,GSW,2024-11-22,Smoothie King Center,New Orleans,LA,Emirates NBA Cup
+DEN,DAL,2024-11-22,Ball Arena,Denver,CO,Emirates NBA Cup
+LAC,SAC,2024-11-22,Intuit Dome,Inglewood,CA,Emirates NBA Cup
+UTA,NYK,2024-11-23,Delta Center,Salt Lake City,UT,Regular Season
+ORL,DET,2024-11-23,Kia Center,Orlando,FL,Regular Season
+CHI,MEM,2024-11-23,United Center,Chicago,IL,Regular Season
+HOU,POR,2024-11-23,Toyota Center,Houston,TX,Regular Season
+MIL,CHO,2024-11-23,Fiserv Forum,Milwaukee,WI,Regular Season
+SAS,GSW,2024-11-23,Frost Bank Center,San Antonio,TX,Regular Season
+LAL,DEN,2024-11-23,Crypto.com Arena,Los Angeles,CA,Regular Season
+BOS,MIN,2024-11-24,TD Garden,Boston,MA,Regular Season
+IND,WAS,2024-11-24,Gainbridge Fieldhouse,Indianapolis,IN,Regular Season
+MIA,DAL,2024-11-24,Kaseya Center,Miami,FL,Regular Season
+PHI,LAC,2024-11-24,Wells Fargo Center,Philadelphia,PA,Regular Season
+CLE,TOR,2024-11-24,Rocket Mortgage FieldHouse,Cleveland,OH,Regular Season
+SAC,BRK,2024-11-24,Golden 1 Center,Sacramento,CA,Regular Season
+CHO,ORL,2024-11-25,Spectrum Center,Charlotte,NC,Regular Season
+DET,TOR,2024-11-25,Little Caesars Arena,Detroit,MI,Regular Season
+IND,NOP,2024-11-25,Gainbridge Fieldhouse,Indianapolis,IN,Regular Season
+ATL,DAL,2024-11-25,State Farm Arena,Atlanta,GA,Regular Season
+BOS,LAC,2024-11-25,TD Garden,Boston,MA,Regular Season
+MEM,POR,2024-11-25,FedExForum,Memphis,TN,Regular Season
+DEN,NYK,2024-11-25,Ball Arena,Denver,CO,Regular Season
+GSW,BRK,2024-11-25,Chase Center,San Francisco,CA,Regular Season
+SAC,OKC,2024-11-25,Golden 1 Center,Sacramento,CA,Regular Season
+WAS,CHI,2024-11-26,Capital One Arena,Washington,DC,Emirates NBA Cup
+MIA,MIL,2024-11-26,Kaseya Center,Miami,FL,Emirates NBA Cup
+MIN,HOU,2024-11-26,Target Center,Minneapolis,MN,Emirates NBA Cup
+UTA,SAS,2024-11-26,Delta Center,Salt Lake City,UT,Emirates NBA Cup
+PHO,LAL,2024-11-26,Footprint Center,Phoenix,AZ,Emirates NBA Cup
+CHO,MIA,2024-11-27,Spectrum Center,Charlotte,NC,Regular Season
+CLE,ATL,2024-11-27,Rocket Mortgage FieldHouse,Cleveland,OH,Regular Season
+IND,POR,2024-11-27,Gainbridge Fieldhouse,Indianapolis,IN,Regular Season
+ORL,CHI,2024-11-27,Kia Center,Orlando,FL,Regular Season
+PHI,HOU,2024-11-27,Wells Fargo Center,Philadelphia,PA,Regular Season
+WAS,LAC,2024-11-27,Capital One Arena,Washington,DC,Regular Season
+DAL,NYK,2024-11-27,American Airlines Center,Dallas,TX,Regular Season
+MEM,DET,2024-11-27,FedExForum,Memphis,TN,Regular Season
+MIN,SAC,2024-11-27,Target Center,Minneapolis,MN,Regular Season
+NOP,TOR,2024-11-27,Smoothie King Center,New Orleans,LA,Regular Season
+SAS,LAL,2024-11-27,Frost Bank Center,San Antonio,TX,Regular Season
+PHO,BRK,2024-11-27,Footprint Center,Phoenix,AZ,Regular Season
+UTA,DEN,2024-11-27,Delta Center,Salt Lake City,UT,Regular Season
+GSW,OKC,2024-11-27,Chase Center,San Francisco,CA,Regular Season
+CHO,NYK,2024-11-29,Spectrum Center,Charlotte,NC,Emirates NBA Cup
+ATL,CLE,2024-11-29,State Farm Arena,Atlanta,GA,Emirates NBA Cup
+MEM,NOP,2024-11-29,FedExForum,Memphis,TN,Emirates NBA Cup
+BRK,ORL,2024-11-29,Barclays Center,Brooklyn,NY,Emirates NBA Cup
+MIN,LAC,2024-11-29,Target Center,Minneapolis,MN,Emirates NBA Cup
+IND,DET,2024-11-29,Gainbridge Fieldhouse,Indianapolis,IN,Emirates NBA Cup
+MIA,TOR,2024-11-29,Kaseya Center,Miami,FL,Emirates NBA Cup
+CHI,BOS,2024-11-29,United Center,Chicago,IL,Emirates NBA Cup
+LAL,OKC,2024-11-29,Crypto.com Arena,Los Angeles,CA,Emirates NBA Cup
+POR,SAC,2024-11-29,Moda Center,Portland,OR,Emirates NBA Cup
+CHO,ATL,2024-11-30,Spectrum Center,Charlotte,NC,Regular Season
+DET,PHI,2024-11-30,Little Caesars Arena,Detroit,MI,Regular Season
+MIL,WAS,2024-11-30,Fiserv Forum,Milwaukee,WI,Regular Season
+PHO,GSW,2024-11-30,Footprint Center,Phoenix,AZ,Regular Season
+UTA,DAL,2024-11-30,Delta Center,Salt Lake City,UT,Regular Season
+BRK,ORL,2024-12-01,Barclays Center,Brooklyn,NY,Regular Season
+MEM,IND,2024-12-01,FedExForum,Memphis,TN,Regular Season
+CLE,BOS,2024-12-01,Rocket Mortgage FieldHouse,Cleveland,OH,Regular Season
+NYK,NOP,2024-12-01,Madison Square Garden,New York,NY,Regular Season
+TOR,MIA,2024-12-01,Scotiabank Arena,Toronto,ON,Regular Season
+HOU,OKC,2024-12-01,Toyota Center,Houston,TX,Regular Season
+UTA,LAL,2024-12-01,Delta Center,Salt Lake City,UT,Regular Season
+POR,DAL,2024-12-01,Moda Center,Portland,OR,Regular Season
+SAC,SAS,2024-12-01,Golden 1 Center,Sacramento,CA,Regular Season
+LAC,DEN,2024-12-01,Intuit Dome,Inglewood,CA,Regular Season
+ATL,NOP,2024-12-02,State Farm Arena,Atlanta,GA,Regular Season
+BOS,MIA,2024-12-02,TD Garden,Boston,MA,Regular Season
+CHI,BRK,2024-12-02,United Center,Chicago,IL,Regular Season
+MIN,LAL,2024-12-02,Target Center,Minneapolis,MN,Regular Season
+CHO,PHI,2024-12-03,Spectrum Center,Charlotte,NC,Emirates NBA Cup
+CLE,WAS,2024-12-03,Rocket Mortgage FieldHouse,Cleveland,OH,Emirates NBA Cup
+DET,MIL,2024-12-03,Little Caesars Arena,Detroit,MI,Emirates NBA Cup
+NYK,ORL,2024-12-03,Madison Square Garden,New York,NY,Emirates NBA Cup
+TOR,IND,2024-12-03,Scotiabank Arena,Toronto,ON,Emirates NBA Cup
+OKC,UTA,2024-12-03,Paycom Center,Oklahoma City,OK,Emirates NBA Cup
+DAL,MEM,2024-12-03,American Airlines Center,Dallas,TX,Emirates NBA Cup
+PHO,SAS,2024-12-03,Footprint Center,Phoenix,AZ,Emirates NBA Cup
+DEN,GSW,2024-12-03,Ball Arena,Denver,CO,Emirates NBA Cup
+SAC,HOU,2024-12-03,Golden 1 Center,Sacramento,CA,Emirates NBA Cup
+LAC,POR,2024-12-03,Intuit Dome,Inglewood,CA,Emirates NBA Cup
+BOS,DET,2024-12-04,TD Garden,Boston,MA,Regular Season
+BRK,IND,2024-12-04,Barclays Center,Brooklyn,NY,Regular Season
+MIA,LAL,2024-12-04,Kaseya Center,Miami,FL,Regular Season
+PHI,ORL,2024-12-04,Wells Fargo Center,Philadelphia,PA,Regular Season
+MIL,ATL,2024-12-04,Fiserv Forum,Milwaukee,WI,Regular Season
+LAC,MIN,2024-12-04,Intuit Dome,Inglewood,CA,Regular Season
+CLE,DEN,2024-12-05,Rocket Mortgage FieldHouse,Cleveland,OH,Regular Season
+WAS,DAL,2024-12-05,Capital One Arena,Washington,DC,Regular Season
+NYK,CHO,2024-12-05,Madison Square Garden,New York,NY,Regular Season
+TOR,OKC,2024-12-05,Scotiabank Arena,Toronto,ON,Regular Season
+MEM,SAC,2024-12-05,FedExForum,Memphis,TN,Regular Season
+NOP,PHO,2024-12-05,Smoothie King Center,New Orleans,LA,Regular Season
+SAS,CHI,2024-12-05,Frost Bank Center,San Antonio,TX,Regular Season
+GSW,HOU,2024-12-05,Chase Center,San Francisco,CA,Regular Season
+PHI,ORL,2024-12-06,Wells Fargo Center,Philadelphia,PA,Regular Season
+ATL,LAL,2024-12-06,State Farm Arena,Atlanta,GA,Regular Season
+BOS,MIL,2024-12-06,TD Garden,Boston,MA,Regular Season
+CHI,IND,2024-12-06,United Center,Chicago,IL,Regular Season
+SAS,SAC,2024-12-06,Frost Bank Center,San Antonio,TX,Regular Season
+GSW,MIN,2024-12-06,Chase Center,San Francisco,CA,Regular Season
+POR,UTA,2024-12-06,Moda Center,Portland,OR,Regular Season
+CHO,CLE,2024-12-07,Spectrum Center,Charlotte,NC,Regular Season
+WAS,DEN,2024-12-07,Capital One Arena,Washington,DC,Regular Season
+NOP,OKC,2024-12-07,Smoothie King Center,New Orleans,LA,Regular Season
+NYK,DET,2024-12-07,Madison Square Garden,New York,NY,Regular Season
+TOR,DAL,2024-12-07,Scotiabank Arena,Toronto,ON,Regular Season
+BOS,MEM,2024-12-07,TD Garden,Boston,MA,Regular Season
+MIA,PHO,2024-12-07,Kaseya Center,Miami,FL,Regular Season
+CHI,PHI,2024-12-08,United Center,Chicago,IL,Regular Season
+BRK,MIL,2024-12-08,Barclays Center,Brooklyn,NY,Regular Season
+IND,CHO,2024-12-08,Gainbridge Fieldhouse,Indianapolis,IN,Regular Season
+ATL,DEN,2024-12-08,State Farm Arena,Atlanta,GA,Regular Season
+MIA,CLE,2024-12-08,Kaseya Center,Miami,FL,Regular Season
+ORL,PHO,2024-12-08,Kia Center,Orlando,FL,Regular Season
+WAS,MEM,2024-12-08,Capital One Arena,Washington,DC,Regular Season
+SAS,NOP,2024-12-08,Frost Bank Center,San Antonio,TX,Regular Season
+GSW,MIN,2024-12-08,Chase Center,San Francisco,CA,Regular Season
+LAC,HOU,2024-12-08,Intuit Dome,Inglewood,CA,Regular Season
+SAC,UTA,2024-12-08,Golden 1 Center,Sacramento,CA,Regular Season
+LAL,POR,2024-12-08,Crypto.com Arena,Los Angeles,CA,Regular Season
+TOR,NYK,2024-12-09,Scotiabank Arena,Toronto,ON,Regular Season
+MIL,ORL,2024-12-10,Fiserv Forum,Milwaukee,WI,Emirates NBA Cup
+OKC,DAL,2024-12-10,Paycom Center,Oklahoma City,OK,Emirates NBA Cup
+NYK,ATL,2024-12-11,Madison Square Garden,New York,NY,Emirates NBA Cup
+HOU,GSW,2024-12-11,Toyota Center,Houston,TX,Emirates NBA Cup
+BOS,DET,2024-12-12,TD Garden,Boston,MA,Regular Season
+MIA,TOR,2024-12-12,Kaseya Center,Miami,FL,Regular Season
+NOP,SAC,2024-12-12,Smoothie King Center,New Orleans,LA,Regular Season
+CLE,WAS,2024-12-13,Rocket Mortgage FieldHouse,Cleveland,OH,Regular Season
+PHI,IND,2024-12-13,Wells Fargo Center,Philadelphia,PA,Regular Season
+MIN,LAL,2024-12-13,Target Center,Minneapolis,MN,Regular Season
+MEM,BRK,2024-12-13,FedExForum,Memphis,TN,Regular Season
+CHI,CHO,2024-12-13,United Center,Chicago,IL,Regular Season
+DEN,LAC,2024-12-13,Ball Arena,Denver,CO,Regular Season
+UTA,PHO,2024-12-13,Delta Center,Salt Lake City,UT,Regular Season
+POR,SAS,2024-12-13,Moda Center,Portland,OR,Regular Season
+MIL,ATL,2024-12-14,T-Mobile Arena,Las Vegas,NV,Emirates NBA Cup
+OKC,HOU,2024-12-14,T-Mobile Arena,Las Vegas,NV,Emirates NBA Cup
+IND,NOP,2024-12-15,Gainbridge Fieldhouse,Indianapolis,IN,Regular Season
+WAS,BOS,2024-12-15,Capital One Arena,Washington,DC,Regular Season
+SAS,MIN,2024-12-15,Frost Bank Center,San Antonio,TX,Regular Season
+PHO,POR,2024-12-15,Footprint Center,Phoenix,AZ,Regular Season
+LAL,MEM,2024-12-15,Crypto.com Arena,Los Angeles,CA,Regular Season
+ORL,NYK,2024-12-15,Kia Center,Orlando,FL,Regular Season
+GSW,DAL,2024-12-15,Chase Center,San Francisco,CA,Regular Season
+DET,MIA,2024-12-16,Little Caesars Arena,Detroit,MI,Regular Season
+CHO,PHI,2024-12-16,Spectrum Center,Charlotte,NC,Regular Season
+TOR,CHI,2024-12-16,Scotiabank Arena,Toronto,ON,Regular Season
+BRK,CLE,2024-12-16,Barclays Center,Brooklyn,NY,Regular Season
+SAC,DEN,2024-12-16,Golden 1 Center,Sacramento,CA,Regular Season
+LAC,UTA,2024-12-16,Intuit Dome,Inglewood,CA,Regular Season
+OKC,MIL,2024-12-17,T-Mobile Arena,Las Vegas,NV,Emirates NBA Cup
+DET,UTA,2024-12-19,Little Caesars Arena,Detroit,MI,Regular Season
+ORL,OKC,2024-12-19,Kia Center,Orlando,FL,Regular Season
+WAS,CHO,2024-12-19,Capital One Arena,Washington,DC,Regular Season
+BOS,CHI,2024-12-19,TD Garden,Boston,MA,Regular Season
+TOR,BRK,2024-12-19,Scotiabank Arena,Toronto,ON,Regular Season
+HOU,NOP,2024-12-19,Toyota Center,Houston,TX,Regular Season
+MEM,GSW,2024-12-19,FedExForum,Memphis,TN,Regular Season
+MIN,NYK,2024-12-19,Target Center,Minneapolis,MN,Regular Season
+DAL,LAC,2024-12-19,American Airlines Center,Dallas,TX,Regular Season
+PHO,IND,2024-12-19,Footprint Center,Phoenix,AZ,Regular Season
+SAS,ATL,2024-12-19,Frost Bank Center,San Antonio,TX,Regular Season
+POR,DEN,2024-12-19,Moda Center,Portland,OR,Regular Season
+SAC,LAL,2024-12-19,Golden 1 Center,Sacramento,CA,Regular Season
+PHI,CHO,2024-12-20,Wells Fargo Center,Philadelphia,PA,Regular Season
+CLE,MIL,2024-12-20,Rocket Mortgage FieldHouse,Cleveland,OH,Regular Season
+MIA,OKC,2024-12-20,Kaseya Center,Miami,FL,Regular Season
+SAC,LAL,2024-12-21,Golden 1 Center,Sacramento,CA,Regular Season
+ORL,MIA,2024-12-21,Kia Center,Orlando,FL,Regular Season
+ATL,MEM,2024-12-21,State Farm Arena,Atlanta,GA,Regular Season
+BRK,UTA,2024-12-21,Barclays Center,Brooklyn,NY,Regular Season
+CLE,PHI,2024-12-21,Rocket Mortgage FieldHouse,Cleveland,OH,Regular Season
+CHI,BOS,2024-12-21,United Center,Chicago,IL,Regular Season
+MIL,WAS,2024-12-21,Fiserv Forum,Milwaukee,WI,Regular Season
+MIN,GSW,2024-12-21,Target Center,Minneapolis,MN,Regular Season
+NOP,NYK,2024-12-21,Smoothie King Center,New Orleans,LA,Regular Season
+DAL,LAC,2024-12-21,American Airlines Center,Dallas,TX,Regular Season
+SAS,POR,2024-12-21,Frost Bank Center,San Antonio,TX,Regular Season
+PHO,DET,2024-12-21,Footprint Center,Phoenix,AZ,Regular Season
+TOR,HOU,2024-12-22,Scotiabank Arena,Toronto,ON,Regular Season
+SAC,IND,2024-12-22,Golden 1 Center,Sacramento,CA,Regular Season
+NOP,DEN,2024-12-22,Smoothie King Center,New Orleans,LA,Regular Season
+CHO,HOU,2024-12-23,Spectrum Center,Charlotte,NC,Regular Season
+CLE,UTA,2024-12-23,Rocket Mortgage FieldHouse,Cleveland,OH,Regular Season
+ORL,BOS,2024-12-23,Kia Center,Orlando,FL,Regular Season
+PHI,SAS,2024-12-23,Wells Fargo Center,Philadelphia,PA,Regular Season
+ATL,MIN,2024-12-23,State Farm Arena,Atlanta,GA,Regular Season
+MIA,BRK,2024-12-23,Kaseya Center,Miami,FL,Regular Season
+NYK,TOR,2024-12-23,Madison Square Garden,New York,NY,Regular Season
+CHI,MIL,2024-12-23,United Center,Chicago,IL,Regular Season
+MEM,LAC,2024-12-23,FedExForum,Memphis,TN,Regular Season
+OKC,WAS,2024-12-23,Paycom Center,Oklahoma City,OK,Regular Season
+DAL,POR,2024-12-23,American Airlines Center,Dallas,TX,Regular Season
+DEN,PHO,2024-12-23,Ball Arena,Denver,CO,Regular Season
+GSW,IND,2024-12-23,Chase Center,San Francisco,CA,Regular Season
+LAL,DET,2024-12-23,Crypto.com Arena,Los Angeles,CA,Regular Season
+NYK,SAS,2024-12-25,Madison Square Garden,New York,NY,Regular Season
+DAL,MIN,2024-12-25,American Airlines Center,Dallas,TX,Regular Season
+BOS,PHI,2024-12-25,TD Garden,Boston,MA,Regular Season
+GSW,LAL,2024-12-25,Chase Center,San Francisco,CA,Regular Season
+PHO,DEN,2024-12-25,Footprint Center,Phoenix,AZ,Regular Season
+IND,OKC,2024-12-26,Gainbridge Fieldhouse,Indianapolis,IN,Regular Season
+ORL,MIA,2024-12-26,Kia Center,Orlando,FL,Regular Season
+WAS,CHO,2024-12-26,Capital One Arena,Washington,DC,Regular Season
+ATL,CHI,2024-12-26,State Farm Arena,Atlanta,GA,Regular Season
+MEM,TOR,2024-12-26,FedExForum,Memphis,TN,Regular Season
+MIL,BRK,2024-12-26,Fiserv Forum,Milwaukee,WI,Regular Season
+NOP,HOU,2024-12-26,Smoothie King Center,New Orleans,LA,Regular Season
+POR,UTA,2024-12-26,Moda Center,Portland,OR,Regular Season
+SAC,DET,2024-12-26,Golden 1 Center,Sacramento,CA,Regular Season
+ORL,NYK,2024-12-27,Kia Center,Orlando,FL,Regular Season
+BOS,IND,2024-12-27,TD Garden,Boston,MA,Regular Season
+BRK,SAS,2024-12-27,Barclays Center,Brooklyn,NY,Regular Season
+HOU,MIN,2024-12-27,Toyota Center,Houston,TX,Regular Season
+NOP,MEM,2024-12-27,Smoothie King Center,New Orleans,LA,Regular Season
+DEN,CLE,2024-12-27,Ball Arena,Denver,CO,Regular Season
+PHO,DAL,2024-12-27,Footprint Center,Phoenix,AZ,Regular Season
+LAC,GSW,2024-12-27,Intuit Dome,Inglewood,CA,Regular Season
+ATL,MIA,2024-12-28,State Farm Arena,Atlanta,GA,Regular Season
+CHO,OKC,2024-12-28,Spectrum Center,Charlotte,NC,Regular Season
+WAS,NYK,2024-12-28,Capital One Arena,Washington,DC,Regular Season
+CHI,MIL,2024-12-28,United Center,Chicago,IL,Regular Season
+GSW,PHO,2024-12-28,Chase Center,San Francisco,CA,Regular Season
+DEN,DET,2024-12-28,Ball Arena,Denver,CO,Regular Season
+UTA,PHI,2024-12-28,Delta Center,Salt Lake City,UT,Regular Season
+POR,DAL,2024-12-28,Moda Center,Portland,OR,Regular Season
+LAL,SAC,2024-12-28,Crypto.com Arena,Los Angeles,CA,Regular Season
+ORL,BRK,2024-12-29,Kia Center,Orlando,FL,Regular Season
+BOS,IND,2024-12-29,TD Garden,Boston,MA,Regular Season
+TOR,ATL,2024-12-29,Scotiabank Arena,Toronto,ON,Regular Season
+HOU,MIA,2024-12-29,Toyota Center,Houston,TX,Regular Season
+OKC,MEM,2024-12-29,Paycom Center,Oklahoma City,OK,Regular Season
+MIN,SAS,2024-12-29,Target Center,Minneapolis,MN,Regular Season
+CHO,CHI,2024-12-30,Spectrum Center,Charlotte,NC,Regular Season
+WAS,NYK,2024-12-30,Capital One Arena,Washington,DC,Regular Season
+NOP,LAC,2024-12-30,Smoothie King Center,New Orleans,LA,Regular Season
+UTA,DEN,2024-12-30,Delta Center,Salt Lake City,UT,Regular Season
+GSW,CLE,2024-12-30,Chase Center,San Francisco,CA,Regular Season
+POR,PHI,2024-12-30,Moda Center,Portland,OR,Regular Season
+SAC,DAL,2024-12-30,Golden 1 Center,Sacramento,CA,Regular Season
+BOS,TOR,2024-12-31,TD Garden,Boston,MA,Regular Season
+IND,MIL,2024-12-31,Gainbridge Fieldhouse,Indianapolis,IN,Regular Season
+SAS,LAC,2024-12-31,Frost Bank Center,San Antonio,TX,Regular Season
+OKC,MIN,2024-12-31,Paycom Center,Oklahoma City,OK,Regular Season
+PHO,MEM,2024-12-31,Footprint Center,Phoenix,AZ,Regular Season
+LAL,CLE,2024-12-31,Crypto.com Arena,Los Angeles,CA,Regular Season
+DET,ORL,2025-01-01,Little Caesars Arena,Detroit,MI,Regular Season
+WAS,CHI,2025-01-01,Capital One Arena,Washington,DC,Regular Season
+MIA,NOP,2025-01-01,Kaseya Center,Miami,FL,Regular Season
+NYK,UTA,2025-01-01,Madison Square Garden,New York,NY,Regular Season
+TOR,BRK,2025-01-01,Scotiabank Arena,Toronto,ON,Regular Season
+HOU,DAL,2025-01-01,Toyota Center,Houston,TX,Regular Season
+DEN,ATL,2025-01-01,Ball Arena,Denver,CO,Regular Season
+SAC,PHI,2025-01-01,Golden 1 Center,Sacramento,CA,Regular Season
+MIA,IND,2025-01-02,Kaseya Center,Miami,FL,Regular Season
+MIN,BOS,2025-01-02,Target Center,Minneapolis,MN,Regular Season
+MIL,BRK,2025-01-02,Fiserv Forum,Milwaukee,WI,Regular Season
+OKC,LAC,2025-01-02,Paycom Center,Oklahoma City,OK,Regular Season
+GSW,PHI,2025-01-02,Chase Center,San Francisco,CA,Regular Season
+LAL,POR,2025-01-02,Crypto.com Arena,Los Angeles,CA,Regular Season
+DET,CHO,2025-01-03,Little Caesars Arena,Detroit,MI,Regular Season
+TOR,ORL,2025-01-03,Scotiabank Arena,Toronto,ON,Regular Season
+HOU,BOS,2025-01-03,Toyota Center,Houston,TX,Regular Season
+NOP,WAS,2025-01-03,Smoothie King Center,New Orleans,LA,Regular Season
+OKC,NYK,2025-01-03,Paycom Center,Oklahoma City,OK,Regular Season
+DAL,CLE,2025-01-03,American Airlines Center,Dallas,TX,Regular Season
+DEN,SAS,2025-01-03,Ball Arena,Denver,CO,Regular Season
+SAC,MEM,2025-01-03,Golden 1 Center,Sacramento,CA,Regular Season
+LAL,ATL,2025-01-03,Crypto.com Arena,Los Angeles,CA,Regular Season
+BRK,PHI,2025-01-04,Barclays Center,Brooklyn,NY,Regular Season
+DET,MIN,2025-01-04,Little Caesars Arena,Detroit,MI,Regular Season
+IND,PHO,2025-01-04,Gainbridge Fieldhouse,Indianapolis,IN,Regular Season
+MIA,UTA,2025-01-04,Kaseya Center,Miami,FL,Regular Season
+CHI,NYK,2025-01-04,United Center,Chicago,IL,Regular Season
+MIL,POR,2025-01-04,Fiserv Forum,Milwaukee,WI,Regular Season
+SAS,DEN,2025-01-04,Frost Bank Center,San Antonio,TX,Regular Season
+GSW,MEM,2025-01-04,Chase Center,San Francisco,CA,Regular Season
+LAC,ATL,2025-01-04,Intuit Dome,Inglewood,CA,Regular Season
+OKC,BOS,2025-01-05,Paycom Center,Oklahoma City,OK,Regular Season
+CLE,CHO,2025-01-05,Rocket Mortgage FieldHouse,Cleveland,OH,Regular Season
+WAS,NOP,2025-01-05,Capital One Arena,Washington,DC,Regular Season
+ORL,UTA,2025-01-05,Kia Center,Orlando,FL,Regular Season
+HOU,LAL,2025-01-05,Toyota Center,Houston,TX,Regular Season
+GSW,SAC,2025-01-05,Chase Center,San Francisco,CA,Regular Season
+DET,POR,2025-01-06,Little Caesars Arena,Detroit,MI,Regular Season
+PHI,PHO,2025-01-06,Wells Fargo Center,Philadelphia,PA,Regular Season
+BRK,IND,2025-01-06,Barclays Center,Brooklyn,NY,Regular Season
+NYK,ORL,2025-01-06,Madison Square Garden,New York,NY,Regular Season
+TOR,MIL,2025-01-06,Scotiabank Arena,Toronto,ON,Regular Season
+CHI,SAS,2025-01-06,United Center,Chicago,IL,Regular Season
+MEM,DAL,2025-01-06,FedExForum,Memphis,TN,Regular Season
+MIN,LAC,2025-01-06,Target Center,Minneapolis,MN,Regular Season
+SAC,MIA,2025-01-06,Golden 1 Center,Sacramento,CA,Regular Season
+CHO,PHO,2025-01-07,Spectrum Center,Charlotte,NC,Regular Season
+WAS,HOU,2025-01-07,Capital One Arena,Washington,DC,Regular Season
+DAL,LAL,2025-01-07,American Airlines Center,Dallas,TX,Regular Season
+NOP,MIN,2025-01-07,Smoothie King Center,New Orleans,LA,Regular Season
+UTA,ATL,2025-01-07,Delta Center,Salt Lake City,UT,Regular Season
+DEN,BOS,2025-01-07,Ball Arena,Denver,CO,Regular Season
+GSW,MIA,2025-01-07,Chase Center,San Francisco,CA,Regular Season
+CLE,OKC,2025-01-08,Rocket Mortgage FieldHouse,Cleveland,OH,Regular Season
+IND,CHI,2025-01-08,Gainbridge Fieldhouse,Indianapolis,IN,Regular Season
+NYK,TOR,2025-01-08,Madison Square Garden,New York,NY,Regular Season
+PHI,WAS,2025-01-08,Wells Fargo Center,Philadelphia,PA,Regular Season
+BRK,DET,2025-01-08,Barclays Center,Brooklyn,NY,Regular Season
+NOP,POR,2025-01-08,Smoothie King Center,New Orleans,LA,Regular Season
+DEN,LAC,2025-01-08,Ball Arena,Denver,CO,Regular Season
+MIL,SAS,2025-01-08,Fiserv Forum,Milwaukee,WI,Regular Season
+CLE,TOR,2025-01-09,Rocket Mortgage FieldHouse,Cleveland,OH,Regular Season
+DET,GSW,2025-01-09,Little Caesars Arena,Detroit,MI,Regular Season
+ORL,MIN,2025-01-09,Kia Center,Orlando,FL,Regular Season
+MEM,HOU,2025-01-09,FedExForum,Memphis,TN,Regular Season
+DAL,POR,2025-01-09,American Airlines Center,Dallas,TX,Regular Season
+PHO,ATL,2025-01-09,Footprint Center,Phoenix,AZ,Regular Season
+UTA,MIA,2025-01-09,Delta Center,Salt Lake City,UT,Regular Season
+IND,GSW,2025-01-10,Gainbridge Fieldhouse,Indianapolis,IN,Regular Season
+ORL,MIL,2025-01-10,Kia Center,Orlando,FL,Regular Season
+PHI,NOP,2025-01-10,Wells Fargo Center,Philadelphia,PA,Regular Season
+BOS,SAC,2025-01-10,TD Garden,Boston,MA,Regular Season
+NYK,OKC,2025-01-10,Madison Square Garden,New York,NY,Regular Season
+CHI,WAS,2025-01-10,United Center,Chicago,IL,Regular Season
+DEN,BRK,2025-01-10,Ball Arena,Denver,CO,Regular Season
+PHO,UTA,2025-01-11,Footprint Center,Phoenix,AZ,Regular Season
+DET,TOR,2025-01-11,Little Caesars Arena,Detroit,MI,Regular Season
+MIN,MEM,2025-01-11,Target Center,Minneapolis,MN,Regular Season
+POR,MIA,2025-01-11,Moda Center,Portland,OR,Regular Season
+NYK,MIL,2025-01-12,Madison Square Garden,New York,NY,Regular Season
+DAL,DEN,2025-01-12,American Airlines Center,Dallas,TX,Regular Season
+CHI,SAC,2025-01-12,United Center,Chicago,IL,Regular Season
+BOS,NOP,2025-01-12,TD Garden,Boston,MA,Regular Season
+CLE,IND,2025-01-12,Rocket Mortgage FieldHouse,Cleveland,OH,Regular Season
+ORL,PHI,2025-01-12,Kia Center,Orlando,FL,Regular Season
+WAS,OKC,2025-01-12,Capital One Arena,Washington,DC,Regular Season
+UTA,BRK,2025-01-12,Delta Center,Salt Lake City,UT,Regular Season
+PHO,CHO,2025-01-12,Footprint Center,Phoenix,AZ,Regular Season
+WAS,MIN,2025-01-13,Capital One Arena,Washington,DC,Regular Season
+NYK,DET,2025-01-13,Madison Square Garden,New York,NY,Regular Season
+TOR,GSW,2025-01-13,Scotiabank Arena,Toronto,ON,Regular Season
+HOU,MEM,2025-01-13,Toyota Center,Houston,TX,Regular Season
+LAL,SAS,2025-01-13,Crypto.com Arena,Los Angeles,CA,Regular Season
+LAC,MIA,2025-01-13,Intuit Dome,Inglewood,CA,Regular Season
+IND,CLE,2025-01-14,Gainbridge Fieldhouse,Indianapolis,IN,Regular Season
+PHI,OKC,2025-01-14,Wells Fargo Center,Philadelphia,PA,Regular Season
+ATL,PHO,2025-01-14,State Farm Arena,Atlanta,GA,Regular Season
+CHI,NOP,2025-01-14,United Center,Chicago,IL,Regular Season
+MIL,SAC,2025-01-14,Fiserv Forum,Milwaukee,WI,Regular Season
+DAL,DEN,2025-01-14,American Airlines Center,Dallas,TX,Regular Season
+POR,BRK,2025-01-14,Moda Center,Portland,OR,Regular Season
+PHI,NYK,2025-01-15,Wells Fargo Center,Philadelphia,PA,Regular Season
+TOR,BOS,2025-01-15,Scotiabank Arena,Toronto,ON,Regular Season
+CHI,ATL,2025-01-15,United Center,Chicago,IL,Regular Season
+MIL,ORL,2025-01-15,Fiserv Forum,Milwaukee,WI,Regular Season
+MIN,GSW,2025-01-15,Target Center,Minneapolis,MN,Regular Season
+NOP,DAL,2025-01-15,Smoothie King Center,New Orleans,LA,Regular Season
+SAS,MEM,2025-01-15,Frost Bank Center,San Antonio,TX,Regular Season
+DEN,HOU,2025-01-15,Ball Arena,Denver,CO,Regular Season
+UTA,CHO,2025-01-15,Delta Center,Salt Lake City,UT,Regular Season
+LAL,MIA,2025-01-15,Crypto.com Arena,Los Angeles,CA,Regular Season
+LAC,BRK,2025-01-15,Intuit Dome,Inglewood,CA,Regular Season
+DET,IND,2025-01-16,Little Caesars Arena,Detroit,MI,Regular Season
+WAS,PHO,2025-01-16,Capital One Arena,Washington,DC,Regular Season
+OKC,CLE,2025-01-16,Paycom Center,Oklahoma City,OK,Regular Season
+POR,LAC,2025-01-16,Moda Center,Portland,OR,Regular Season
+SAC,HOU,2025-01-16,Golden 1 Center,Sacramento,CA,Regular Season
+BOS,ORL,2025-01-17,TD Garden,Boston,MA,Regular Season
+NYK,MIN,2025-01-17,Madison Square Garden,New York,NY,Regular Season
+MIA,DEN,2025-01-17,Kaseya Center,Miami,FL,Regular Season
+MIL,TOR,2025-01-17,Fiserv Forum,Milwaukee,WI,Regular Season
+NOP,UTA,2025-01-17,Smoothie King Center,New Orleans,LA,Regular Season
+SAS,MEM,2025-01-17,Frost Bank Center,San Antonio,TX,Regular Season
+DAL,OKC,2025-01-17,American Airlines Center,Dallas,TX,Regular Season
+CHI,CHO,2025-01-17,United Center,Chicago,IL,Regular Season
+LAL,BRK,2025-01-17,Crypto.com Arena,Los Angeles,CA,Regular Season
+DET,PHO,2025-01-18,Little Caesars Arena,Detroit,MI,Regular Season
+BOS,ATL,2025-01-18,TD Garden,Boston,MA,Regular Season
+IND,PHI,2025-01-18,Gainbridge Fieldhouse,Indianapolis,IN,Regular Season
+GSW,WAS,2025-01-18,Chase Center,San Francisco,CA,Regular Season
+MIN,CLE,2025-01-18,Target Center,Minneapolis,MN,Regular Season
+POR,HOU,2025-01-18,Moda Center,Portland,OR,Regular Season
+MIA,SAS,2025-01-19,Kaseya Center,Miami,FL,Regular Season
+ORL,DEN,2025-01-19,Kia Center,Orlando,FL,Regular Season
+MIL,PHI,2025-01-19,Fiserv Forum,Milwaukee,WI,Regular Season
+OKC,BRK,2025-01-19,Paycom Center,Oklahoma City,OK,Regular Season
+LAC,LAL,2025-01-19,Intuit Dome,Inglewood,CA,Regular Season
+POR,CHI,2025-01-19,Moda Center,Portland,OR,Regular Season
+SAC,WAS,2025-01-19,Golden 1 Center,Sacramento,CA,Regular Season
+CHO,DAL,2025-01-20,Spectrum Center,Charlotte,NC,Regular Season
+HOU,DET,2025-01-20,Toyota Center,Houston,TX,Regular Season
+MEM,MIN,2025-01-20,FedExForum,Memphis,TN,Regular Season
+NYK,ATL,2025-01-20,Madison Square Garden,New York,NY,Regular Season
+CLE,PHO,2025-01-20,Rocket Mortgage FieldHouse,Cleveland,OH,Regular Season
+GSW,BOS,2025-01-20,Chase Center,San Francisco,CA,Regular Season
+NOP,UTA,2025-01-20,Smoothie King Center,New Orleans,LA,Regular Season
+LAC,CHI,2025-01-20,Intuit Dome,Inglewood,CA,Regular Season
+BRK,NYK,2025-01-21,Barclays Center,Brooklyn,NY,Regular Season
+MIA,POR,2025-01-21,Kaseya Center,Miami,FL,Regular Season
+TOR,ORL,2025-01-21,Scotiabank Arena,Toronto,ON,Regular Season
+DEN,PHI,2025-01-21,Ball Arena,Denver,CO,Regular Season
+LAL,WAS,2025-01-21,Crypto.com Arena,Los Angeles,CA,Regular Season
+ATL,DET,2025-01-22,State Farm Arena,Atlanta,GA,Regular Season
+BRK,PHO,2025-01-22,Barclays Center,Brooklyn,NY,Regular Season
+DAL,MIN,2025-01-22,American Airlines Center,Dallas,TX,Regular Season
+HOU,CLE,2025-01-22,Toyota Center,Houston,TX,Regular Season
+MEM,CHO,2025-01-22,FedExForum,Memphis,TN,Regular Season
+OKC,UTA,2025-01-22,Paycom Center,Oklahoma City,OK,Regular Season
+SAC,GSW,2025-01-22,Golden 1 Center,Sacramento,CA,Regular Season
+LAC,BOS,2025-01-22,Intuit Dome,Inglewood,CA,Regular Season
+IND,SAS,2025-01-23,Accor Arena,Paris,FR,NBA Paris Games
+ORL,POR,2025-01-23,Kia Center,Orlando,FL,Regular Season
+ATL,TOR,2025-01-23,State Farm Arena,Atlanta,GA,Regular Season
+MIL,MIA,2025-01-23,Fiserv Forum,Milwaukee,WI,Regular Season
+OKC,DAL,2025-01-23,Paycom Center,Oklahoma City,OK,Regular Season
+DEN,SAC,2025-01-23,Ball Arena,Denver,CO,Regular Season
+GSW,CHI,2025-01-23,Chase Center,San Francisco,CA,Regular Season
+LAL,BOS,2025-01-23,Crypto.com Arena,Los Angeles,CA,Regular Season
+LAC,WAS,2025-01-23,Intuit Dome,Inglewood,CA,Regular Season
+CHO,POR,2025-01-24,Spectrum Center,Charlotte,NC,Regular Season
+PHI,CLE,2025-01-24,Wells Fargo Center,Philadelphia,PA,Regular Season
+MEM,NOP,2025-01-24,FedExForum,Memphis,TN,Regular Season
+SAS,IND,2025-01-25,Accor Arena,Paris,FR,NBA Paris Games
+MIN,DEN,2025-01-25,Target Center,Minneapolis,MN,Regular Season
+DAL,BOS,2025-01-25,American Airlines Center,Dallas,TX,Regular Season
+BRK,MIA,2025-01-25,Barclays Center,Brooklyn,NY,Regular Season
+CHO,NOP,2025-01-25,Spectrum Center,Charlotte,NC,Regular Season
+ORL,DET,2025-01-25,Kia Center,Orlando,FL,Regular Season
+ATL,TOR,2025-01-25,State Farm Arena,Atlanta,GA,Regular Season
+CLE,HOU,2025-01-25,Rocket Mortgage FieldHouse,Cleveland,OH,Regular Season
+NYK,SAC,2025-01-25,Madison Square Garden,New York,NY,Regular Season
+CHI,PHI,2025-01-25,United Center,Chicago,IL,Regular Season
+MEM,UTA,2025-01-25,FedExForum,Memphis,TN,Regular Season
+GSW,LAL,2025-01-25,Chase Center,San Francisco,CA,Regular Season
+PHO,WAS,2025-01-25,Footprint Center,Phoenix,AZ,Regular Season
+LAC,MIL,2025-01-25,Intuit Dome,Inglewood,CA,Regular Season
+POR,OKC,2025-01-26,Moda Center,Portland,OR,Regular Season
+CHO,LAL,2025-01-27,Spectrum Center,Charlotte,NC,Regular Season
+CLE,DET,2025-01-27,Rocket Mortgage FieldHouse,Cleveland,OH,Regular Season
+BOS,HOU,2025-01-27,TD Garden,Boston,MA,Regular Season
+BRK,SAC,2025-01-27,Barclays Center,Brooklyn,NY,Regular Season
+MIA,ORL,2025-01-27,Kaseya Center,Miami,FL,Regular Season
+NYK,MEM,2025-01-27,Madison Square Garden,New York,NY,Regular Season
+TOR,NOP,2025-01-27,Scotiabank Arena,Toronto,ON,Regular Season
+CHI,DEN,2025-01-27,United Center,Chicago,IL,Regular Season
+MIN,ATL,2025-01-27,Target Center,Minneapolis,MN,Regular Season
+DAL,WAS,2025-01-27,American Airlines Center,Dallas,TX,Regular Season
+UTA,MIL,2025-01-27,Delta Center,Salt Lake City,UT,Regular Season
+PHO,LAC,2025-01-27,Footprint Center,Phoenix,AZ,Regular Season
+ATL,HOU,2025-01-28,State Farm Arena,Atlanta,GA,Regular Season
+PHI,LAL,2025-01-28,Wells Fargo Center,Philadelphia,PA,Regular Season
+GSW,UTA,2025-01-28,Chase Center,San Francisco,CA,Regular Season
+POR,MIL,2025-01-28,Moda Center,Portland,OR,Regular Season
+CHO,BRK,2025-01-29,Spectrum Center,Charlotte,NC,Regular Season
+IND,DET,2025-01-29,Gainbridge Fieldhouse,Indianapolis,IN,Regular Season
+WAS,TOR,2025-01-29,Capital One Arena,Washington,DC,Regular Season
+BOS,CHI,2025-01-29,TD Garden,Boston,MA,Regular Season
+MIA,CLE,2025-01-29,Kaseya Center,Miami,FL,Regular Season
+NYK,DEN,2025-01-29,Madison Square Garden,New York,NY,Regular Season
+PHI,SAC,2025-01-29,Wells Fargo Center,Philadelphia,PA,Regular Season
+NOP,DAL,2025-01-29,Smoothie King Center,New Orleans,LA,Regular Season
+SAS,LAC,2025-01-29,Frost Bank Center,San Antonio,TX,Regular Season
+PHO,MIN,2025-01-29,Footprint Center,Phoenix,AZ,Regular Season
+GSW,OKC,2025-01-29,Chase Center,San Francisco,CA,Regular Season
+WAS,LAL,2025-01-30,Capital One Arena,Washington,DC,Regular Season
+CLE,ATL,2025-01-30,Rocket Mortgage FieldHouse,Cleveland,OH,Regular Season
+MEM,HOU,2025-01-30,FedExForum,Memphis,TN,Regular Season
+UTA,MIN,2025-01-30,Delta Center,Salt Lake City,UT,Regular Season
+POR,ORL,2025-01-30,Moda Center,Portland,OR,Regular Season
+CHO,LAC,2025-01-31,Spectrum Center,Charlotte,NC,Regular Season
+DET,DAL,2025-01-31,Little Caesars Arena,Detroit,MI,Regular Season
+PHI,DEN,2025-01-31,Wells Fargo Center,Philadelphia,PA,Regular Season
+TOR,CHI,2025-01-31,Scotiabank Arena,Toronto,ON,Regular Season
+NOP,BOS,2025-01-31,Smoothie King Center,New Orleans,LA,Regular Season
+SAS,MIL,2025-01-31,Frost Bank Center,San Antonio,TX,Regular Season
+GSW,PHO,2025-01-31,Chase Center,San Francisco,CA,Regular Season
+IND,ATL,2025-02-01,Gainbridge Fieldhouse,Indianapolis,IN,Regular Season
+UTA,ORL,2025-02-01,Delta Center,Salt Lake City,UT,Regular Season
+CHO,DEN,2025-02-01,Spectrum Center,Charlotte,NC,Regular Season
+HOU,BRK,2025-02-01,Toyota Center,Houston,TX,Regular Season
+MIN,WAS,2025-02-01,Target Center,Minneapolis,MN,Regular Season
+OKC,SAC,2025-02-01,Paycom Center,Oklahoma City,OK,Regular Season
+NYK,LAL,2025-02-01,Madison Square Garden,New York,NY,Regular Season
+SAS,MIA,2025-02-01,Frost Bank Center,San Antonio,TX,Regular Season
+POR,PHO,2025-02-01,Moda Center,Portland,OR,Regular Season
+DET,CHI,2025-02-02,Little Caesars Arena,Detroit,MI,Regular Season
+CLE,DAL,2025-02-02,Rocket Mortgage FieldHouse,Cleveland,OH,Regular Season
+TOR,LAC,2025-02-02,Scotiabank Arena,Toronto,ON,Regular Season
+PHI,BOS,2025-02-02,Wells Fargo Center,Philadelphia,PA,Regular Season
+MIL,MEM,2025-02-02,Fiserv Forum,Milwaukee,WI,Regular Season
+CHO,WAS,2025-02-03,Spectrum Center,Charlotte,NC,Regular Season
+DET,ATL,2025-02-03,Little Caesars Arena,Detroit,MI,Regular Season
+NYK,HOU,2025-02-03,Madison Square Garden,New York,NY,Regular Season
+MEM,SAS,2025-02-03,FedExForum,Memphis,TN,Regular Season
+MIN,SAC,2025-02-03,Target Center,Minneapolis,MN,Regular Season
+OKC,MIL,2025-02-03,Paycom Center,Oklahoma City,OK,Regular Season
+DEN,NOP,2025-02-03,Ball Arena,Denver,CO,Regular Season
+UTA,IND,2025-02-03,Delta Center,Salt Lake City,UT,Regular Season
+GSW,ORL,2025-02-03,Chase Center,San Francisco,CA,Regular Season
+POR,PHO,2025-02-03,Moda Center,Portland,OR,Regular Season
+CLE,BOS,2025-02-04,Rocket Mortgage FieldHouse,Cleveland,OH,Regular Season
+BRK,HOU,2025-02-04,Barclays Center,Brooklyn,NY,Regular Season
+PHI,DAL,2025-02-04,Wells Fargo Center,Philadelphia,PA,Regular Season
+TOR,NYK,2025-02-04,Scotiabank Arena,Toronto,ON,Regular Season
+CHI,MIA,2025-02-04,United Center,Chicago,IL,Regular Season
+LAC,LAL,2025-02-04,Intuit Dome,Inglewood,CA,Regular Season
+POR,IND,2025-02-04,Moda Center,Portland,OR,Regular Season
+CHO,MIL,2025-02-05,Spectrum Center,Charlotte,NC,Regular Season
+DET,CLE,2025-02-05,Little Caesars Arena,Detroit,MI,Regular Season
+ATL,SAS,2025-02-05,State Farm Arena,Atlanta,GA,Regular Season
+BRK,WAS,2025-02-05,Barclays Center,Brooklyn,NY,Regular Season
+PHI,MIA,2025-02-05,Wells Fargo Center,Philadelphia,PA,Regular Season
+TOR,MEM,2025-02-05,Scotiabank Arena,Toronto,ON,Regular Season
+MIN,CHI,2025-02-05,Target Center,Minneapolis,MN,Regular Season
+OKC,PHO,2025-02-05,Paycom Center,Oklahoma City,OK,Regular Season
+UTA,GSW,2025-02-05,Delta Center,Salt Lake City,UT,Regular Season
+DEN,NOP,2025-02-05,Ball Arena,Denver,CO,Regular Season
+SAC,ORL,2025-02-05,Golden 1 Center,Sacramento,CA,Regular Season
+BOS,DAL,2025-02-06,TD Garden,Boston,MA,Regular Season
+MIN,HOU,2025-02-06,Target Center,Minneapolis,MN,Regular Season
+DEN,ORL,2025-02-06,Ball Arena,Denver,CO,Regular Season
+LAL,GSW,2025-02-06,Crypto.com Arena,Los Angeles,CA,Regular Season
+POR,SAC,2025-02-06,Moda Center,Portland,OR,Regular Season
+LAC,IND,2025-02-06,Intuit Dome,Inglewood,CA,Regular Season
+CHO,SAS,2025-02-07,Spectrum Center,Charlotte,NC,Regular Season
+WAS,CLE,2025-02-07,Capital One Arena,Washington,DC,Regular Season
+ATL,MIL,2025-02-07,State Farm Arena,Atlanta,GA,Regular Season
+BRK,MIA,2025-02-07,Barclays Center,Brooklyn,NY,Regular Season
+DET,PHI,2025-02-07,Little Caesars Arena,Detroit,MI,Regular Season
+OKC,TOR,2025-02-07,Paycom Center,Oklahoma City,OK,Regular Season
+PHO,UTA,2025-02-07,Footprint Center,Phoenix,AZ,Regular Season
+DAL,HOU,2025-02-08,American Airlines Center,Dallas,TX,Regular Season
+LAL,IND,2025-02-08,Crypto.com Arena,Los Angeles,CA,Regular Season
+ORL,SAS,2025-02-08,Kia Center,Orlando,FL,Regular Season
+WAS,ATL,2025-02-08,Capital One Arena,Washington,DC,Regular Season
+CHI,GSW,2025-02-08,United Center,Chicago,IL,Regular Season
+MEM,OKC,2025-02-08,FedExForum,Memphis,TN,Regular Season
+MIN,POR,2025-02-08,Target Center,Minneapolis,MN,Regular Season
+NYK,BOS,2025-02-08,Madison Square Garden,New York,NY,Regular Season
+PHO,DEN,2025-02-08,Footprint Center,Phoenix,AZ,Regular Season
+SAC,NOP,2025-02-08,Golden 1 Center,Sacramento,CA,Regular Season
+LAC,UTA,2025-02-08,Intuit Dome,Inglewood,CA,Regular Season
+DET,CHO,2025-02-09,Little Caesars Arena,Detroit,MI,Regular Season
+HOU,TOR,2025-02-09,Toyota Center,Houston,TX,Regular Season
+MIL,PHI,2025-02-09,Fiserv Forum,Milwaukee,WI,Regular Season
+CLE,MIN,2025-02-10,Rocket Mortgage FieldHouse,Cleveland,OH,Regular Season
+ORL,ATL,2025-02-10,Kia Center,Orlando,FL,Regular Season
+WAS,SAS,2025-02-10,Capital One Arena,Washington,DC,Regular Season
+BRK,CHO,2025-02-10,Barclays Center,Brooklyn,NY,Regular Season
+MIA,BOS,2025-02-10,Kaseya Center,Miami,FL,Regular Season
+MIL,GSW,2025-02-10,Fiserv Forum,Milwaukee,WI,Regular Season
+OKC,NOP,2025-02-10,Paycom Center,Oklahoma City,OK,Regular Season
+DAL,SAC,2025-02-10,American Airlines Center,Dallas,TX,Regular Season
+DEN,POR,2025-02-10,Ball Arena,Denver,CO,Regular Season
+LAL,UTA,2025-02-10,Crypto.com Arena,Los Angeles,CA,Regular Season
+PHI,TOR,2025-02-11,Wells Fargo Center,Philadelphia,PA,Regular Season
+IND,NYK,2025-02-11,Gainbridge Fieldhouse,Indianapolis,IN,Regular Season
+CHI,DET,2025-02-11,United Center,Chicago,IL,Regular Season
+PHO,MEM,2025-02-11,Footprint Center,Phoenix,AZ,Regular Season
+BOS,SAS,2025-02-12,TD Garden,Boston,MA,Regular Season
+ORL,CHO,2025-02-12,Kia Center,Orlando,FL,Regular Season
+WAS,IND,2025-02-12,Capital One Arena,Washington,DC,Regular Season
+BRK,PHI,2025-02-12,Barclays Center,Brooklyn,NY,Regular Season
+NYK,ATL,2025-02-12,Madison Square Garden,New York,NY,Regular Season
+TOR,CLE,2025-02-12,Scotiabank Arena,Toronto,ON,Regular Season
+CHI,DET,2025-02-12,United Center,Chicago,IL,Regular Season
+MIN,MIL,2025-02-12,Target Center,Minneapolis,MN,Regular Season
+NOP,SAC,2025-02-12,Smoothie King Center,New Orleans,LA,Regular Season
+OKC,MIA,2025-02-12,Paycom Center,Oklahoma City,OK,Regular Season
+HOU,PHO,2025-02-12,Toyota Center,Houston,TX,Regular Season
+DEN,POR,2025-02-12,Ball Arena,Denver,CO,Regular Season
+UTA,LAL,2025-02-12,Delta Center,Salt Lake City,UT,Regular Season
+DAL,GSW,2025-02-12,American Airlines Center,Dallas,TX,Regular Season
+LAC,MEM,2025-02-12,Intuit Dome,Inglewood,CA,Regular Season
+HOU,GSW,2025-02-13,Toyota Center,Houston,TX,Regular Season
+NOP,SAC,2025-02-13,Smoothie King Center,New Orleans,LA,Regular Season
+DAL,MIA,2025-02-13,American Airlines Center,Dallas,TX,Regular Season
+MIN,OKC,2025-02-13,Target Center,Minneapolis,MN,Regular Season
+UTA,LAC,2025-02-13,Delta Center,Salt Lake City,UT,Regular Season
+LAL,CHO,2025-02-19,Crypto.com Arena,Los Angeles,CA,Regular Season
+IND,MEM,2025-02-20,Gainbridge Fieldhouse,Indianapolis,IN,Regular Season
+PHI,BOS,2025-02-20,Wells Fargo Center,Philadelphia,PA,Regular Season
+ATL,ORL,2025-02-20,State Farm Arena,Atlanta,GA,Regular Season
+BRK,CLE,2025-02-20,Barclays Center,Brooklyn,NY,Regular Season
+NYK,CHI,2025-02-20,Madison Square Garden,New York,NY,Regular Season
+MIL,LAC,2025-02-20,Fiserv Forum,Milwaukee,WI,Regular Season
+DEN,CHO,2025-02-20,Ball Arena,Denver,CO,Regular Season
+SAS,PHO,2025-02-20,Moody Center,Austin,TX,Regular Season
+POR,LAL,2025-02-20,Moda Center,Portland,OR,Regular Season
+CLE,NYK,2025-02-21,Rocket Arena,Cleveland,OH,Regular Season
+ORL,MEM,2025-02-21,Kia Center,Orlando,FL,Regular Season
+WAS,MIL,2025-02-21,Capital One Arena,Washington,DC,Regular Season
+TOR,MIA,2025-02-21,Scotiabank Arena,Toronto,ON,Regular Season
+HOU,MIN,2025-02-21,Toyota Center,Houston,TX,Regular Season
+SAS,DET,2025-02-21,Moody Center,Austin,TX,Regular Season
+DAL,NOP,2025-02-21,American Airlines Center,Dallas,TX,Regular Season
+UTA,OKC,2025-02-21,Delta Center,Salt Lake City,UT,Regular Season
+SAC,GSW,2025-02-21,Golden 1 Center,Sacramento,CA,Regular Season
+CHI,PHO,2025-02-22,United Center,Chicago,IL,Regular Season
+PHI,BRK,2025-02-22,Wells Fargo Center,Philadelphia,PA,Regular Season
+DEN,LAL,2025-02-22,Ball Arena,Denver,CO,Regular Season
+UTA,HOU,2025-02-22,Delta Center,Salt Lake City,UT,Regular Season
+POR,CHO,2025-02-22,Moda Center,Portland,OR,Regular Season
+BOS,NYK,2025-02-23,TD Garden,Boston,MA,Regular Season
+GSW,DAL,2025-02-23,Chase Center,San Francisco,CA,Regular Season
+IND,LAC,2025-02-23,Gainbridge Fieldhouse,Indianapolis,IN,Regular Season
+ATL,DET,2025-02-23,State Farm Arena,Atlanta,GA,Regular Season
+ORL,WAS,2025-02-23,Kia Center,Orlando,FL,Regular Season
+TOR,PHO,2025-02-23,Scotiabank Arena,Toronto,ON,Regular Season
+MIL,MIA,2025-02-23,Fiserv Forum,Milwaukee,WI,Regular Season
+NOP,SAS,2025-02-23,Smoothie King Center,New Orleans,LA,Regular Season
+CLE,MEM,2025-02-23,Rocket Arena,Cleveland,OH,Regular Season
+MIN,OKC,2025-02-23,Target Center,Minneapolis,MN,Regular Season
+DET,LAC,2025-02-24,Little Caesars Arena,Detroit,MI,Regular Season
+IND,DEN,2025-02-24,Gainbridge Fieldhouse,Indianapolis,IN,Regular Season
+PHI,CHI,2025-02-24,Wells Fargo Center,Philadelphia,PA,Regular Season
+WAS,BRK,2025-02-24,Capital One Arena,Washington,DC,Regular Season
+ATL,MIA,2025-02-24,State Farm Arena,Atlanta,GA,Regular Season
+OKC,MIN,2025-02-24,Paycom Center,Oklahoma City,OK,Regular Season
+UTA,POR,2025-02-24,Delta Center,Salt Lake City,UT,Regular Season
+SAC,CHO,2025-02-24,Golden 1 Center,Sacramento,CA,Regular Season
+TOR,BOS,2025-02-25,Scotiabank Arena,Toronto,ON,Regular Season
+ORL,CLE,2025-02-25,Kia Center,Orlando,FL,Regular Season
+HOU,MIL,2025-02-25,Toyota Center,Houston,TX,Regular Season
+MEM,PHO,2025-02-25,FedExForum,Memphis,TN,Regular Season
+NOP,SAS,2025-02-25,Smoothie King Center,New Orleans,LA,Regular Season
+GSW,CHO,2025-02-25,Chase Center,San Francisco,CA,Regular Season
+LAL,DAL,2025-02-25,Crypto.com Arena,Los Angeles,CA,Regular Season
+DET,BOS,2025-02-26,Little Caesars Arena,Detroit,MI,Regular Season
+IND,TOR,2025-02-26,Gainbridge Fieldhouse,Indianapolis,IN,Regular Season
+NYK,PHI,2025-02-26,Madison Square Garden,New York,NY,Regular Season
+WAS,POR,2025-02-26,Capital One Arena,Washington,DC,Regular Season
+BRK,OKC,2025-02-26,Barclays Center,Brooklyn,NY,Regular Season
+MIA,ATL,2025-02-26,Kaseya Center,Miami,FL,Regular Season
+CHI,LAC,2025-02-26,United Center,Chicago,IL,Regular Season
+UTA,SAC,2025-02-26,Delta Center,Salt Lake City,UT,Regular Season
+HOU,SAS,2025-02-26,Toyota Center,Houston,TX,Regular Season
+ORL,GSW,2025-02-27,Kia Center,Orlando,FL,Regular Season
+MIL,DEN,2025-02-27,Fiserv Forum,Milwaukee,WI,Regular Season
+DAL,CHO,2025-02-27,American Airlines Center,Dallas,TX,Regular Season
+PHO,NOP,2025-02-27,PHX Arena,Phoenix,AZ,Regular Season
+LAL,MIN,2025-02-27,Crypto.com Arena,Los Angeles,CA,Regular Season
+DET,DEN,2025-02-28,Little Caesars Arena,Detroit,MI,Regular Season
+ATL,OKC,2025-02-28,State Farm Arena,Atlanta,GA,Regular Season
+BOS,CLE,2025-02-28,TD Garden,Boston,MA,Regular Season
+BRK,POR,2025-02-28,Barclays Center,Brooklyn,NY,Regular Season
+MIA,IND,2025-02-28,Kaseya Center,Miami,FL,Regular Season
+CHI,TOR,2025-02-28,United Center,Chicago,IL,Regular Season
+MEM,NYK,2025-02-28,FedExForum,Memphis,TN,Regular Season
+PHO,NOP,2025-02-28,PHX Arena,Phoenix,AZ,Regular Season
+UTA,MIN,2025-02-28,Delta Center,Salt Lake City,UT,Regular Season
+LAL,LAC,2025-02-28,Crypto.com Arena,Los Angeles,CA,Regular Season
+CHO,WAS,2025-03-01,Spectrum Center,Charlotte,NC,Regular Season
+DET,BRK,2025-03-01,Little Caesars Arena,Detroit,MI,Regular Season
+HOU,SAC,2025-03-01,Toyota Center,Houston,TX,Regular Season
+MEM,SAS,2025-03-01,FedExForum,Memphis,TN,Regular Season
+PHI,GSW,2025-03-01,Wells Fargo Center,Philadelphia,PA,Regular Season
+DAL,MIL,2025-03-01,American Airlines Center,Dallas,TX,Regular Season
+BOS,DEN,2025-03-02,TD Garden,Boston,MA,Regular Season
+CLE,POR,2025-03-02,Rocket Arena,Cleveland,OH,Regular Season
+IND,CHI,2025-03-02,Gainbridge Fieldhouse,Indianapolis,IN,Regular Season
+MIA,NYK,2025-03-02,Kaseya Center,Miami,FL,Regular Season
+ORL,TOR,2025-03-02,Kia Center,Orlando,FL,Regular Season
+SAS,OKC,2025-03-02,Frost Bank Center,San Antonio,TX,Regular Season
+UTA,NOP,2025-03-02,Delta Center,Salt Lake City,UT,Regular Season
+PHO,MIN,2025-03-02,PHX Arena,Phoenix,AZ,Regular Season
+LAL,LAC,2025-03-02,Crypto.com Arena,Los Angeles,CA,Regular Season
+CHO,GSW,2025-03-03,Spectrum Center,Charlotte,NC,Regular Season
+PHI,POR,2025-03-03,Wells Fargo Center,Philadelphia,PA,Regular Season
+MIA,WAS,2025-03-03,Kaseya Center,Miami,FL,Regular Season
+MEM,ATL,2025-03-03,FedExForum,Memphis,TN,Regular Season
+OKC,HOU,2025-03-03,Paycom Center,Oklahoma City,OK,Regular Season
+DAL,SAC,2025-03-03,American Airlines Center,Dallas,TX,Regular Season
+UTA,DET,2025-03-03,Delta Center,Salt Lake City,UT,Regular Season
+IND,HOU,2025-03-04,Gainbridge Fieldhouse,Indianapolis,IN,Regular Season
+ORL,TOR,2025-03-04,Kia Center,Orlando,FL,Regular Season
+ATL,MIL,2025-03-04,State Farm Arena,Atlanta,GA,Regular Season
+NYK,GSW,2025-03-04,Madison Square Garden,New York,NY,Regular Season
+CHI,CLE,2025-03-04,United Center,Chicago,IL,Regular Season
+MIN,PHI,2025-03-04,Target Center,Minneapolis,MN,Regular Season
+SAS,BRK,2025-03-04,Frost Bank Center,San Antonio,TX,Regular Season
+PHO,LAC,2025-03-04,PHX Arena,Phoenix,AZ,Regular Season
+LAL,NOP,2025-03-04,Crypto.com Arena,Los Angeles,CA,Regular Season
+BOS,POR,2025-03-05,TD Garden,Boston,MA,Regular Season
+CHO,MIN,2025-03-05,Spectrum Center,Charlotte,NC,Regular Season
+CLE,MIA,2025-03-05,Rocket Arena,Cleveland,OH,Regular Season
+WAS,UTA,2025-03-05,Capital One Arena,Washington,DC,Regular Season
+MEM,OKC,2025-03-05,FedExForum,Memphis,TN,Regular Season
+DEN,SAC,2025-03-05,Ball Arena,Denver,CO,Regular Season
+MIL,DAL,2025-03-05,Fiserv Forum,Milwaukee,WI,Regular Season
+LAC,DET,2025-03-05,Intuit Dome,Inglewood,CA,Regular Season
+ATL,IND,2025-03-06,State Farm Arena,Atlanta,GA,Regular Season
+BOS,PHI,2025-03-06,TD Garden,Boston,MA,Regular Season
+BRK,GSW,2025-03-06,Barclays Center,Brooklyn,NY,Regular Season
+NOP,HOU,2025-03-06,Smoothie King Center,New Orleans,LA,Regular Season
+LAL,NYK,2025-03-06,Crypto.com Arena,Los Angeles,CA,Regular Season
+ORL,CHI,2025-03-06,Kia Center,Orlando,FL,Regular Season
+CHO,CLE,2025-03-07,Spectrum Center,Charlotte,NC,Regular Season
+TOR,UTA,2025-03-07,Scotiabank Arena,Toronto,ON,Regular Season
+DAL,MEM,2025-03-07,American Airlines Center,Dallas,TX,Regular Season
+MIA,MIN,2025-03-07,Kaseya Center,Miami,FL,Regular Season
+OKC,POR,2025-03-07,Paycom Center,Oklahoma City,OK,Regular Season
+DEN,PHO,2025-03-07,Ball Arena,Denver,CO,Regular Season
+SAC,SAS,2025-03-07,Golden 1 Center,Sacramento,CA,Regular Season
+LAC,NYK,2025-03-07,Intuit Dome,Inglewood,CA,Regular Season
+CHO,BRK,2025-03-08,Spectrum Center,Charlotte,NC,Regular Season
+HOU,NOP,2025-03-08,Toyota Center,Houston,TX,Regular Season
+ATL,IND,2025-03-08,State Farm Arena,Atlanta,GA,Regular Season
+TOR,WAS,2025-03-08,Scotiabank Arena,Toronto,ON,Regular Season
+MIA,CHI,2025-03-08,Kaseya Center,Miami,FL,Regular Season
+MIL,ORL,2025-03-08,Fiserv Forum,Milwaukee,WI,Regular Season
+BOS,LAL,2025-03-08,TD Garden,Boston,MA,Regular Season
+GSW,DET,2025-03-08,Chase Center,San Francisco,CA,Regular Season
+OKC,DEN,2025-03-09,Paycom Center,Oklahoma City,OK,Regular Season
+DAL,PHO,2025-03-09,American Airlines Center,Dallas,TX,Regular Season
+MIL,CLE,2025-03-09,Fiserv Forum,Milwaukee,WI,Regular Season
+NOP,MEM,2025-03-09,Smoothie King Center,New Orleans,LA,Regular Season
+PHI,UTA,2025-03-09,Wells Fargo Center,Philadelphia,PA,Regular Season
+MIN,SAS,2025-03-09,Target Center,Minneapolis,MN,Regular Season
+POR,DET,2025-03-09,Moda Center,Portland,OR,Regular Season
+LAC,SAC,2025-03-09,Intuit Dome,Inglewood,CA,Regular Season
+ATL,PHI,2025-03-10,State Farm Arena,Atlanta,GA,Regular Season
+BOS,UTA,2025-03-10,TD Garden,Boston,MA,Regular Season
+BRK,LAL,2025-03-10,Barclays Center,Brooklyn,NY,Regular Season
+MIA,CHO,2025-03-10,Kaseya Center,Miami,FL,Regular Season
+TOR,WAS,2025-03-10,Scotiabank Arena,Toronto,ON,Regular Season
+CHI,IND,2025-03-10,United Center,Chicago,IL,Regular Season
+HOU,ORL,2025-03-10,Toyota Center,Houston,TX,Regular Season
+MEM,PHO,2025-03-10,FedExForum,Memphis,TN,Regular Season
+OKC,DEN,2025-03-10,Paycom Center,Oklahoma City,OK,Regular Season
+SAS,DAL,2025-03-10,Frost Bank Center,San Antonio,TX,Regular Season
+GSW,POR,2025-03-10,Chase Center,San Francisco,CA,Regular Season
+SAC,NYK,2025-03-10,Golden 1 Center,Sacramento,CA,Regular Season
+CLE,BRK,2025-03-11,Rocket Arena,Cleveland,OH,Regular Season
+DET,WAS,2025-03-11,Little Caesars Arena,Detroit,MI,Regular Season
+IND,MIL,2025-03-11,Gainbridge Fieldhouse,Indianapolis,IN,Regular Season
+NOP,LAC,2025-03-11,Smoothie King Center,New Orleans,LA,Regular Season
+ATL,CHO,2025-03-12,State Farm Arena,Atlanta,GA,Regular Season
+BOS,OKC,2025-03-12,TD Garden,Boston,MA,Regular Season
+TOR,PHI,2025-03-12,Scotiabank Arena,Toronto,ON,Regular Season
+MIA,LAC,2025-03-12,Kaseya Center,Miami,FL,Regular Season
+HOU,PHO,2025-03-12,Toyota Center,Houston,TX,Regular Season
+MEM,UTA,2025-03-12,FedExForum,Memphis,TN,Regular Season
+SAS,DAL,2025-03-12,Frost Bank Center,San Antonio,TX,Regular Season
+DEN,MIN,2025-03-12,Ball Arena,Denver,CO,Regular Season
+POR,NYK,2025-03-12,Moda Center,Portland,OR,Regular Season
+DET,WAS,2025-03-13,Little Caesars Arena,Detroit,MI,Regular Season
+MIL,LAL,2025-03-13,Fiserv Forum,Milwaukee,WI,Regular Season
+CHI,BRK,2025-03-13,United Center,Chicago,IL,Regular Season
+GSW,SAC,2025-03-13,Chase Center,San Francisco,CA,Regular Season
+NOP,ORL,2025-03-13,Smoothie King Center,New Orleans,LA,Regular Season
+MIA,BOS,2025-03-14,Kaseya Center,Miami,FL,Regular Season
+PHI,IND,2025-03-14,Wells Fargo Center,Philadelphia,PA,Regular Season
+ATL,LAC,2025-03-14,State Farm Arena,Atlanta,GA,Regular Season
+HOU,DAL,2025-03-14,Toyota Center,Houston,TX,Regular Season
+MEM,CLE,2025-03-14,FedExForum,Memphis,TN,Regular Season
+MIN,ORL,2025-03-14,Target Center,Minneapolis,MN,Regular Season
+SAS,CHO,2025-03-14,Frost Bank Center,San Antonio,TX,Regular Season
+DEN,LAL,2025-03-14,Ball Arena,Denver,CO,Regular Season
+UTA,TOR,2025-03-14,Delta Center,Salt Lake City,UT,Regular Season
+PHO,SAC,2025-03-14,PHX Arena,Phoenix,AZ,Regular Season
+BRK,BOS,2025-03-15,Barclays Center,Brooklyn,NY,Regular Season
+DET,OKC,2025-03-15,Little Caesars Arena,Detroit,MI,Regular Season
+HOU,CHI,2025-03-15,Toyota Center,Houston,TX,Regular Season
+MEM,MIA,2025-03-15,FedExForum,Memphis,TN,Regular Season
+MIL,IND,2025-03-15,Fiserv Forum,Milwaukee,WI,Regular Season
+SAS,NOP,2025-03-15,Frost Bank Center,San Antonio,TX,Regular Season
+GSW,NYK,2025-03-15,Chase Center,San Francisco,CA,Regular Season
+DEN,WAS,2025-03-15,Ball Arena,Denver,CO,Regular Season
+LAC,CHO,2025-03-16,Intuit Dome,Inglewood,CA,Regular Season
+DAL,PHI,2025-03-16,American Airlines Center,Dallas,TX,Regular Season
+LAL,PHO,2025-03-16,Crypto.com Arena,Los Angeles,CA,Regular Season
+BRK,ATL,2025-03-16,Barclays Center,Brooklyn,NY,Regular Season
+CLE,ORL,2025-03-16,Rocket Arena,Cleveland,OH,Regular Season
+POR,TOR,2025-03-16,Moda Center,Portland,OR,Regular Season
+MIN,UTA,2025-03-16,Target Center,Minneapolis,MN,Regular Season
+MIL,OKC,2025-03-16,Fiserv Forum,Milwaukee,WI,Regular Season
+LAL,SAS,2025-03-17,Crypto.com Arena,Los Angeles,CA,Regular Season
+NYK,MIA,2025-03-17,Madison Square Garden,New York,NY,Regular Season
+HOU,PHI,2025-03-17,Toyota Center,Houston,TX,Regular Season
+MIN,IND,2025-03-17,Target Center,Minneapolis,MN,Regular Season
+NOP,DET,2025-03-17,Smoothie King Center,New Orleans,LA,Regular Season
+UTA,CHI,2025-03-17,Delta Center,Salt Lake City,UT,Regular Season
+GSW,DEN,2025-03-17,Chase Center,San Francisco,CA,Regular Season
+PHO,TOR,2025-03-17,PHX Arena,Phoenix,AZ,Regular Season
+SAC,MEM,2025-03-17,Golden 1 Center,Sacramento,CA,Regular Season
+POR,WAS,2025-03-17,Moda Center,Portland,OR,Regular Season
+CHO,ATL,2025-03-18,Spectrum Center,Charlotte,NC,Regular Season
+BOS,BRK,2025-03-18,TD Garden,Boston,MA,Regular Season
+LAC,CLE,2025-03-18,Intuit Dome,Inglewood,CA,Regular Season
+GSW,MIL,2025-03-18,Chase Center,San Francisco,CA,Regular Season
+UTA,WAS,2025-03-19,Delta Center,Salt Lake City,UT,Regular Season
+IND,DAL,2025-03-19,Gainbridge Fieldhouse,Indianapolis,IN,Regular Season
+ORL,HOU,2025-03-19,Kia Center,Orlando,FL,Regular Season
+MIA,DET,2025-03-19,Kaseya Center,Miami,FL,Regular Season
+MIN,NOP,2025-03-19,Target Center,Minneapolis,MN,Regular Season
+OKC,PHI,2025-03-19,Paycom Center,Oklahoma City,OK,Regular Season
+SAS,NYK,2025-03-19,Frost Bank Center,San Antonio,TX,Regular Season
+LAL,DEN,2025-03-19,Crypto.com Arena,Los Angeles,CA,Regular Season
+PHO,CHI,2025-03-19,PHX Arena,Phoenix,AZ,Regular Season
+POR,MEM,2025-03-19,Moda Center,Portland,OR,Regular Season
+SAC,CLE,2025-03-19,Golden 1 Center,Sacramento,CA,Regular Season
+LAL,MIL,2025-03-20,Crypto.com Arena,Los Angeles,CA,Regular Season
+GSW,TOR,2025-03-20,Chase Center,San Francisco,CA,Regular Season
+CHO,NYK,2025-03-20,Spectrum Center,Charlotte,NC,Regular Season
+IND,BRK,2025-03-20,Gainbridge Fieldhouse,Indianapolis,IN,Regular Season
+SAC,CHI,2025-03-20,Golden 1 Center,Sacramento,CA,Regular Season
+WAS,ORL,2025-03-21,Capital One Arena,Washington,DC,Regular Season
+MIA,HOU,2025-03-21,Kaseya Center,Miami,FL,Regular Season
+MIN,NOP,2025-03-21,Target Center,Minneapolis,MN,Regular Season
+OKC,CHO,2025-03-21,Paycom Center,Oklahoma City,OK,Regular Season
+SAS,PHI,2025-03-21,Frost Bank Center,San Antonio,TX,Regular Season
+DAL,DET,2025-03-21,American Airlines Center,Dallas,TX,Regular Season
+UTA,BOS,2025-03-21,Delta Center,Salt Lake City,UT,Regular Season
+PHO,CLE,2025-03-21,PHX Arena,Phoenix,AZ,Regular Season
+POR,DEN,2025-03-21,Moda Center,Portland,OR,Regular Season
+LAC,MEM,2025-03-21,Intuit Dome,Inglewood,CA,Regular Season
+IND,BRK,2025-03-22,Gainbridge Fieldhouse,Indianapolis,IN,Regular Season
+ATL,GSW,2025-03-22,State Farm Arena,Atlanta,GA,Regular Season
+NYK,WAS,2025-03-22,Madison Square Garden,New York,NY,Regular Season
+SAC,MIL,2025-03-22,Golden 1 Center,Sacramento,CA,Regular Season
+LAL,CHI,2025-03-22,Crypto.com Arena,Los Angeles,CA,Regular Season
+DET,NOP,2025-03-23,Little Caesars Arena,Detroit,MI,Regular Season
+UTA,CLE,2025-03-23,Delta Center,Salt Lake City,UT,Regular Season
+ATL,PHI,2025-03-23,State Farm Arena,Atlanta,GA,Regular Season
+MIA,CHO,2025-03-23,Kaseya Center,Miami,FL,Regular Season
+TOR,SAS,2025-03-23,Scotiabank Arena,Toronto,ON,Regular Season
+POR,BOS,2025-03-23,Moda Center,Portland,OR,Regular Season
+HOU,DEN,2025-03-23,Toyota Center,Houston,TX,Regular Season
+LAC,OKC,2025-03-23,Intuit Dome,Inglewood,CA,Regular Season
+IND,MIN,2025-03-24,Gainbridge Fieldhouse,Indianapolis,IN,Regular Season
+ORL,LAL,2025-03-24,Kia Center,Orlando,FL,Regular Season
+WAS,TOR,2025-03-24,Capital One Arena,Washington,DC,Regular Season
+BRK,DAL,2025-03-24,Barclays Center,Brooklyn,NY,Regular Season
+NOP,PHI,2025-03-24,Smoothie King Center,New Orleans,LA,Regular Season
+DEN,CHI,2025-03-24,Ball Arena,Denver,CO,Regular Season
+PHO,MIL,2025-03-24,PHX Arena,Phoenix,AZ,Regular Season
+SAC,BOS,2025-03-24,Golden 1 Center,Sacramento,CA,Regular Season
+CHO,ORL,2025-03-25,Spectrum Center,Charlotte,NC,Regular Season
+DET,SAS,2025-03-25,Little Caesars Arena,Detroit,MI,Regular Season
+MIA,GSW,2025-03-25,Kaseya Center,Miami,FL,Regular Season
+NYK,DAL,2025-03-25,Madison Square Garden,New York,NY,Regular Season
+HOU,ATL,2025-03-25,Toyota Center,Houston,TX,Regular Season
+UTA,MEM,2025-03-25,Delta Center,Salt Lake City,UT,Regular Season
+POR,CLE,2025-03-25,Moda Center,Portland,OR,Regular Season
+SAC,OKC,2025-03-25,Golden 1 Center,Sacramento,CA,Regular Season
+PHI,WAS,2025-03-26,Wells Fargo Center,Philadelphia,PA,Regular Season
+BRK,TOR,2025-03-26,Barclays Center,Brooklyn,NY,Regular Season
+IND,LAL,2025-03-26,Gainbridge Fieldhouse,Indianapolis,IN,Regular Season
+NYK,LAC,2025-03-26,Madison Square Garden,New York,NY,Regular Season
+DEN,MIL,2025-03-26,Ball Arena,Denver,CO,Regular Season
+PHO,BOS,2025-03-26,PHX Arena,Phoenix,AZ,Regular Season
+CLE,SAS,2025-03-27,Rocket Arena,Cleveland,OH,Regular Season
+ORL,DAL,2025-03-27,Kia Center,Orlando,FL,Regular Season
+WAS,IND,2025-03-27,Capital One Arena,Washington,DC,Regular Season
+MIA,ATL,2025-03-27,Kaseya Center,Miami,FL,Regular Season
+CHI,LAL,2025-03-27,United Center,Chicago,IL,Regular Season
+OKC,MEM,2025-03-27,Paycom Center,Oklahoma City,OK,Regular Season
+UTA,HOU,2025-03-27,Delta Center,Salt Lake City,UT,Regular Season
+SAC,POR,2025-03-27,Golden 1 Center,Sacramento,CA,Regular Season
+DET,CLE,2025-03-28,Little Caesars Arena,Detroit,MI,Regular Season
+BRK,LAC,2025-03-28,Barclays Center,Brooklyn,NY,Regular Season
+TOR,CHO,2025-03-28,Scotiabank Arena,Toronto,ON,Regular Season
+MIL,NYK,2025-03-28,Fiserv Forum,Milwaukee,WI,Regular Season
+MIN,PHO,2025-03-28,Target Center,Minneapolis,MN,Regular Season
+NOP,GSW,2025-03-28,Smoothie King Center,New Orleans,LA,Regular Season
+DEN,UTA,2025-03-28,Ball Arena,Denver,CO,Regular Season
+ORL,SAC,2025-03-29,Kia Center,Orlando,FL,Regular Season
+WAS,BRK,2025-03-29,Capital One Arena,Washington,DC,Regular Season
+PHI,MIA,2025-03-29,Wells Fargo Center,Philadelphia,PA,Regular Season
+CHI,DAL,2025-03-29,United Center,Chicago,IL,Regular Season
+MEM,LAL,2025-03-29,FedExForum,Memphis,TN,Regular Season
+OKC,IND,2025-03-29,Paycom Center,Oklahoma City,OK,Regular Season
+SAS,BOS,2025-03-29,Frost Bank Center,San Antonio,TX,Regular Season
+CLE,LAC,2025-03-30,Rocket Arena,Cleveland,OH,Regular Season
+NYK,POR,2025-03-30,Madison Square Garden,New York,NY,Regular Season
+MIL,ATL,2025-03-30,Fiserv Forum,Milwaukee,WI,Regular Season
+MIN,DET,2025-03-30,Target Center,Minneapolis,MN,Regular Season
+NOP,CHO,2025-03-30,Smoothie King Center,New Orleans,LA,Regular Season
+SAS,GSW,2025-03-30,Frost Bank Center,San Antonio,TX,Regular Season
+PHI,TOR,2025-03-30,Wells Fargo Center,Philadelphia,PA,Regular Season
+PHO,HOU,2025-03-30,PHX Arena,Phoenix,AZ,Regular Season
+CHO,UTA,2025-03-31,Spectrum Center,Charlotte,NC,Regular Season
+IND,SAC,2025-03-31,Gainbridge Fieldhouse,Indianapolis,IN,Regular Season
+ORL,LAC,2025-03-31,Kia Center,Orlando,FL,Regular Season
+WAS,MIA,2025-03-31,Capital One Arena,Washington,DC,Regular Season
+MEM,BOS,2025-03-31,FedExForum,Memphis,TN,Regular Season
+OKC,CHI,2025-03-31,Paycom Center,Oklahoma City,OK,Regular Season
+DAL,BRK,2025-03-31,American Airlines Center,Dallas,TX,Regular Season
+LAL,HOU,2025-03-31,Crypto.com Arena,Los Angeles,CA,Regular Season
+SAS,ORL,2025-04-01,Frost Bank Center,San Antonio,TX,Regular Season
+ATL,POR,2025-04-01,State Farm Arena,Atlanta,GA,Regular Season
+NYK,PHI,2025-04-01,Madison Square Garden,New York,NY,Regular Season
+CHI,TOR,2025-04-01,United Center,Chicago,IL,Regular Season
+MEM,GSW,2025-04-01,FedExForum,Memphis,TN,Regular Season
+MIL,PHO,2025-04-01,Fiserv Forum,Milwaukee,WI,Regular Season
+DEN,MIN,2025-04-01,Ball Arena,Denver,CO,Regular Season
+CLE,NYK,2025-04-02,Rocket Arena,Cleveland,OH,Regular Season
+IND,CHO,2025-04-02,Gainbridge Fieldhouse,Indianapolis,IN,Regular Season
+WAS,SAC,2025-04-02,Capital One Arena,Washington,DC,Regular Season
+BOS,MIA,2025-04-02,TD Garden,Boston,MA,Regular Season
+HOU,UTA,2025-04-02,Toyota Center,Houston,TX,Regular Season
+OKC,DET,2025-04-02,Paycom Center,Oklahoma City,OK,Regular Season
+DAL,ATL,2025-04-02,American Airlines Center,Dallas,TX,Regular Season
+DEN,SAS,2025-04-02,Ball Arena,Denver,CO,Regular Season
+LAC,NOP,2025-04-02,Intuit Dome,Inglewood,CA,Regular Season
+WAS,ORL,2025-04-03,Capital One Arena,Washington,DC,Regular Season
+BRK,MIN,2025-04-03,Barclays Center,Brooklyn,NY,Regular Season
+MIA,MEM,2025-04-03,Kaseya Center,Miami,FL,Regular Season
+PHI,MIL,2025-04-03,Wells Fargo Center,Philadelphia,PA,Regular Season
+TOR,POR,2025-04-03,Scotiabank Arena,Toronto,ON,Regular Season
+LAL,GSW,2025-04-03,Crypto.com Arena,Los Angeles,CA,Regular Season
+CHO,SAC,2025-04-04,Spectrum Center,Charlotte,NC,Regular Season
+IND,UTA,2025-04-04,Gainbridge Fieldhouse,Indianapolis,IN,Regular Season
+BOS,PHO,2025-04-04,TD Garden,Boston,MA,Regular Season
+TOR,DET,2025-04-04,Scotiabank Arena,Toronto,ON,Regular Season
+CHI,POR,2025-04-04,United Center,Chicago,IL,Regular Season
+HOU,OKC,2025-04-04,Toyota Center,Houston,TX,Regular Season
+SAS,CLE,2025-04-04,Frost Bank Center,San Antonio,TX,Regular Season
+GSW,DEN,2025-04-04,Chase Center,San Francisco,CA,Regular Season
+LAL,NOP,2025-04-04,Crypto.com Arena,Los Angeles,CA,Regular Season
+LAC,DAL,2025-04-04,Intuit Dome,Inglewood,CA,Regular Season
+ATL,NYK,2025-04-05,State Farm Arena,Atlanta,GA,Regular Season
+DET,MEM,2025-04-05,Little Caesars Arena,Detroit,MI,Regular Season
+PHI,MIN,2025-04-05,Wells Fargo Center,Philadelphia,PA,Regular Season
+MIA,MIL,2025-04-05,Kaseya Center,Miami,FL,Regular Season
+LAC,DAL,2025-04-05,Intuit Dome,Inglewood,CA,Regular Season
+NOP,MIL,2025-04-06,Smoothie King Center,New Orleans,LA,Regular Season
+CHO,CHI,2025-04-06,Spectrum Center,Charlotte,NC,Regular Season
+BRK,TOR,2025-04-06,Barclays Center,Brooklyn,NY,Regular Season
+OKC,LAL,2025-04-06,Paycom Center,Oklahoma City,OK,Regular Season
+ATL,UTA,2025-04-06,State Farm Arena,Atlanta,GA,Regular Season
+BOS,WAS,2025-04-06,TD Garden,Boston,MA,Regular Season
+CLE,SAC,2025-04-06,Rocket Arena,Cleveland,OH,Regular Season
+POR,SAS,2025-04-06,Moda Center,Portland,OR,Regular Season
+NYK,PHO,2025-04-06,Madison Square Garden,New York,NY,Regular Season
+DEN,IND,2025-04-06,Ball Arena,Denver,CO,Regular Season
+GSW,HOU,2025-04-06,Chase Center,San Francisco,CA,Regular Season
+DET,SAC,2025-04-07,Little Caesars Arena,Detroit,MI,Regular Season
+MIA,PHI,2025-04-07,Kaseya Center,Miami,FL,Regular Season
+CHO,MEM,2025-04-08,Spectrum Center,Charlotte,NC,Regular Season
+CLE,CHI,2025-04-08,Rocket Arena,Cleveland,OH,Regular Season
+IND,WAS,2025-04-08,Gainbridge Fieldhouse,Indianapolis,IN,Regular Season
+ORL,ATL,2025-04-08,Kia Center,Orlando,FL,Regular Season
+BRK,NOP,2025-04-08,Barclays Center,Brooklyn,NY,Regular Season
+NYK,BOS,2025-04-08,Madison Square Garden,New York,NY,Regular Season
+MIL,MIN,2025-04-08,Fiserv Forum,Milwaukee,WI,Regular Season
+OKC,LAL,2025-04-08,Paycom Center,Oklahoma City,OK,Regular Season
+PHO,GSW,2025-04-08,PHX Arena,Phoenix,AZ,Regular Season
+LAC,SAS,2025-04-08,Intuit Dome,Inglewood,CA,Regular Season
+ORL,BOS,2025-04-09,Kia Center,Orlando,FL,Regular Season
+WAS,PHI,2025-04-09,Capital One Arena,Washington,DC,Regular Season
+TOR,CHO,2025-04-09,Scotiabank Arena,Toronto,ON,Regular Season
+DAL,LAL,2025-04-09,American Airlines Center,Dallas,TX,Regular Season
+CHI,MIA,2025-04-09,United Center,Chicago,IL,Regular Season
+UTA,POR,2025-04-09,Delta Center,Salt Lake City,UT,Regular Season
+GSW,SAS,2025-04-09,Chase Center,San Francisco,CA,Regular Season
+PHO,OKC,2025-04-09,PHX Arena,Phoenix,AZ,Regular Season
+SAC,DEN,2025-04-09,Golden 1 Center,Sacramento,CA,Regular Season
+LAC,HOU,2025-04-09,Intuit Dome,Inglewood,CA,Regular Season
+MIL,NOP,2025-04-10,Fiserv Forum,Milwaukee,WI,Regular Season
+DET,NYK,2025-04-10,Little Caesars Arena,Detroit,MI,Regular Season
+IND,CLE,2025-04-10,Gainbridge Fieldhouse,Indianapolis,IN,Regular Season
+BRK,ATL,2025-04-10,Barclays Center,Brooklyn,NY,Regular Season
+MEM,MIN,2025-04-10,FedExForum,Memphis,TN,Regular Season
+DET,MIL,2025-04-11,Little Caesars Arena,Detroit,MI,Regular Season
+IND,ORL,2025-04-11,Gainbridge Fieldhouse,Indianapolis,IN,Regular Season
+PHI,ATL,2025-04-11,Wells Fargo Center,Philadelphia,PA,Regular Season
+BOS,CHO,2025-04-11,TD Garden,Boston,MA,Regular Season
+NYK,CLE,2025-04-11,Madison Square Garden,New York,NY,Regular Season
+CHI,WAS,2025-04-11,United Center,Chicago,IL,Regular Season
+NOP,MIA,2025-04-11,Smoothie King Center,New Orleans,LA,Regular Season
+DAL,TOR,2025-04-11,American Airlines Center,Dallas,TX,Regular Season
+MIN,BRK,2025-04-11,Target Center,Minneapolis,MN,Regular Season
+DEN,MEM,2025-04-11,Ball Arena,Denver,CO,Regular Season
+UTA,OKC,2025-04-11,Delta Center,Salt Lake City,UT,Regular Season
+PHO,SAS,2025-04-11,PHX Arena,Phoenix,AZ,Regular Season
+POR,GSW,2025-04-11,Moda Center,Portland,OR,Regular Season
+SAC,LAC,2025-04-11,Golden 1 Center,Sacramento,CA,Regular Season
+LAL,HOU,2025-04-11,Crypto.com Arena,Los Angeles,CA,Regular Season
+ATL,ORL,2025-04-13,State Farm Arena,Atlanta,GA,Regular Season
+BOS,CHO,2025-04-13,TD Garden,Boston,MA,Regular Season
+BRK,NYK,2025-04-13,Barclays Center,Brooklyn,NY,Regular Season
+CLE,IND,2025-04-13,Rocket Arena,Cleveland,OH,Regular Season
+MIA,WAS,2025-04-13,Kaseya Center,Miami,FL,Regular Season
+PHI,CHI,2025-04-13,Wells Fargo Center,Philadelphia,PA,Regular Season
+MIL,DET,2025-04-13,Fiserv Forum,Milwaukee,WI,Regular Season
+HOU,DEN,2025-04-13,Toyota Center,Houston,TX,Regular Season
+MEM,DAL,2025-04-13,FedExForum,Memphis,TN,Regular Season
+MIN,UTA,2025-04-13,Target Center,Minneapolis,MN,Regular Season
+NOP,OKC,2025-04-13,Smoothie King Center,New Orleans,LA,Regular Season
+SAS,TOR,2025-04-13,Frost Bank Center,San Antonio,TX,Regular Season
+GSW,LAC,2025-04-13,Chase Center,San Francisco,CA,Regular Season
+POR,LAL,2025-04-13,Moda Center,Portland,OR,Regular Season
+SAC,PHO,2025-04-13,Golden 1 Center,Sacramento,CA,Regular Season
+ORL,ATL,2025-04-15,Kia Center,Orlando,FL,SoFi Play-In Tournament
+GSW,MEM,2025-04-15,Chase Center,San Francisco,CA,SoFi Play-In Tournament
+CHI,MIA,2025-04-16,United Center,Chicago,IL,SoFi Play-In Tournament
+SAC,DAL,2025-04-16,Golden 1 Center,Sacramento,CA,SoFi Play-In Tournament
+ATL,MIA,2025-04-18,State Farm Arena,Atlanta,GA,SoFi Play-In Tournament
+MEM,DAL,2025-04-18,FedExForum,Memphis,TN,SoFi Play-In Tournament
+NYK,DET,2025-04-19,Madison Square Garden,New York,NY,East First Round
+IND,MIL,2025-04-19,Gainbridge Fieldhouse,Indianapolis,IN,East First Round
+LAL,MIN,2025-04-19,Crypto.com Arena,Los Angeles,CA,West First Round
+DEN,LAC,2025-04-19,Ball Arena,Denver,CO,West First Round
+CLE,MIA,2025-04-20,Rocket Arena,Cleveland,OH,East First Round
+BOS,ORL,2025-04-20,TD Garden,Boston,MA,East First Round
+OKC,MEM,2025-04-20,Paycom Center,Oklahoma City,OK,West First Round
+HOU,GSW,2025-04-20,Toyota Center,Houston,TX,West First Round
+NYK,DET,2025-04-21,Madison Square Garden,New York,NY,East First Round
+DEN,LAC,2025-04-21,Ball Arena,Denver,CO,West First Round
+IND,MIL,2025-04-22,Gainbridge Fieldhouse,Indianapolis,IN,East First Round
+OKC,MEM,2025-04-22,Paycom Center,Oklahoma City,OK,West First Round
+LAL,MIN,2025-04-22,Crypto.com Arena,Los Angeles,CA,West First Round
+CLE,MIA,2025-04-23,Rocket Arena,Cleveland,OH,East First Round
+BOS,ORL,2025-04-23,TD Garden,Boston,MA,East First Round
+HOU,GSW,2025-04-23,Toyota Center,Houston,TX,West First Round
+DET,NYK,2025-04-24,Little Caesars Arena,Detroit,MI,East First Round
+MEM,OKC,2025-04-24,FedExForum,Memphis,TN,West First Round
+LAC,DEN,2025-04-24,Intuit Dome,Inglewood,CA,West First Round
+ORL,BOS,2025-04-25,Kia Center,Orlando,FL,East First Round
+MIL,IND,2025-04-25,Fiserv Forum,Milwaukee,WI,East First Round
+MIN,LAL,2025-04-25,Target Center,Minneapolis,MN,West First Round
+MIA,CLE,2025-04-26,Kaseya Center,Miami,FL,East First Round
+MEM,OKC,2025-04-26,FedExForum,Memphis,TN,West First Round
+GSW,HOU,2025-04-26,Chase Center,San Francisco,CA,West First Round
+LAC,DEN,2025-04-26,Intuit Dome,Inglewood,CA,West First Round
+ORL,BOS,2025-04-27,Kia Center,Orlando,FL,East First Round
+DET,NYK,2025-04-27,Little Caesars Arena,Detroit,MI,East First Round
+MIL,IND,2025-04-27,Fiserv Forum,Milwaukee,WI,East First Round
+MIN,LAL,2025-04-27,Target Center,Minneapolis,MN,West First Round
+MIA,CLE,2025-04-28,Kaseya Center,Miami,FL,East First Round
+GSW,HOU,2025-04-28,Chase Center,San Francisco,CA,West First Round
+BOS,ORL,2025-04-29,TD Garden,Boston,MA,East First Round
+NYK,DET,2025-04-29,Madison Square Garden,New York,NY,East First Round
+IND,MIL,2025-04-29,Gainbridge Fieldhouse,Indianapolis,IN,East First Round
+DEN,LAC,2025-04-29,Ball Arena,Denver,CO,West First Round
+HOU,GSW,2025-04-30,Toyota Center,Houston,TX,West First Round
+LAL,MIN,2025-04-30,Crypto.com Arena,Los Angeles,CA,West First Round
+DET,NYK,2025-05-01,Little Caesars Arena,Detroit,MI,East First Round
+LAC,DEN,2025-05-01,Intuit Dome,Inglewood,CA,West First Round
+GSW,HOU,2025-05-02,Chase Center,San Francisco,CA,West First Round
+DEN,LAC,2025-05-03,Ball Arena,Denver,CO,West First Round
+HOU,GSW,2025-05-04,Toyota Center,Houston,TX,West First Round
+CLE,IND,2025-05-04,Rocket Arena,Cleveland,OH,East Conf. Semifinals
+BOS,NYK,2025-05-05,TD Garden,Boston,MA,East Conf. Semifinals
+OKC,,2025-05-05,Paycom Center,Oklahoma City,OK,West Conf. Semifinals
+CLE,IND,2025-05-06,Rocket Arena,Cleveland,OH,East Conf. Semifinals
+,,0001-01-01,,,,West Conf. Semifinals
+BOS,NYK,2025-05-07,TD Garden,Boston,MA,East Conf. Semifinals
+OKC,,2025-05-07,Paycom Center,Oklahoma City,OK,West Conf. Semifinals
+,,0001-01-01,,,,West Conf. Semifinals
+IND,CLE,2025-05-09,Gainbridge Fieldhouse,Indianapolis,IN,East Conf. Semifinals
+,OKC,0001-01-01,,,,West Conf. Semifinals
+NYK,BOS,2025-05-10,Madison Square Garden,New York,NY,East Conf. Semifinals
+,,0001-01-01,,,,West Conf. Semifinals
+IND,CLE,2025-05-11,Gainbridge Fieldhouse,Indianapolis,IN,East Conf. Semifinals
+,OKC,0001-01-01,,,,West Conf. Semifinals
+NYK,BOS,2025-05-12,Madison Square Garden,New York,NY,East Conf. Semifinals
+,,0001-01-01,,,,West Conf. Semifinals
+CLE,IND,2025-05-13,Rocket Arena,Cleveland,OH,East Conf. Semifinals
+BOS,NYK,2025-05-14,TD Garden,Boston,MA,East Conf. Semifinals
+IND,CLE,2025-05-15,Gainbridge Fieldhouse,Indianapolis,IN,East Conf. Semifinals
+NYK,BOS,2025-05-16,Madison Square Garden,New York,NY,East Conf. Semifinals
+CLE,IND,2025-05-18,Rocket Arena,Cleveland,OH,East Conf. Semifinals
+BOS,NYK,2025-05-19,TD Garden,Boston,MA,East Conf. Semifinals

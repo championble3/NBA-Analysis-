@@ -1,0 +1,27 @@
+[2025-06-20T11:09:08.023+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-06-20T11:09:08.080+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: nba_etl_to_staging.fetch_pbp_and_load_to_stage manual__2025-06-20T11:08:34.126145+00:00 [queued]>
+[2025-06-20T11:09:08.096+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: nba_etl_to_staging.fetch_pbp_and_load_to_stage manual__2025-06-20T11:08:34.126145+00:00 [queued]>
+[2025-06-20T11:09:08.098+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-06-20T11:09:08.435+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): fetch_pbp_and_load_to_stage> on 2025-06-20 11:08:34.126145+00:00
+[2025-06-20T11:09:08.444+0000] {standard_task_runner.py:63} INFO - Started process 1062 to run task
+[2025-06-20T11:09:08.450+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'nba_etl_to_staging', 'fetch_pbp_and_load_to_stage', 'manual__2025-06-20T11:08:34.126145+00:00', '--job-id', '136', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/tmp/tmpbp2yznut']
+[2025-06-20T11:09:08.452+0000] {standard_task_runner.py:91} INFO - Job 136: Subtask fetch_pbp_and_load_to_stage
+[2025-06-20T11:09:08.570+0000] {task_command.py:426} INFO - Running <TaskInstance: nba_etl_to_staging.fetch_pbp_and_load_to_stage manual__2025-06-20T11:08:34.126145+00:00 [running]> on host 11d91b3c2b82
+[2025-06-20T11:09:08.746+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='nba_etl_to_staging' AIRFLOW_CTX_TASK_ID='fetch_pbp_and_load_to_stage' AIRFLOW_CTX_EXECUTION_DATE='2025-06-20T11:08:34.126145+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-20T11:08:34.126145+00:00'
+[2025-06-20T11:09:08.748+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-06-20T11:09:08.780+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/etl_pipeline.py:208 UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+[2025-06-20T11:09:12.970+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-20T11:09:13.068+0000] {etl_pipeline.py:221} INFO - Processed game on 2024-10-22 between BOS and NYK.
+[2025-06-20T11:09:20.352+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-20T11:09:20.435+0000] {etl_pipeline.py:221} INFO - Processed game on 2024-10-22 between LAL and MIN.
+[2025-06-20T11:09:27.668+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-20T11:09:27.758+0000] {etl_pipeline.py:221} INFO - Processed game on 2024-10-23 between DET and IND.
+[2025-06-20T11:09:27.764+0000] {etl_pipeline.py:98} INFO - Ensuring table 'stgpbp' exists...
+[2025-06-20T11:09:28.190+0000] {etl_pipeline.py:100} INFO - Table 'stgpbp' is ready.
+[2025-06-20T11:09:28.192+0000] {etl_pipeline.py:103} WARNING - DataFrame is empty. No data to load into stgpbp.
+[2025-06-20T11:09:28.225+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-06-20T11:09:28.226+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-06-20T11:09:28.243+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=nba_etl_to_staging, task_id=fetch_pbp_and_load_to_stage, run_id=manual__2025-06-20T11:08:34.126145+00:00, execution_date=20250620T110834, start_date=20250620T110908, end_date=20250620T110928
+[2025-06-20T11:09:28.329+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-06-20T11:09:28.345+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-06-20T11:09:28.373+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

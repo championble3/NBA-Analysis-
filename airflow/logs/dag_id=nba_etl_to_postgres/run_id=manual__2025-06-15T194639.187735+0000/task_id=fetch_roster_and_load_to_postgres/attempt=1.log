@@ -1,0 +1,201 @@
+[2025-06-15T19:46:42.029+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-06-15T19:46:42.076+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: nba_etl_to_postgres.fetch_roster_and_load_to_postgres manual__2025-06-15T19:46:39.187735+00:00 [queued]>
+[2025-06-15T19:46:42.092+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: nba_etl_to_postgres.fetch_roster_and_load_to_postgres manual__2025-06-15T19:46:39.187735+00:00 [queued]>
+[2025-06-15T19:46:42.094+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-06-15T19:46:42.150+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): fetch_roster_and_load_to_postgres> on 2025-06-15 19:46:39.187735+00:00
+[2025-06-15T19:46:42.160+0000] {standard_task_runner.py:63} INFO - Started process 525 to run task
+[2025-06-15T19:46:42.165+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'nba_etl_to_postgres', 'fetch_roster_and_load_to_postgres', 'manual__2025-06-15T19:46:39.187735+00:00', '--job-id', '45', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/tmp/tmpxrkp3p3t']
+[2025-06-15T19:46:42.168+0000] {standard_task_runner.py:91} INFO - Job 45: Subtask fetch_roster_and_load_to_postgres
+[2025-06-15T19:46:42.302+0000] {task_command.py:426} INFO - Running <TaskInstance: nba_etl_to_postgres.fetch_roster_and_load_to_postgres manual__2025-06-15T19:46:39.187735+00:00 [running]> on host 79b635c86444
+[2025-06-15T19:46:42.625+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='nba_etl_to_postgres' AIRFLOW_CTX_TASK_ID='fetch_roster_and_load_to_postgres' AIRFLOW_CTX_EXECUTION_DATE='2025-06-15T19:46:39.187735+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-15T19:46:39.187735+00:00'
+[2025-06-15T19:46:42.627+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-06-15T19:46:42.696+0000] {logging_mixin.py:188} INFO - Fetching roster for Atlanta Hawks (ATL)...
+[2025-06-15T19:46:43.372+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/teams.py:21 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:46:47.598+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:46:51.529+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:46:54.849+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:46:58.278+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:46:58.309+0000] {logging_mixin.py:188} INFO - Fetched 18 players for Atlanta Hawks.
+[2025-06-15T19:47:00.313+0000] {logging_mixin.py:188} INFO - Fetching roster for Boston Celtics (BOS)...
+[2025-06-15T19:47:04.203+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/teams.py:21 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:47:07.696+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:47:11.230+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:47:14.731+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:47:18.162+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:47:18.181+0000] {logging_mixin.py:188} INFO - Fetched 17 players for Boston Celtics.
+[2025-06-15T19:47:20.185+0000] {logging_mixin.py:188} INFO - Fetching roster for Brooklyn Nets (BRK)...
+[2025-06-15T19:47:23.903+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/teams.py:21 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:47:27.742+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:47:31.093+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:47:34.581+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:47:37.903+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:47:41.231+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:47:44.841+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:47:44.865+0000] {logging_mixin.py:188} INFO - Fetched 18 players for Brooklyn Nets.
+[2025-06-15T19:47:46.872+0000] {logging_mixin.py:188} INFO - Fetching roster for Charlotte Hornets (CHO)...
+[2025-06-15T19:47:50.486+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/teams.py:21 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:47:53.961+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:47:57.567+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:48:00.940+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:48:04.311+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:48:07.971+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:48:11.362+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:48:14.823+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:48:14.845+0000] {logging_mixin.py:188} INFO - Fetched 19 players for Charlotte Hornets.
+[2025-06-15T19:48:16.847+0000] {logging_mixin.py:188} INFO - Fetching roster for Chicago Bulls (CHI)...
+[2025-06-15T19:48:20.564+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/teams.py:21 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:48:23.932+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:48:27.271+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:48:31.356+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:48:34.726+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:48:38.092+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:48:38.115+0000] {logging_mixin.py:188} INFO - Fetched 18 players for Chicago Bulls.
+[2025-06-15T19:48:40.118+0000] {logging_mixin.py:188} INFO - Fetching roster for Cleveland Cavaliers (CLE)...
+[2025-06-15T19:48:43.913+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/teams.py:21 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:48:47.708+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:48:51.449+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:48:54.957+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:48:58.350+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:49:01.831+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:49:01.846+0000] {logging_mixin.py:188} INFO - Fetched 18 players for Cleveland Cavaliers.
+[2025-06-15T19:49:03.849+0000] {logging_mixin.py:188} INFO - Fetching roster for Dallas Mavericks (DAL)...
+[2025-06-15T19:49:07.411+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/teams.py:21 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:49:10.739+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:49:14.300+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:49:17.849+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:49:21.294+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:49:21.353+0000] {logging_mixin.py:188} INFO - Fetched 17 players for Dallas Mavericks.
+[2025-06-15T19:49:23.359+0000] {logging_mixin.py:188} INFO - Fetching roster for Denver Nuggets (DEN)...
+[2025-06-15T19:49:27.116+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/teams.py:21 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:49:30.604+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:49:34.499+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:49:37.969+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:49:41.434+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:49:44.873+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:49:48.339+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:49:51.999+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:49:52.046+0000] {logging_mixin.py:188} INFO - Fetched 18 players for Denver Nuggets.
+[2025-06-15T19:49:54.050+0000] {logging_mixin.py:188} INFO - Fetching roster for Detroit Pistons (DET)...
+[2025-06-15T19:49:57.786+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/teams.py:21 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:50:01.299+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:50:04.672+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:50:08.125+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:50:11.876+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:50:15.391+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:50:15.476+0000] {logging_mixin.py:188} INFO - Fetched 18 players for Detroit Pistons.
+[2025-06-15T19:50:17.489+0000] {logging_mixin.py:188} INFO - Fetching roster for Golden State Warriors (GSW)...
+[2025-06-15T19:50:21.451+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/teams.py:21 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:50:25.092+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:50:28.733+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:50:32.283+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:50:32.297+0000] {logging_mixin.py:188} INFO - Fetched 17 players for Golden State Warriors.
+[2025-06-15T19:50:34.300+0000] {logging_mixin.py:188} INFO - Fetching roster for Houston Rockets (HOU)...
+[2025-06-15T19:50:38.254+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/teams.py:21 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:50:41.951+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:50:45.410+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:50:49.192+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:50:52.727+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:50:56.102+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:50:59.659+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:50:59.676+0000] {logging_mixin.py:188} INFO - Fetched 18 players for Houston Rockets.
+[2025-06-15T19:51:01.678+0000] {logging_mixin.py:188} INFO - Fetching roster for Indiana Pacers (IND)...
+[2025-06-15T19:51:05.672+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/teams.py:21 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:51:09.388+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:51:13.010+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:51:16.512+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:51:19.887+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:51:19.904+0000] {logging_mixin.py:188} INFO - Fetched 18 players for Indiana Pacers.
+[2025-06-15T19:51:21.908+0000] {logging_mixin.py:188} INFO - Fetching roster for Los Angeles Clippers (LAC)...
+[2025-06-15T19:51:25.652+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/teams.py:21 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:51:29.228+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:51:32.922+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:51:36.339+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:51:40.094+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:51:43.705+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:51:43.733+0000] {logging_mixin.py:188} INFO - Fetched 18 players for Los Angeles Clippers.
+[2025-06-15T19:51:45.825+0000] {logging_mixin.py:188} INFO - Fetching roster for Los Angeles Lakers (LAL)...
+[2025-06-15T19:51:49.442+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/teams.py:21 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:51:53.285+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:51:57.193+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:52:00.706+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:52:04.159+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:52:04.175+0000] {logging_mixin.py:188} INFO - Fetched 17 players for Los Angeles Lakers.
+[2025-06-15T19:52:06.179+0000] {logging_mixin.py:188} INFO - Fetching roster for Memphis Grizzlies (MEM)...
+[2025-06-15T19:52:09.704+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/teams.py:21 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:52:13.355+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:52:16.819+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:52:20.183+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:52:23.731+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:52:27.101+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:52:30.591+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:52:30.607+0000] {logging_mixin.py:188} INFO - Fetched 18 players for Memphis Grizzlies.
+[2025-06-15T19:52:32.610+0000] {logging_mixin.py:188} INFO - Fetching roster for Miami Heat (MIA)...
+[2025-06-15T19:52:36.536+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/teams.py:21 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:52:40.216+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:52:43.802+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:52:47.254+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:52:50.600+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-15T19:52:53.715+0000] {local_task_job_runner.py:124} ERROR - Received SIGTERM. Terminating subprocesses
+[2025-06-15T19:52:53.816+0000] {process_utils.py:132} INFO - Sending 15 to group 525. PIDs of all processes in the group: [525]
+[2025-06-15T19:52:53.820+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 525
+[2025-06-15T19:52:53.824+0000] {taskinstance.py:2611} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-06-15T19:52:53.829+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-06-15T19:52:53.891+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/etl_pipeline.py", line 241, in fetch_and_load_roster_to_stage
+    roster = get_roster(team_code, '2025')
+  File "/opt/airflow/plugins/nba_lib/teams.py", line 26, in get_roster
+    df['PLAYER'] = df['PLAYER'].apply(
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/core/series.py", line 4757, in apply
+    return SeriesApply(
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/core/apply.py", line 1209, in apply
+    return self.apply_standard()
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/core/apply.py", line 1289, in apply_standard
+    mapped = obj._map_values(
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/core/base.py", line 921, in _map_values
+    return algorithms.map_array(arr, mapper, na_action=na_action, convert=convert)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/core/algorithms.py", line 1814, in map_array
+    return lib.map_infer(values, mapper, convert=convert)
+  File "lib.pyx", line 2926, in pandas._libs.lib.map_infer
+  File "/opt/airflow/plugins/nba_lib/teams.py", line 27, in <lambda>
+    lambda name: remove_accents(name, team, season_end_year))
+  File "/opt/airflow/plugins/nba_lib/utils.py", line 116, in remove_accents
+    soup = BeautifulSoup(r.content, 'html.parser')
+  File "/home/airflow/.local/lib/python3.9/site-packages/bs4/__init__.py", line 335, in __init__
+    self._feed()
+  File "/home/airflow/.local/lib/python3.9/site-packages/bs4/__init__.py", line 478, in _feed
+    self.builder.feed(self.markup)
+  File "/home/airflow/.local/lib/python3.9/site-packages/bs4/builder/_htmlparser.py", line 380, in feed
+    parser.feed(markup)
+  File "/usr/local/lib/python3.9/html/parser.py", line 110, in feed
+    self.goahead(0)
+  File "/usr/local/lib/python3.9/html/parser.py", line 170, in goahead
+    k = self.parse_starttag(i)
+  File "/usr/local/lib/python3.9/html/parser.py", line 344, in parse_starttag
+    self.handle_starttag(tag, attrs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/bs4/builder/_htmlparser.py", line 137, in handle_starttag
+    tag = self.soup.handle_starttag(
+  File "/home/airflow/.local/lib/python3.9/site-packages/bs4/__init__.py", line 749, in handle_starttag
+    tag = self.element_classes.get(Tag, Tag)(
+  File "/home/airflow/.local/lib/python3.9/site-packages/bs4/element.py", line 1277, in __init__
+    self.setup(parent, previous)
+  File "/home/airflow/.local/lib/python3.9/site-packages/bs4/element.py", line 175, in setup
+    self.parent = parent
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 2613, in signal_handler
+    raise AirflowTaskTerminated("Task received SIGTERM signal")
+airflow.exceptions.AirflowTaskTerminated: Task received SIGTERM signal
+[2025-06-15T19:52:54.001+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=nba_etl_to_postgres, task_id=fetch_roster_and_load_to_postgres, run_id=manual__2025-06-15T19:46:39.187735+00:00, execution_date=20250615T194639, start_date=20250615T194642, end_date=20250615T195254
+[2025-06-15T19:52:54.127+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=525, status='terminated', exitcode=2, started='19:46:41') (525) terminated with exit code 2
+[2025-06-15T19:52:54.128+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 143
+[2025-06-15T19:52:54.149+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-06-15T19:52:55.377+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

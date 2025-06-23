@@ -1,0 +1,25 @@
+[2025-06-20T11:21:34.338+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-06-20T11:21:34.509+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: nba_staging_to_transform.transform_shot_chart manual__2025-06-20T11:21:26.788469+00:00 [queued]>
+[2025-06-20T11:21:35.008+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: nba_staging_to_transform.transform_shot_chart manual__2025-06-20T11:21:26.788469+00:00 [queued]>
+[2025-06-20T11:21:35.011+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-06-20T11:21:35.074+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): transform_shot_chart> on 2025-06-20 11:21:26.788469+00:00
+[2025-06-20T11:21:35.084+0000] {standard_task_runner.py:63} INFO - Started process 1208 to run task
+[2025-06-20T11:21:35.091+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'nba_staging_to_transform', 'transform_shot_chart', 'manual__2025-06-20T11:21:26.788469+00:00', '--job-id', '144', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/tmp/tmpldozjkk3']
+[2025-06-20T11:21:35.093+0000] {standard_task_runner.py:91} INFO - Job 144: Subtask transform_shot_chart
+[2025-06-20T11:21:35.321+0000] {task_command.py:426} INFO - Running <TaskInstance: nba_staging_to_transform.transform_shot_chart manual__2025-06-20T11:21:26.788469+00:00 [running]> on host 11d91b3c2b82
+[2025-06-20T11:21:35.602+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='nba_staging_to_transform' AIRFLOW_CTX_TASK_ID='transform_shot_chart' AIRFLOW_CTX_EXECUTION_DATE='2025-06-20T11:21:26.788469+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-20T11:21:26.788469+00:00'
+[2025-06-20T11:21:35.603+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-06-20T11:21:35.663+0000] {etl_pipeline.py:288} INFO - Fetching data for transformation: transformshotchart
+[2025-06-20T11:21:35.718+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/etl_pipeline.py:289 UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+[2025-06-20T11:21:35.759+0000] {etl_pipeline.py:290} INFO - Successfully fetched and transformed 524 rows.
+[2025-06-20T11:21:35.785+0000] {etl_pipeline.py:98} INFO - Ensuring table 'transformshotchart' exists...
+[2025-06-20T11:21:35.791+0000] {etl_pipeline.py:100} INFO - Table 'transformshotchart' is ready.
+[2025-06-20T11:21:35.794+0000] {etl_pipeline.py:110} INFO - Truncating table transformshotchart and restarting identity columns...
+[2025-06-20T11:21:36.107+0000] {etl_pipeline.py:115} INFO - Loading 524 rows into transformshotchart...
+[2025-06-20T11:21:36.179+0000] {etl_pipeline.py:118} INFO - 524 rows loaded successfully to transformshotchart.
+[2025-06-20T11:21:36.269+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-06-20T11:21:36.275+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-06-20T11:21:36.307+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=nba_staging_to_transform, task_id=transform_shot_chart, run_id=manual__2025-06-20T11:21:26.788469+00:00, execution_date=20250620T112126, start_date=20250620T112134, end_date=20250620T112136
+[2025-06-20T11:21:36.441+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-06-20T11:21:36.528+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-06-20T11:21:36.598+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

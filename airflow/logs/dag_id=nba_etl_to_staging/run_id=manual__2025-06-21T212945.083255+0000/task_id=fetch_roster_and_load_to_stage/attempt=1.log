@@ -1,0 +1,26 @@
+[2025-06-21T21:29:47.736+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-06-21T21:29:47.876+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: nba_etl_to_staging.fetch_roster_and_load_to_stage manual__2025-06-21T21:29:45.083255+00:00 [queued]>
+[2025-06-21T21:29:48.289+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: nba_etl_to_staging.fetch_roster_and_load_to_stage manual__2025-06-21T21:29:45.083255+00:00 [queued]>
+[2025-06-21T21:29:48.290+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-06-21T21:29:48.416+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): fetch_roster_and_load_to_stage> on 2025-06-21 21:29:45.083255+00:00
+[2025-06-21T21:29:48.447+0000] {standard_task_runner.py:63} INFO - Started process 797 to run task
+[2025-06-21T21:29:48.460+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'nba_etl_to_staging', 'fetch_roster_and_load_to_stage', 'manual__2025-06-21T21:29:45.083255+00:00', '--job-id', '484', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/tmp/tmpf6kmg785']
+[2025-06-21T21:29:48.471+0000] {standard_task_runner.py:91} INFO - Job 484: Subtask fetch_roster_and_load_to_stage
+[2025-06-21T21:29:49.402+0000] {task_command.py:426} INFO - Running <TaskInstance: nba_etl_to_staging.fetch_roster_and_load_to_stage manual__2025-06-21T21:29:45.083255+00:00 [running]> on host 5ea278fdf3a6
+[2025-06-21T21:29:49.689+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='nba_etl_to_staging' AIRFLOW_CTX_TASK_ID='fetch_roster_and_load_to_stage' AIRFLOW_CTX_EXECUTION_DATE='2025-06-21T21:29:45.083255+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-21T21:29:45.083255+00:00'
+[2025-06-21T21:29:49.691+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-06-21T21:29:49.705+0000] {etl_pipeline.py:243} INFO - Fetching roster for Atlanta Hawks (ATL)...
+[2025-06-21T21:29:50.744+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/teams.py:21 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-21T21:29:58.656+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-21T21:29:59.766+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-21T21:30:03.256+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-21T21:30:06.667+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-21T21:30:06.701+0000] {etl_pipeline.py:248} INFO - Successfully fetched roster for Atlanta Hawks.
+[2025-06-21T21:30:07.704+0000] {etl_pipeline.py:243} INFO - Fetching roster for Boston Celtics (BOS)...
+[2025-06-21T21:30:09.565+0000] {local_task_job_runner.py:310} WARNING - State of this instance has been externally set to success. Terminating instance.
+[2025-06-21T21:30:09.566+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2025-06-21T21:30:09.575+0000] {process_utils.py:132} INFO - Sending 15 to group 797. PIDs of all processes in the group: [797]
+[2025-06-21T21:30:09.577+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 797
+[2025-06-21T21:30:09.579+0000] {taskinstance.py:2611} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-06-21T21:30:09.580+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-06-21T21:30:09.713+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=797, status='terminated', exitcode=0, started='21:29:47') (797) terminated with exit code 0

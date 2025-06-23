@@ -1,0 +1,43 @@
+[2025-06-15T13:33:11.226+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-06-15T13:33:11.259+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: nba_etl_to_postgres.fetch_shot_chart_and_load_to_postgres manual__2025-06-15T09:29:10.226536+00:00 [queued]>
+[2025-06-15T13:33:11.278+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: nba_etl_to_postgres.fetch_shot_chart_and_load_to_postgres manual__2025-06-15T09:29:10.226536+00:00 [queued]>
+[2025-06-15T13:33:11.283+0000] {taskinstance.py:2306} INFO - Starting attempt 2 of 2
+[2025-06-15T13:33:11.531+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): fetch_shot_chart_and_load_to_postgres> on 2025-06-15 09:29:10.226536+00:00
+[2025-06-15T13:33:11.542+0000] {standard_task_runner.py:63} INFO - Started process 494 to run task
+[2025-06-15T13:33:11.549+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'nba_etl_to_postgres', 'fetch_shot_chart_and_load_to_postgres', 'manual__2025-06-15T09:29:10.226536+00:00', '--job-id', '18', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/tmp/tmpdmo8z5xl']
+[2025-06-15T13:33:11.551+0000] {standard_task_runner.py:91} INFO - Job 18: Subtask fetch_shot_chart_and_load_to_postgres
+[2025-06-15T13:33:11.866+0000] {task_command.py:426} INFO - Running <TaskInstance: nba_etl_to_postgres.fetch_shot_chart_and_load_to_postgres manual__2025-06-15T09:29:10.226536+00:00 [running]> on host e9ac9ffe8f89
+[2025-06-15T13:33:12.291+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='nba_etl_to_postgres' AIRFLOW_CTX_TASK_ID='fetch_shot_chart_and_load_to_postgres' AIRFLOW_CTX_EXECUTION_DATE='2025-06-15T09:29:10.226536+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-15T09:29:10.226536+00:00'
+[2025-06-15T13:33:12.294+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-06-15T13:33:12.025+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/etl_pipeline.py:193 UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+[2025-06-15T13:33:12.945+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-22 between 2024-10-22 and NYK: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:33:16.706+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-22 between 2024-10-22 and MIN: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:33:21.724+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-23 between 2024-10-23 and IND: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:33:27.409+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-23 between 2024-10-23 and BRK: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:33:30.768+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-23 between 2024-10-23 and ORL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:33:34.088+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-23 between 2024-10-23 and MIL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:33:37.545+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-23 between 2024-10-23 and CLE: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:33:40.827+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-23 between 2024-10-23 and CHO: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:33:43.509+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-23 between 2024-10-23 and CHI: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:33:46.836+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-23 between 2024-10-23 and MEM: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:33:50.129+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-23 between 2024-10-23 and PHO: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:33:53.439+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-23 between 2024-10-23 and GSW: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:33:56.940+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-24 between 2024-10-24 and BOS: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:34:00.466+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-24 between 2024-10-24 and SAS: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:34:03.770+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-24 between 2024-10-24 and OKC: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:34:07.203+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-24 between 2024-10-24 and MIN: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:34:10.964+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-25 between 2024-10-25 and BRK: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:34:14.403+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-25 between 2024-10-25 and PHI: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:34:17.725+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-25 between 2024-10-25 and CHO: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:34:21.013+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-25 between 2024-10-25 and DET: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:34:24.399+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-25 between 2024-10-25 and IND: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:34:27.049+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-25 between 2024-10-25 and MEM: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:34:30.355+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-25 between 2024-10-25 and CHI: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:34:33.732+0000] {logging_mixin.py:188} INFO - Retrying after 3600 sec...
+[2025-06-15T13:35:13.599+0000] {local_task_job_runner.py:310} WARNING - State of this instance has been externally set to skipped. Terminating instance.
+[2025-06-15T13:35:13.600+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2025-06-15T13:35:13.602+0000] {process_utils.py:132} INFO - Sending 15 to group 494. PIDs of all processes in the group: [494]
+[2025-06-15T13:35:13.603+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 494
+[2025-06-15T13:35:13.604+0000] {taskinstance.py:2611} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-06-15T13:35:13.604+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-06-15T13:35:13.697+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=494, status='terminated', exitcode=0, started='13:33:10') (494) terminated with exit code 0

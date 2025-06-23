@@ -1,0 +1,49 @@
+[2025-06-20T18:41:36.455+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-06-20T18:41:36.489+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: nba_etl_to_staging.fetch_shot_chart_and_load_to_stage manual__2025-06-20T18:41:11.746448+00:00 [queued]>
+[2025-06-20T18:41:36.499+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: nba_etl_to_staging.fetch_shot_chart_and_load_to_stage manual__2025-06-20T18:41:11.746448+00:00 [queued]>
+[2025-06-20T18:41:36.500+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-06-20T18:41:36.555+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): fetch_shot_chart_and_load_to_stage> on 2025-06-20 18:41:11.746448+00:00
+[2025-06-20T18:41:36.568+0000] {standard_task_runner.py:63} INFO - Started process 4365 to run task
+[2025-06-20T18:41:36.573+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'nba_etl_to_staging', 'fetch_shot_chart_and_load_to_stage', 'manual__2025-06-20T18:41:11.746448+00:00', '--job-id', '301', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/tmp/tmp1cqc6iai']
+[2025-06-20T18:41:36.575+0000] {standard_task_runner.py:91} INFO - Job 301: Subtask fetch_shot_chart_and_load_to_stage
+[2025-06-20T18:41:36.675+0000] {task_command.py:426} INFO - Running <TaskInstance: nba_etl_to_staging.fetch_shot_chart_and_load_to_stage manual__2025-06-20T18:41:11.746448+00:00 [running]> on host 5ea278fdf3a6
+[2025-06-20T18:41:36.841+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='nba_etl_to_staging' AIRFLOW_CTX_TASK_ID='fetch_shot_chart_and_load_to_stage' AIRFLOW_CTX_EXECUTION_DATE='2025-06-20T18:41:11.746448+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-20T18:41:11.746448+00:00'
+[2025-06-20T18:41:36.842+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-06-20T18:41:36.871+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/etl_pipeline.py:174 UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+[2025-06-20T18:41:41.103+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-22 between BOS and NYK.
+[2025-06-20T18:41:49.241+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-22 between LAL and MIN.
+[2025-06-20T18:41:56.461+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-23 between DET and IND.
+[2025-06-20T18:41:56.467+0000] {etl_pipeline.py:98} INFO - Ensuring table 'stgshotchart' exists...
+[2025-06-20T18:41:56.469+0000] {etl_pipeline.py:120} ERROR - Database execution error: syntax error at or near "date"
+LINE 4: ...10), away_team VARCHAR(10), playerteam VARCHAR(10) date DATE
+                                                              ^
+
+[2025-06-20T18:41:56.469+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-06-20T18:41:56.470+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/etl_pipeline.py", line 197, in fetch_and_load_shot_chart_to_stage
+    load_df_to_postgres(df=final_df, table_name=table_name, conn_string=conn_string, create_table_query=create_table_query)
+  File "/opt/airflow/dags/etl_pipeline.py", line 99, in load_df_to_postgres
+    cursor.execute(create_table_query)
+psycopg2.errors.SyntaxError: syntax error at or near "date"
+LINE 4: ...10), away_team VARCHAR(10), playerteam VARCHAR(10) date DATE
+                                                              ^
+
+[2025-06-20T18:41:56.485+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=nba_etl_to_staging, task_id=fetch_shot_chart_and_load_to_stage, run_id=manual__2025-06-20T18:41:11.746448+00:00, execution_date=20250620T184111, start_date=20250620T184136, end_date=20250620T184156
+[2025-06-20T18:41:56.554+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 301 for task fetch_shot_chart_and_load_to_stage (syntax error at or near "date"
+LINE 4: ...10), away_team VARCHAR(10), playerteam VARCHAR(10) date DATE
+                                                              ^
+; 4365)
+[2025-06-20T18:41:56.571+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2025-06-20T18:41:56.587+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-06-20T18:41:56.620+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

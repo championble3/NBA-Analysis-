@@ -1,0 +1,145 @@
+[2025-06-21T21:41:15.841+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-06-21T21:41:15.891+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: nba_etl_to_staging.fetch_shot_chart_and_load_to_stage manual__2025-06-21T21:40:55.752118+00:00 [queued]>
+[2025-06-21T21:41:16.161+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: nba_etl_to_staging.fetch_shot_chart_and_load_to_stage manual__2025-06-21T21:40:55.752118+00:00 [queued]>
+[2025-06-21T21:41:16.163+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-06-21T21:41:16.221+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): fetch_shot_chart_and_load_to_stage> on 2025-06-21 21:40:55.752118+00:00
+[2025-06-21T21:41:16.236+0000] {standard_task_runner.py:63} INFO - Started process 997 to run task
+[2025-06-21T21:41:16.245+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'nba_etl_to_staging', 'fetch_shot_chart_and_load_to_stage', 'manual__2025-06-21T21:40:55.752118+00:00', '--job-id', '491', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/tmp/tmpwhljzfru']
+[2025-06-21T21:41:16.247+0000] {standard_task_runner.py:91} INFO - Job 491: Subtask fetch_shot_chart_and_load_to_stage
+[2025-06-21T21:41:16.461+0000] {task_command.py:426} INFO - Running <TaskInstance: nba_etl_to_staging.fetch_shot_chart_and_load_to_stage manual__2025-06-21T21:40:55.752118+00:00 [running]> on host 5ea278fdf3a6
+[2025-06-21T21:41:16.687+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='nba_etl_to_staging' AIRFLOW_CTX_TASK_ID='fetch_shot_chart_and_load_to_stage' AIRFLOW_CTX_EXECUTION_DATE='2025-06-21T21:40:55.752118+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-21T21:40:55.752118+00:00'
+[2025-06-21T21:41:16.689+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-06-21T21:41:16.725+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/etl_pipeline.py:174 UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+[2025-06-21T21:41:20.335+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-22 between BOS and NYK.
+[2025-06-21T21:41:26.962+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-22 between LAL and MIN.
+[2025-06-21T21:41:33.607+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-23 between DET and IND.
+[2025-06-21T21:41:41.779+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-23 between ATL and BRK.
+[2025-06-21T21:41:48.250+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-23 between MIA and ORL.
+[2025-06-21T21:41:54.672+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-23 between PHI and MIL.
+[2025-06-21T21:42:01.107+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-23 between TOR and CLE.
+[2025-06-21T21:42:07.683+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-23 between HOU and CHO.
+[2025-06-21T21:42:15.104+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-23 between NOP and CHI.
+[2025-06-21T21:42:21.547+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-23 between UTA and MEM.
+[2025-06-21T21:42:27.974+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-23 between LAC and PHO.
+[2025-06-21T21:42:34.525+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-23 between POR and GSW.
+[2025-06-21T21:42:42.055+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-24 between WAS and BOS.
+[2025-06-21T21:42:48.519+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-24 between DAL and SAS.
+[2025-06-21T21:42:54.950+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-24 between DEN and OKC.
+[2025-06-21T21:43:01.601+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-24 between SAC and MIN.
+[2025-06-21T21:43:08.145+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-25 between ORL and BRK.
+[2025-06-21T21:43:15.661+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-25 between TOR and PHI.
+[2025-06-21T21:43:22.169+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-25 between ATL and CHO.
+[2025-06-21T21:43:29.121+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-25 between CLE and DET.
+[2025-06-21T21:43:35.761+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-25 between NYK and IND.
+[2025-06-21T21:43:43.599+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-25 between HOU and MEM.
+[2025-06-21T21:43:50.458+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-25 between MIL and CHI.
+[2025-06-21T21:43:57.811+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-25 between UTA and GSW.
+[2025-06-21T21:44:04.562+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-25 between LAL and PHO.
+[2025-06-21T21:44:11.455+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-25 between POR and NOP.
+[2025-06-21T21:44:19.735+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-26 between DEN and LAC.
+[2025-06-21T21:44:27.746+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-26 between CHO and MIA.
+[2025-06-21T21:44:34.526+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-26 between DET and BOS.
+[2025-06-21T21:44:42.219+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-26 between WAS and CLE.
+[2025-06-21T21:44:50.044+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-26 between CHI and OKC.
+[2025-06-21T21:44:57.398+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-26 between MEM and ORL.
+[2025-06-21T21:45:04.158+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-26 between MIN and TOR.
+[2025-06-21T21:45:10.915+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-26 between SAS and HOU.
+[2025-06-21T21:45:18.612+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-26 between PHO and DAL.
+[2025-06-21T21:45:26.114+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-26 between LAL and SAC.
+[2025-06-21T21:45:32.917+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-27 between IND and PHI.
+[2025-06-21T21:45:39.525+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-27 between BRK and MIL.
+[2025-06-21T21:45:47.221+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-27 between POR and NOP.
+[2025-06-21T21:45:53.886+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-27 between OKC and ATL.
+[2025-06-21T21:46:01.639+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-27 between GSW and LAC.
+[2025-06-21T21:46:08.283+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-28 between ORL and IND.
+[2025-06-21T21:46:15.051+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-28 between ATL and WAS.
+[2025-06-21T21:46:22.859+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-28 between BOS and MIL.
+[2025-06-21T21:46:30.140+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-28 between MIA and DET.
+[2025-06-21T21:46:37.869+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-28 between NYK and CLE.
+[2025-06-21T21:46:45.100+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-28 between TOR and DEN.
+[2025-06-21T21:46:53.382+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-28 between MEM and CHI.
+[2025-06-21T21:47:00.498+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-28 between SAS and HOU.
+[2025-06-21T21:47:07.765+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-28 between DAL and UTA.
+[2025-06-21T21:47:14.503+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-28 between PHO and LAL.
+[2025-06-21T21:47:22.695+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-28 between SAC and POR.
+[2025-06-21T21:47:30.007+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-29 between BRK and DEN.
+[2025-06-21T21:47:37.309+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-29 between MIN and DAL.
+[2025-06-21T21:47:44.922+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-29 between UTA and SAC.
+[2025-06-21T21:47:52.849+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-29 between GSW and NOP.
+[2025-06-21T21:48:00.743+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-30 between CHO and TOR.
+[2025-06-21T21:48:08.009+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-30 between CLE and LAL.
+[2025-06-21T21:48:14.799+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-30 between IND and BOS.
+[2025-06-21T21:48:22.486+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-30 between PHI and DET.
+[2025-06-21T21:48:29.170+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-30 between WAS and ATL.
+[2025-06-21T21:48:35.763+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-30 between MIA and NYK.
+[2025-06-21T21:48:42.332+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-30 between CHI and ORL.
+[2025-06-21T21:48:49.963+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-30 between MEM and BRK.
+[2025-06-21T21:48:57.542+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-30 between OKC and SAS.
+[2025-06-21T21:49:03.994+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-30 between GSW and NOP.
+[2025-06-21T21:49:10.451+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-30 between LAC and POR.
+[2025-06-21T21:49:17.046+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-31 between MEM and MIL.
+[2025-06-21T21:49:24.663+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-31 between DAL and HOU.
+[2025-06-21T21:49:31.079+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-31 between UTA and SAS.
+[2025-06-21T21:49:37.527+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-31 between LAC and PHO.
+[2025-06-21T21:49:44.665+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-11-01 between CHO and BOS.
+[2025-06-21T21:49:51.529+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-11-01 between CLE and ORL.
+[2025-06-21T21:49:59.314+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-11-01 between DET and NYK.
+[2025-06-21T21:50:05.862+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-11-01 between ATL and SAC.
+[2025-06-21T21:50:13.037+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-11-01 between BRK and CHI.
+[2025-06-21T21:50:19.946+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-11-01 between TOR and LAL.
+[2025-06-21T21:50:28.024+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-11-01 between NOP and IND.
+[2025-06-21T21:50:35.187+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-11-01 between MIN and DEN.
+[2025-06-21T21:50:42.141+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-11-01 between POR and OKC.
+[2025-06-21T21:50:49.469+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-11-02 between CHO and BOS.
+[2025-06-21T21:50:57.467+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-11-02 between PHI and MEM.
+[2025-06-21T21:51:04.598+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-11-02 between TOR and SAC.
+[2025-06-21T21:51:12.005+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-11-02 between HOU and GSW.
+[2025-06-21T21:51:19.283+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-11-02 between MIL and CLE.
+[2025-06-21T21:51:28.670+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-11-02 between SAS and MIN.
+[2025-06-21T21:51:35.753+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-11-02 between WAS and MIA.
+[2025-06-21T21:51:43.858+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-11-02 between DEN and UTA.
+[2025-06-21T21:51:51.826+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-11-02 between PHO and POR.
+[2025-06-21T21:51:59.904+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-11-02 between LAC and OKC.
+[2025-06-21T21:52:06.885+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-11-03 between BRK and DET.
+[2025-06-21T21:52:14.138+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-11-03 between NOP and ATL.
+[2025-06-21T21:52:22.646+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-11-03 between DAL and ORL.
+[2025-06-21T21:52:31.151+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-11-04 between CLE and MIL.
+[2025-06-21T21:52:38.287+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-11-04 between WAS and GSW.
+[2025-06-21T21:52:44.986+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-11-04 between DET and LAL.
+[2025-06-21T21:52:51.973+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-11-04 between ATL and BOS.
+[2025-06-21T21:52:59.419+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-11-04 between BRK and MEM.
+[2025-06-21T21:53:07.183+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-11-04 between MIA and SAC.
+[2025-06-21T21:53:14.386+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-11-04 between CHI and UTA.
+[2025-06-21T21:53:14.428+0000] {etl_pipeline.py:98} INFO - Ensuring table 'stgshotchart' exists...
+[2025-06-21T21:53:15.220+0000] {etl_pipeline.py:100} INFO - Table 'stgshotchart' is ready.
+[2025-06-21T21:53:15.221+0000] {etl_pipeline.py:110} INFO - Truncating table stgshotchart and restarting identity columns...
+[2025-06-21T21:53:15.303+0000] {etl_pipeline.py:115} INFO - Loading 17751 rows into stgshotchart...
+[2025-06-21T21:53:15.621+0000] {etl_pipeline.py:120} ERROR - Database execution error: integer out of range
+
+[2025-06-21T21:53:15.622+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-06-21T21:53:15.623+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/etl_pipeline.py", line 197, in fetch_and_load_shot_chart_to_stage
+    load_df_to_postgres(df=final_df, table_name=table_name, conn_string=conn_string, create_table_query=create_table_query)
+  File "/opt/airflow/dags/etl_pipeline.py", line 116, in load_df_to_postgres
+    execute_values(cursor, sql_query, data_tuples)
+  File "/home/airflow/.local/lib/python3.9/site-packages/psycopg2/extras.py", line 1299, in execute_values
+    cur.execute(b''.join(parts))
+psycopg2.errors.NumericValueOutOfRange: integer out of range
+
+[2025-06-21T21:53:15.670+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=nba_etl_to_staging, task_id=fetch_shot_chart_and_load_to_stage, run_id=manual__2025-06-21T21:40:55.752118+00:00, execution_date=20250621T214055, start_date=20250621T214115, end_date=20250621T215315
+[2025-06-21T21:53:15.812+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 491 for task fetch_shot_chart_and_load_to_stage (integer out of range
+; 997)
+[2025-06-21T21:53:15.870+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2025-06-21T21:53:15.891+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-06-21T21:53:15.923+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

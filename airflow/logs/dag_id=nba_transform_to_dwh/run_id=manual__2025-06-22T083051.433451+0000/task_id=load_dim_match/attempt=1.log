@@ -1,0 +1,20 @@
+[2025-06-22T08:30:53.135+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-06-22T08:30:53.268+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: nba_transform_to_dwh.load_dim_match manual__2025-06-22T08:30:51.433451+00:00 [queued]>
+[2025-06-22T08:30:53.789+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: nba_transform_to_dwh.load_dim_match manual__2025-06-22T08:30:51.433451+00:00 [queued]>
+[2025-06-22T08:30:53.790+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-06-22T08:30:53.883+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): load_dim_match> on 2025-06-22 08:30:51.433451+00:00
+[2025-06-22T08:30:53.894+0000] {standard_task_runner.py:63} INFO - Started process 893 to run task
+[2025-06-22T08:30:53.901+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'nba_transform_to_dwh', 'load_dim_match', 'manual__2025-06-22T08:30:51.433451+00:00', '--job-id', '524', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/tmp/tmp7rnvl81m']
+[2025-06-22T08:30:53.903+0000] {standard_task_runner.py:91} INFO - Job 524: Subtask load_dim_match
+[2025-06-22T08:30:54.061+0000] {task_command.py:426} INFO - Running <TaskInstance: nba_transform_to_dwh.load_dim_match manual__2025-06-22T08:30:51.433451+00:00 [running]> on host 5ea278fdf3a6
+[2025-06-22T08:30:54.326+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='nba_transform_to_dwh' AIRFLOW_CTX_TASK_ID='load_dim_match' AIRFLOW_CTX_EXECUTION_DATE='2025-06-22T08:30:51.433451+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-22T08:30:51.433451+00:00'
+[2025-06-22T08:30:54.328+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-06-22T08:30:54.347+0000] {etl_pipeline.py:503} INFO - Ensuring dimension table 'dimmatch' exists...
+[2025-06-22T08:30:54.349+0000] {etl_pipeline.py:505} INFO - Loading/updating data into 'dimmatch'...
+[2025-06-22T08:30:54.568+0000] {etl_pipeline.py:507} INFO - Operation complete. 1321 new rows inserted into dimmatch.
+[2025-06-22T08:30:54.660+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-06-22T08:30:54.663+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-06-22T08:30:54.673+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=nba_transform_to_dwh, task_id=load_dim_match, run_id=manual__2025-06-22T08:30:51.433451+00:00, execution_date=20250622T083051, start_date=20250622T083053, end_date=20250622T083054
+[2025-06-22T08:30:54.757+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-06-22T08:30:54.783+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-06-22T08:30:54.811+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

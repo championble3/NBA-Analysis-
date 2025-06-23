@@ -1,0 +1,23 @@
+[2025-06-15T21:03:11.366+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-06-15T21:03:11.464+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: nba_etl_to_postgres.fetch_schedule_and_load_to_postgres manual__2025-06-15T21:03:08.185863+00:00 [queued]>
+[2025-06-15T21:03:11.496+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: nba_etl_to_postgres.fetch_schedule_and_load_to_postgres manual__2025-06-15T21:03:08.185863+00:00 [queued]>
+[2025-06-15T21:03:11.498+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-06-15T21:03:11.560+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): fetch_schedule_and_load_to_postgres> on 2025-06-15 21:03:08.185863+00:00
+[2025-06-15T21:03:11.568+0000] {standard_task_runner.py:63} INFO - Started process 736 to run task
+[2025-06-15T21:03:11.574+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'nba_etl_to_postgres', 'fetch_schedule_and_load_to_postgres', 'manual__2025-06-15T21:03:08.185863+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/tmp/tmpilarthr4']
+[2025-06-15T21:03:11.576+0000] {standard_task_runner.py:91} INFO - Job 3: Subtask fetch_schedule_and_load_to_postgres
+[2025-06-15T21:03:11.786+0000] {task_command.py:426} INFO - Running <TaskInstance: nba_etl_to_postgres.fetch_schedule_and_load_to_postgres manual__2025-06-15T21:03:08.185863+00:00 [running]> on host 10d298296c8f
+[2025-06-15T21:03:12.010+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='nba_etl_to_postgres' AIRFLOW_CTX_TASK_ID='fetch_schedule_and_load_to_postgres' AIRFLOW_CTX_EXECUTION_DATE='2025-06-15T21:03:08.185863+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-15T21:03:08.185863+00:00'
+[2025-06-15T21:03:12.017+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-06-15T21:03:12.041+0000] {logging_mixin.py:188} INFO - Fetching schedule from NBA API...
+[2025-06-15T21:03:13.736+0000] {logging_mixin.py:188} INFO - Successfully fetched and transformed 1321 games.
+[2025-06-15T21:03:13.737+0000] {logging_mixin.py:188} INFO - Preparing to load data into staging table: stgschedule
+[2025-06-15T21:03:13.745+0000] {logging_mixin.py:188} INFO - Ensuring table 'stgschedule' exists...
+[2025-06-15T21:03:13.874+0000] {logging_mixin.py:188} INFO - Table 'stgschedule' is ready.
+[2025-06-15T21:03:13.879+0000] {logging_mixin.py:188} INFO - Loading 1321 rows into stgschedule...
+[2025-06-15T21:03:13.911+0000] {logging_mixin.py:188} INFO - 1321 rows loaded successfully to stgschedule.
+[2025-06-15T21:03:13.960+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-06-15T21:03:13.962+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-06-15T21:03:13.980+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=nba_etl_to_postgres, task_id=fetch_schedule_and_load_to_postgres, run_id=manual__2025-06-15T21:03:08.185863+00:00, execution_date=20250615T210308, start_date=20250615T210311, end_date=20250615T210313
+[2025-06-15T21:03:14.281+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-06-15T21:03:14.376+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

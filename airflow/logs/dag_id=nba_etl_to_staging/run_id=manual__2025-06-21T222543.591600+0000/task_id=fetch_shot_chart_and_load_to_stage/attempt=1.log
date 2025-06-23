@@ -1,0 +1,51 @@
+[2025-06-21T22:25:58.744+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-06-21T22:25:58.833+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: nba_etl_to_staging.fetch_shot_chart_and_load_to_stage manual__2025-06-21T22:25:43.591600+00:00 [queued]>
+[2025-06-21T22:25:59.179+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: nba_etl_to_staging.fetch_shot_chart_and_load_to_stage manual__2025-06-21T22:25:43.591600+00:00 [queued]>
+[2025-06-21T22:25:59.180+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-06-21T22:25:59.228+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): fetch_shot_chart_and_load_to_stage> on 2025-06-21 22:25:43.591600+00:00
+[2025-06-21T22:25:59.238+0000] {standard_task_runner.py:63} INFO - Started process 1513 to run task
+[2025-06-21T22:25:59.243+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'nba_etl_to_staging', 'fetch_shot_chart_and_load_to_stage', 'manual__2025-06-21T22:25:43.591600+00:00', '--job-id', '509', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/tmp/tmp9cfod05b']
+[2025-06-21T22:25:59.246+0000] {standard_task_runner.py:91} INFO - Job 509: Subtask fetch_shot_chart_and_load_to_stage
+[2025-06-21T22:25:59.377+0000] {task_command.py:426} INFO - Running <TaskInstance: nba_etl_to_staging.fetch_shot_chart_and_load_to_stage manual__2025-06-21T22:25:43.591600+00:00 [running]> on host 5ea278fdf3a6
+[2025-06-21T22:25:59.582+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='nba_etl_to_staging' AIRFLOW_CTX_TASK_ID='fetch_shot_chart_and_load_to_stage' AIRFLOW_CTX_EXECUTION_DATE='2025-06-21T22:25:43.591600+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-21T22:25:43.591600+00:00'
+[2025-06-21T22:25:59.583+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-06-21T22:25:59.618+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/etl_pipeline.py:184 UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+[2025-06-21T22:26:03.120+0000] {etl_pipeline.py:201} INFO - Processed game on 2024-10-22 between BOS and NYK.
+[2025-06-21T22:26:10.944+0000] {etl_pipeline.py:201} INFO - Processed game on 2024-10-22 between LAL and MIN.
+[2025-06-21T22:26:17.397+0000] {etl_pipeline.py:201} INFO - Processed game on 2024-10-23 between DET and IND.
+[2025-06-21T22:26:24.054+0000] {etl_pipeline.py:201} INFO - Processed game on 2024-10-23 between ATL and BRK.
+[2025-06-21T22:26:30.535+0000] {etl_pipeline.py:201} INFO - Processed game on 2024-10-23 between MIA and ORL.
+[2025-06-21T22:26:37.011+0000] {etl_pipeline.py:201} INFO - Processed game on 2024-10-23 between PHI and MIL.
+[2025-06-21T22:26:44.592+0000] {etl_pipeline.py:201} INFO - Processed game on 2024-10-23 between TOR and CLE.
+[2025-06-21T22:26:51.480+0000] {etl_pipeline.py:201} INFO - Processed game on 2024-10-23 between HOU and CHO.
+[2025-06-21T22:26:57.933+0000] {etl_pipeline.py:201} INFO - Processed game on 2024-10-23 between NOP and CHI.
+[2025-06-21T22:27:04.390+0000] {etl_pipeline.py:201} INFO - Processed game on 2024-10-23 between UTA and MEM.
+[2025-06-21T22:27:10.898+0000] {etl_pipeline.py:201} INFO - Processed game on 2024-10-23 between LAC and PHO.
+[2025-06-21T22:27:18.758+0000] {etl_pipeline.py:201} INFO - Processed game on 2024-10-23 between POR and GSW.
+[2025-06-21T22:27:25.192+0000] {etl_pipeline.py:201} INFO - Processed game on 2024-10-24 between WAS and BOS.
+[2025-06-21T22:27:31.685+0000] {etl_pipeline.py:201} INFO - Processed game on 2024-10-24 between DAL and SAS.
+[2025-06-21T22:27:38.212+0000] {etl_pipeline.py:201} INFO - Processed game on 2024-10-24 between DEN and OKC.
+[2025-06-21T22:27:38.216+0000] {etl_pipeline.py:212} INFO - DataFrame created with 2692 rows before cleaning.
+[2025-06-21T22:27:38.217+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-06-21T22:27:38.217+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/etl_pipeline.py", line 216, in fetch_and_load_shot_chart_to_stage
+    final_df.dropna(subset=required_columns, inplace=True)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/core/frame.py", line 6418, in dropna
+    raise KeyError(np.array(subset)[check].tolist())
+KeyError: ['quarter', 'value', 'player', 'make_miss']
+[2025-06-21T22:27:38.273+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=nba_etl_to_staging, task_id=fetch_shot_chart_and_load_to_stage, run_id=manual__2025-06-21T22:25:43.591600+00:00, execution_date=20250621T222543, start_date=20250621T222558, end_date=20250621T222738
+[2025-06-21T22:27:38.321+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 509 for task fetch_shot_chart_and_load_to_stage (['quarter', 'value', 'player', 'make_miss']; 1513)
+[2025-06-21T22:27:38.374+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2025-06-21T22:27:38.391+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-06-21T22:27:38.421+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,25 @@
+[2025-06-22T08:29:00.139+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-06-22T08:29:00.178+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: nba_staging_to_transform.transform_roster manual__2025-06-22T08:28:54.324250+00:00 [queued]>
+[2025-06-22T08:29:00.419+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: nba_staging_to_transform.transform_roster manual__2025-06-22T08:28:54.324250+00:00 [queued]>
+[2025-06-22T08:29:00.420+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-06-22T08:29:00.484+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): transform_roster> on 2025-06-22 08:28:54.324250+00:00
+[2025-06-22T08:29:00.496+0000] {standard_task_runner.py:63} INFO - Started process 853 to run task
+[2025-06-22T08:29:00.502+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'nba_staging_to_transform', 'transform_roster', 'manual__2025-06-22T08:28:54.324250+00:00', '--job-id', '521', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/tmp/tmp4gtwo46q']
+[2025-06-22T08:29:00.504+0000] {standard_task_runner.py:91} INFO - Job 521: Subtask transform_roster
+[2025-06-22T08:29:00.592+0000] {task_command.py:426} INFO - Running <TaskInstance: nba_staging_to_transform.transform_roster manual__2025-06-22T08:28:54.324250+00:00 [running]> on host 5ea278fdf3a6
+[2025-06-22T08:29:00.758+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='nba_staging_to_transform' AIRFLOW_CTX_TASK_ID='transform_roster' AIRFLOW_CTX_EXECUTION_DATE='2025-06-22T08:28:54.324250+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-22T08:28:54.324250+00:00'
+[2025-06-22T08:29:00.761+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-06-22T08:29:00.780+0000] {etl_pipeline.py:342} INFO - Fetching data for transformation: transformroster
+[2025-06-22T08:29:00.790+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/etl_pipeline.py:343 UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+[2025-06-22T08:29:00.991+0000] {etl_pipeline.py:344} INFO - Successfully fetched and transformed 534 rows.
+[2025-06-22T08:29:00.997+0000] {etl_pipeline.py:98} INFO - Ensuring table 'transformroster' exists...
+[2025-06-22T08:29:00.998+0000] {etl_pipeline.py:100} INFO - Table 'transformroster' is ready.
+[2025-06-22T08:29:00.999+0000] {etl_pipeline.py:110} INFO - Truncating table transformroster and restarting identity columns...
+[2025-06-22T08:29:01.152+0000] {etl_pipeline.py:115} INFO - Loading 534 rows into transformroster...
+[2025-06-22T08:29:01.173+0000] {etl_pipeline.py:118} INFO - 534 rows loaded successfully to transformroster.
+[2025-06-22T08:29:01.206+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-06-22T08:29:01.208+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-06-22T08:29:01.220+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=nba_staging_to_transform, task_id=transform_roster, run_id=manual__2025-06-22T08:28:54.324250+00:00, execution_date=20250622T082854, start_date=20250622T082900, end_date=20250622T082901
+[2025-06-22T08:29:01.278+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-06-22T08:29:01.321+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-06-22T08:29:01.352+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

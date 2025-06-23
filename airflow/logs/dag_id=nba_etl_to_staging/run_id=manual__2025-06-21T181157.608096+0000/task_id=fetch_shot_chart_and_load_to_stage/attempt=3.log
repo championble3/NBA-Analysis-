@@ -1,0 +1,31 @@
+[2025-06-21T21:27:51.419+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-06-21T21:27:51.502+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: nba_etl_to_staging.fetch_shot_chart_and_load_to_stage manual__2025-06-21T18:11:57.608096+00:00 [queued]>
+[2025-06-21T21:27:51.835+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: nba_etl_to_staging.fetch_shot_chart_and_load_to_stage manual__2025-06-21T18:11:57.608096+00:00 [queued]>
+[2025-06-21T21:27:51.836+0000] {taskinstance.py:2306} INFO - Starting attempt 3 of 2
+[2025-06-21T21:27:51.988+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): fetch_shot_chart_and_load_to_stage> on 2025-06-21 18:11:57.608096+00:00
+[2025-06-21T21:27:51.997+0000] {standard_task_runner.py:63} INFO - Started process 493 to run task
+[2025-06-21T21:27:52.002+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'nba_etl_to_staging', 'fetch_shot_chart_and_load_to_stage', 'manual__2025-06-21T18:11:57.608096+00:00', '--job-id', '483', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/tmp/tmp052khxtn']
+[2025-06-21T21:27:52.003+0000] {standard_task_runner.py:91} INFO - Job 483: Subtask fetch_shot_chart_and_load_to_stage
+[2025-06-21T21:27:52.303+0000] {task_command.py:426} INFO - Running <TaskInstance: nba_etl_to_staging.fetch_shot_chart_and_load_to_stage manual__2025-06-21T18:11:57.608096+00:00 [running]> on host 5ea278fdf3a6
+[2025-06-21T21:27:53.022+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='nba_etl_to_staging' AIRFLOW_CTX_TASK_ID='fetch_shot_chart_and_load_to_stage' AIRFLOW_CTX_EXECUTION_DATE='2025-06-21T18:11:57.608096+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-21T18:11:57.608096+00:00'
+[2025-06-21T21:27:53.023+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-06-21T21:27:53.977+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/etl_pipeline.py:174 UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+[2025-06-21T21:27:59.355+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-22 between BOS and NYK.
+[2025-06-21T21:28:06.427+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-22 between LAL and MIN.
+[2025-06-21T21:28:13.147+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-23 between DET and IND.
+[2025-06-21T21:28:20.631+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-23 between ATL and BRK.
+[2025-06-21T21:28:27.650+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-23 between MIA and ORL.
+[2025-06-21T21:28:34.487+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-23 between PHI and MIL.
+[2025-06-21T21:28:41.717+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-23 between TOR and CLE.
+[2025-06-21T21:28:50.075+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-23 between HOU and CHO.
+[2025-06-21T21:28:56.727+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-23 between NOP and CHI.
+[2025-06-21T21:29:03.746+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-23 between UTA and MEM.
+[2025-06-21T21:29:10.926+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-23 between LAC and PHO.
+[2025-06-21T21:29:19.447+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-23 between POR and GSW.
+[2025-06-21T21:29:26.370+0000] {local_task_job_runner.py:310} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2025-06-21T21:29:26.373+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2025-06-21T21:29:26.383+0000] {process_utils.py:132} INFO - Sending 15 to group 493. PIDs of all processes in the group: [493]
+[2025-06-21T21:29:26.385+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 493
+[2025-06-21T21:29:26.386+0000] {taskinstance.py:2611} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-06-21T21:29:26.387+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-06-21T21:29:26.519+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=493, status='terminated', exitcode=0, started='21:27:51') (493) terminated with exit code 0

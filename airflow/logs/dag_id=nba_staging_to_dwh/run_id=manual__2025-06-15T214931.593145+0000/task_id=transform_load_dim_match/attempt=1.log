@@ -1,0 +1,49 @@
+[2025-06-15T21:49:33.458+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-06-15T21:49:33.515+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: nba_staging_to_dwh.transform_load_dim_match manual__2025-06-15T21:49:31.593145+00:00 [queued]>
+[2025-06-15T21:49:33.535+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: nba_staging_to_dwh.transform_load_dim_match manual__2025-06-15T21:49:31.593145+00:00 [queued]>
+[2025-06-15T21:49:33.536+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-06-15T21:49:33.629+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): transform_load_dim_match> on 2025-06-15 21:49:31.593145+00:00
+[2025-06-15T21:49:33.640+0000] {standard_task_runner.py:63} INFO - Started process 871 to run task
+[2025-06-15T21:49:33.648+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'nba_staging_to_dwh', 'transform_load_dim_match', 'manual__2025-06-15T21:49:31.593145+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/tmp/tmperxg6way']
+[2025-06-15T21:49:33.651+0000] {standard_task_runner.py:91} INFO - Job 4: Subtask transform_load_dim_match
+[2025-06-15T21:49:33.843+0000] {task_command.py:426} INFO - Running <TaskInstance: nba_staging_to_dwh.transform_load_dim_match manual__2025-06-15T21:49:31.593145+00:00 [running]> on host 11d91b3c2b82
+[2025-06-15T21:49:34.028+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='nba_staging_to_dwh' AIRFLOW_CTX_TASK_ID='transform_load_dim_match' AIRFLOW_CTX_EXECUTION_DATE='2025-06-15T21:49:31.593145+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-15T21:49:31.593145+00:00'
+[2025-06-15T21:49:34.030+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-06-15T21:49:34.076+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/etl_pipeline.py:312 UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+[2025-06-15T21:49:34.097+0000] {logging_mixin.py:188} INFO - Ensuring table 'dimmatch' exists...
+[2025-06-15T21:49:34.236+0000] {logging_mixin.py:188} INFO - Table 'dimmatch' is ready.
+[2025-06-15T21:49:34.250+0000] {logging_mixin.py:188} INFO - Loading 1321 rows into dimmatch...
+[2025-06-15T21:49:34.262+0000] {logging_mixin.py:188} INFO - Database execution error: column "date" of relation "dimmatch" does not exist
+LINE 1: INSERT INTO dimmatch (hometeam, awayteam, date, arena, city,...
+                                                  ^
+[2025-06-15T21:49:34.263+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-06-15T21:49:34.265+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/etl_pipeline.py", line 345, in dim_match_transform_load
+    load_df_to_postgres(df=df, table_name=table_name, conn_string=conn_string, create_table_query=create_table_query)
+  File "/opt/airflow/dags/etl_pipeline.py", line 64, in load_df_to_postgres
+    execute_values(cursor, sql_query, data_tuples)
+  File "/home/airflow/.local/lib/python3.9/site-packages/psycopg2/extras.py", line 1299, in execute_values
+    cur.execute(b''.join(parts))
+psycopg2.errors.UndefinedColumn: column "date" of relation "dimmatch" does not exist
+LINE 1: INSERT INTO dimmatch (hometeam, awayteam, date, arena, city,...
+                                                  ^
+
+[2025-06-15T21:49:34.288+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=nba_staging_to_dwh, task_id=transform_load_dim_match, run_id=manual__2025-06-15T21:49:31.593145+00:00, execution_date=20250615T214931, start_date=20250615T214933, end_date=20250615T214934
+[2025-06-15T21:49:34.327+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 4 for task transform_load_dim_match (column "date" of relation "dimmatch" does not exist
+LINE 1: INSERT INTO dimmatch (hometeam, awayteam, date, arena, city,...
+                                                  ^
+; 871)
+[2025-06-15T21:49:34.387+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2025-06-15T21:49:34.436+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-06-15T21:49:34.470+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

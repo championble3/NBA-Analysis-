@@ -1,0 +1,36 @@
+[2025-06-15T20:54:38.784+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-06-15T20:54:38.811+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: nba_etl_to_postgres.fetch_and_load_teams_to_stage manual__2025-06-15T20:52:29.551940+00:00 [queued]>
+[2025-06-15T20:54:38.819+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: nba_etl_to_postgres.fetch_and_load_teams_to_stage manual__2025-06-15T20:52:29.551940+00:00 [queued]>
+[2025-06-15T20:54:38.820+0000] {taskinstance.py:2306} INFO - Starting attempt 2 of 2
+[2025-06-15T20:54:38.911+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): fetch_and_load_teams_to_stage> on 2025-06-15 20:52:29.551940+00:00
+[2025-06-15T20:54:38.918+0000] {standard_task_runner.py:63} INFO - Started process 1070 to run task
+[2025-06-15T20:54:38.923+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'nba_etl_to_postgres', 'fetch_and_load_teams_to_stage', 'manual__2025-06-15T20:52:29.551940+00:00', '--job-id', '20', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/tmp/tmprr8wh331']
+[2025-06-15T20:54:38.925+0000] {standard_task_runner.py:91} INFO - Job 20: Subtask fetch_and_load_teams_to_stage
+[2025-06-15T20:54:39.116+0000] {task_command.py:426} INFO - Running <TaskInstance: nba_etl_to_postgres.fetch_and_load_teams_to_stage manual__2025-06-15T20:52:29.551940+00:00 [running]> on host 1c61638087f1
+[2025-06-15T20:54:39.321+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='nba_etl_to_postgres' AIRFLOW_CTX_TASK_ID='fetch_and_load_teams_to_stage' AIRFLOW_CTX_EXECUTION_DATE='2025-06-15T20:52:29.551940+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-15T20:52:29.551940+00:00'
+[2025-06-15T20:54:39.322+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-06-15T20:54:39.453+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-06-15T20:54:39.453+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/etl_pipeline.py", line 284, in fetch_and_load_teams_to_stage
+    cur.copy_expert(sql_copy_command, f)
+psycopg2.errors.BadCopyFileFormat: missing data for column "column2"
+CONTEXT:  COPY stgteam, line 1: "Atlanta Hawks;ATL;Eastern;Southeast"
+
+[2025-06-15T20:54:39.469+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=nba_etl_to_postgres, task_id=fetch_and_load_teams_to_stage, run_id=manual__2025-06-15T20:52:29.551940+00:00, execution_date=20250615T205229, start_date=20250615T205438, end_date=20250615T205439
+[2025-06-15T20:54:39.574+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 20 for task fetch_and_load_teams_to_stage (missing data for column "column2"
+CONTEXT:  COPY stgteam, line 1: "Atlanta Hawks;ATL;Eastern;Southeast"
+; 1070)
+[2025-06-15T20:54:39.621+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2025-06-15T20:54:39.638+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-06-15T20:54:39.698+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

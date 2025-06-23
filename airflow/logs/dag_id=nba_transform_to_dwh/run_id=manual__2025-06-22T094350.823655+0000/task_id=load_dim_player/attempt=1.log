@@ -1,0 +1,20 @@
+[2025-06-22T09:43:58.071+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-06-22T09:43:58.119+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: nba_transform_to_dwh.load_dim_player manual__2025-06-22T09:43:50.823655+00:00 [queued]>
+[2025-06-22T09:43:58.376+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: nba_transform_to_dwh.load_dim_player manual__2025-06-22T09:43:50.823655+00:00 [queued]>
+[2025-06-22T09:43:58.379+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-06-22T09:43:58.448+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): load_dim_player> on 2025-06-22 09:43:50.823655+00:00
+[2025-06-22T09:43:58.462+0000] {standard_task_runner.py:63} INFO - Started process 1652 to run task
+[2025-06-22T09:43:58.471+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'nba_transform_to_dwh', 'load_dim_player', 'manual__2025-06-22T09:43:50.823655+00:00', '--job-id', '536', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/tmp/tmpw88g4_n8']
+[2025-06-22T09:43:58.474+0000] {standard_task_runner.py:91} INFO - Job 536: Subtask load_dim_player
+[2025-06-22T09:43:58.583+0000] {task_command.py:426} INFO - Running <TaskInstance: nba_transform_to_dwh.load_dim_player manual__2025-06-22T09:43:50.823655+00:00 [running]> on host 5ea278fdf3a6
+[2025-06-22T09:43:58.771+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='nba_transform_to_dwh' AIRFLOW_CTX_TASK_ID='load_dim_player' AIRFLOW_CTX_EXECUTION_DATE='2025-06-22T09:43:50.823655+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-22T09:43:50.823655+00:00'
+[2025-06-22T09:43:58.772+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-06-22T09:43:58.796+0000] {etl_pipeline.py:529} INFO - Ensuring dimension table 'dimplayer' exists...
+[2025-06-22T09:43:58.797+0000] {etl_pipeline.py:531} INFO - Loading/updating data into 'dimplayer'...
+[2025-06-22T09:43:58.823+0000] {etl_pipeline.py:533} INFO - Operation complete. 0 new rows inserted into dimplayer.
+[2025-06-22T09:43:58.869+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-06-22T09:43:58.872+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-06-22T09:43:58.887+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=nba_transform_to_dwh, task_id=load_dim_player, run_id=manual__2025-06-22T09:43:50.823655+00:00, execution_date=20250622T094350, start_date=20250622T094358, end_date=20250622T094358
+[2025-06-22T09:43:58.966+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-06-22T09:43:59.002+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-06-22T09:43:59.032+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

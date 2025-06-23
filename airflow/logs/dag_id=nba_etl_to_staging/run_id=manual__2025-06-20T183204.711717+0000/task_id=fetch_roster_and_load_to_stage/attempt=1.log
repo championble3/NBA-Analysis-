@@ -1,0 +1,29 @@
+[2025-06-20T18:32:06.875+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-06-20T18:32:06.956+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: nba_etl_to_staging.fetch_roster_and_load_to_stage manual__2025-06-20T18:32:04.711717+00:00 [queued]>
+[2025-06-20T18:32:06.974+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: nba_etl_to_staging.fetch_roster_and_load_to_stage manual__2025-06-20T18:32:04.711717+00:00 [queued]>
+[2025-06-20T18:32:06.975+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-06-20T18:32:07.043+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): fetch_roster_and_load_to_stage> on 2025-06-20 18:32:04.711717+00:00
+[2025-06-20T18:32:07.053+0000] {standard_task_runner.py:63} INFO - Started process 4233 to run task
+[2025-06-20T18:32:07.064+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'nba_etl_to_staging', 'fetch_roster_and_load_to_stage', 'manual__2025-06-20T18:32:04.711717+00:00', '--job-id', '288', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/tmp/tmp028uzjrx']
+[2025-06-20T18:32:07.066+0000] {standard_task_runner.py:91} INFO - Job 288: Subtask fetch_roster_and_load_to_stage
+[2025-06-20T18:32:07.228+0000] {task_command.py:426} INFO - Running <TaskInstance: nba_etl_to_staging.fetch_roster_and_load_to_stage manual__2025-06-20T18:32:04.711717+00:00 [running]> on host 5ea278fdf3a6
+[2025-06-20T18:32:07.461+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='nba_etl_to_staging' AIRFLOW_CTX_TASK_ID='fetch_roster_and_load_to_stage' AIRFLOW_CTX_EXECUTION_DATE='2025-06-20T18:32:04.711717+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-20T18:32:04.711717+00:00'
+[2025-06-20T18:32:07.467+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-06-20T18:32:07.492+0000] {etl_pipeline.py:242} INFO - Fetching roster for Atlanta Hawks (ATL)...
+[2025-06-20T18:32:08.130+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/teams.py:21 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-20T18:32:11.926+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-20T18:32:15.548+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-20T18:32:18.983+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-20T18:32:22.526+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-20T18:32:22.595+0000] {etl_pipeline.py:247} INFO - Successfully fetched roster for Atlanta Hawks.
+[2025-06-20T18:32:23.599+0000] {etl_pipeline.py:242} INFO - Fetching roster for Boston Celtics (BOS)...
+[2025-06-20T18:32:27.394+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/teams.py:21 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-20T18:32:30.896+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-20T18:32:34.667+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/utils.py:118 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-20T18:32:37.700+0000] {local_task_job_runner.py:310} WARNING - State of this instance has been externally set to success. Terminating instance.
+[2025-06-20T18:32:37.701+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2025-06-20T18:32:37.704+0000] {process_utils.py:132} INFO - Sending 15 to group 4233. PIDs of all processes in the group: [4233]
+[2025-06-20T18:32:37.705+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 4233
+[2025-06-20T18:32:37.705+0000] {taskinstance.py:2611} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-06-20T18:32:37.706+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-06-20T18:32:37.798+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=4233, status='terminated', exitcode=0, started='18:32:06') (4233) terminated with exit code 0

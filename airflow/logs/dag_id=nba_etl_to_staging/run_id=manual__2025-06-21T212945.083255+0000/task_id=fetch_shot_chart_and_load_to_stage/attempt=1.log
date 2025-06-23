@@ -1,0 +1,100 @@
+[2025-06-21T21:30:04.192+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-06-21T21:30:04.252+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: nba_etl_to_staging.fetch_shot_chart_and_load_to_stage manual__2025-06-21T21:29:45.083255+00:00 [queued]>
+[2025-06-21T21:30:04.575+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: nba_etl_to_staging.fetch_shot_chart_and_load_to_stage manual__2025-06-21T21:29:45.083255+00:00 [queued]>
+[2025-06-21T21:30:04.575+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-06-21T21:30:04.626+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): fetch_shot_chart_and_load_to_stage> on 2025-06-21 21:29:45.083255+00:00
+[2025-06-21T21:30:04.637+0000] {standard_task_runner.py:63} INFO - Started process 823 to run task
+[2025-06-21T21:30:04.642+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'nba_etl_to_staging', 'fetch_shot_chart_and_load_to_stage', 'manual__2025-06-21T21:29:45.083255+00:00', '--job-id', '487', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/tmp/tmpnoff9mh1']
+[2025-06-21T21:30:04.644+0000] {standard_task_runner.py:91} INFO - Job 487: Subtask fetch_shot_chart_and_load_to_stage
+[2025-06-21T21:30:04.795+0000] {task_command.py:426} INFO - Running <TaskInstance: nba_etl_to_staging.fetch_shot_chart_and_load_to_stage manual__2025-06-21T21:29:45.083255+00:00 [running]> on host 5ea278fdf3a6
+[2025-06-21T21:30:05.069+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='nba_etl_to_staging' AIRFLOW_CTX_TASK_ID='fetch_shot_chart_and_load_to_stage' AIRFLOW_CTX_EXECUTION_DATE='2025-06-21T21:29:45.083255+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-21T21:29:45.083255+00:00'
+[2025-06-21T21:30:05.073+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-06-21T21:30:05.139+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/etl_pipeline.py:174 UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+[2025-06-21T21:30:09.050+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-22 between BOS and NYK.
+[2025-06-21T21:30:16.141+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-22 between LAL and MIN.
+[2025-06-21T21:30:23.778+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-23 between DET and IND.
+[2025-06-21T21:30:30.782+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-23 between ATL and BRK.
+[2025-06-21T21:30:37.429+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-23 between MIA and ORL.
+[2025-06-21T21:30:45.043+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-23 between PHI and MIL.
+[2025-06-21T21:30:52.692+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-23 between TOR and CLE.
+[2025-06-21T21:30:59.424+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-23 between HOU and CHO.
+[2025-06-21T21:31:10.897+0000] {etl_pipeline.py:69} WARNING - Błąd podczas wywołania get_shot_chart_with_retry: HTTPSConnectionPool(host='www.basketball-reference.com', port=443): Max retries exceeded with url: /boxscores/shot-chart/202410230NOP.html (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:1133)'))). Próba 1 z 5...
+[2025-06-21T21:31:27.369+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-23 between NOP and CHI.
+[2025-06-21T21:31:39.246+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-23 between UTA and MEM.
+[2025-06-21T21:31:49.220+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-23 between LAC and PHO.
+[2025-06-21T21:31:57.453+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-23 between POR and GSW.
+[2025-06-21T21:32:03.560+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-24 between WAS and BOS.
+[2025-06-21T21:32:12.005+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-24 between DAL and SAS.
+[2025-06-21T21:32:21.800+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-24 between DEN and OKC.
+[2025-06-21T21:32:29.172+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-24 between SAC and MIN.
+[2025-06-21T21:32:36.957+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-25 between ORL and BRK.
+[2025-06-21T21:32:43.661+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-25 between TOR and PHI.
+[2025-06-21T21:32:50.817+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-25 between ATL and CHO.
+[2025-06-21T21:32:58.133+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-25 between CLE and DET.
+[2025-06-21T21:33:05.064+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-25 between NYK and IND.
+[2025-06-21T21:33:11.653+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-25 between HOU and MEM.
+[2025-06-21T21:33:18.358+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-25 between MIL and CHI.
+[2025-06-21T21:33:25.994+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-25 between UTA and GSW.
+[2025-06-21T21:33:32.572+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-25 between LAL and PHO.
+[2025-06-21T21:33:39.260+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-25 between POR and NOP.
+[2025-06-21T21:33:46.255+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-26 between DEN and LAC.
+[2025-06-21T21:33:53.218+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-26 between CHO and MIA.
+[2025-06-21T21:34:00.599+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-26 between DET and BOS.
+[2025-06-21T21:34:07.194+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-26 between WAS and CLE.
+[2025-06-21T21:34:13.915+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-26 between CHI and OKC.
+[2025-06-21T21:34:20.513+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-26 between MEM and ORL.
+[2025-06-21T21:34:28.056+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-26 between MIN and TOR.
+[2025-06-21T21:34:34.767+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-26 between SAS and HOU.
+[2025-06-21T21:34:42.418+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-26 between PHO and DAL.
+[2025-06-21T21:34:49.068+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-26 between LAL and SAC.
+[2025-06-21T21:34:56.011+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-27 between IND and PHI.
+[2025-06-21T21:35:03.685+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-27 between BRK and MIL.
+[2025-06-21T21:35:10.915+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-27 between POR and NOP.
+[2025-06-21T21:35:17.586+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-27 between OKC and ATL.
+[2025-06-21T21:35:24.182+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-27 between GSW and LAC.
+[2025-06-21T21:35:37.853+0000] {etl_pipeline.py:69} WARNING - Błąd podczas wywołania get_shot_chart_with_retry: HTTPSConnectionPool(host='www.basketball-reference.com', port=443): Max retries exceeded with url: /boxscores/shot-chart/202410280ORL.html (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:1133)'))). Próba 1 z 5...
+[2025-06-21T21:35:52.042+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-28 between ORL and IND.
+[2025-06-21T21:35:59.640+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-28 between ATL and WAS.
+[2025-06-21T21:36:06.258+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-28 between BOS and MIL.
+[2025-06-21T21:36:12.863+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-28 between MIA and DET.
+[2025-06-21T21:36:19.648+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-28 between NYK and CLE.
+[2025-06-21T21:36:27.428+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-28 between TOR and DEN.
+[2025-06-21T21:36:36.253+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-28 between MEM and CHI.
+[2025-06-21T21:36:44.617+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-28 between SAS and HOU.
+[2025-06-21T21:36:52.410+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-28 between DAL and UTA.
+[2025-06-21T21:36:59.072+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-28 between PHO and LAL.
+[2025-06-21T21:37:06.638+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-28 between SAC and POR.
+[2025-06-21T21:37:13.414+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-29 between BRK and DEN.
+[2025-06-21T21:37:20.215+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-29 between MIN and DAL.
+[2025-06-21T21:37:26.895+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-29 between UTA and SAC.
+[2025-06-21T21:37:34.311+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-29 between GSW and NOP.
+[2025-06-21T21:37:41.081+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-30 between CHO and TOR.
+[2025-06-21T21:37:48.103+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-30 between CLE and LAL.
+[2025-06-21T21:37:54.850+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-30 between IND and BOS.
+[2025-06-21T21:38:01.509+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-30 between PHI and DET.
+[2025-06-21T21:38:10.138+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-30 between WAS and ATL.
+[2025-06-21T21:38:16.962+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-30 between MIA and NYK.
+[2025-06-21T21:38:23.503+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-30 between CHI and ORL.
+[2025-06-21T21:38:30.055+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-30 between MEM and BRK.
+[2025-06-21T21:38:37.583+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-30 between OKC and SAS.
+[2025-06-21T21:38:50.824+0000] {etl_pipeline.py:69} WARNING - Błąd podczas wywołania get_shot_chart_with_retry: HTTPSConnectionPool(host='www.basketball-reference.com', port=443): Max retries exceeded with url: /boxscores/shot-chart/202410300GSW.html (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:1133)'))). Próba 1 z 5...
+[2025-06-21T21:39:05.381+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-30 between GSW and NOP.
+[2025-06-21T21:39:12.662+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-30 between LAC and POR.
+[2025-06-21T21:39:28.866+0000] {etl_pipeline.py:69} WARNING - Błąd podczas wywołania get_shot_chart_with_retry: HTTPSConnectionPool(host='www.basketball-reference.com', port=443): Max retries exceeded with url: /boxscores/shot-chart/202410310MEM.html (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:1133)'))). Próba 1 z 5...
+[2025-06-21T21:39:43.475+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-31 between MEM and MIL.
+[2025-06-21T21:39:50.779+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-31 between DAL and HOU.
+[2025-06-21T21:39:57.619+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-31 between UTA and SAS.
+[2025-06-21T21:40:05.292+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-10-31 between LAC and PHO.
+[2025-06-21T21:40:13.758+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-11-01 between CHO and BOS.
+[2025-06-21T21:40:21.111+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-11-01 between CLE and ORL.
+[2025-06-21T21:40:28.566+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-11-01 between DET and NYK.
+[2025-06-21T21:40:35.827+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-11-01 between ATL and SAC.
+[2025-06-21T21:40:43.643+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-11-01 between BRK and CHI.
+[2025-06-21T21:40:51.486+0000] {etl_pipeline.py:191} INFO - Processed game on 2024-11-01 between TOR and LAL.
+[2025-06-21T21:40:54.203+0000] {local_task_job_runner.py:310} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2025-06-21T21:40:54.204+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2025-06-21T21:40:54.208+0000] {process_utils.py:132} INFO - Sending 15 to group 823. PIDs of all processes in the group: [823]
+[2025-06-21T21:40:54.209+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 823
+[2025-06-21T21:40:54.209+0000] {taskinstance.py:2611} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-06-21T21:40:54.210+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-06-21T21:40:54.301+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=823, status='terminated', exitcode=0, started='21:30:04') (823) terminated with exit code 0

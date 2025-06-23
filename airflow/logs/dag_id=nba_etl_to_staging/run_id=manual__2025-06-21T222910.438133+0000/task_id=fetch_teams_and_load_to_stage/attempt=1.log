@@ -1,0 +1,19 @@
+[2025-06-21T22:29:12.092+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-06-21T22:29:12.199+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: nba_etl_to_staging.fetch_teams_and_load_to_stage manual__2025-06-21T22:29:10.438133+00:00 [queued]>
+[2025-06-21T22:29:12.682+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: nba_etl_to_staging.fetch_teams_and_load_to_stage manual__2025-06-21T22:29:10.438133+00:00 [queued]>
+[2025-06-21T22:29:12.683+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-06-21T22:29:12.796+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): fetch_teams_and_load_to_stage> on 2025-06-21 22:29:10.438133+00:00
+[2025-06-21T22:29:12.810+0000] {standard_task_runner.py:63} INFO - Started process 1553 to run task
+[2025-06-21T22:29:12.820+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'nba_etl_to_staging', 'fetch_teams_and_load_to_stage', 'manual__2025-06-21T22:29:10.438133+00:00', '--job-id', '511', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/tmp/tmplkdysy5q']
+[2025-06-21T22:29:12.824+0000] {standard_task_runner.py:91} INFO - Job 511: Subtask fetch_teams_and_load_to_stage
+[2025-06-21T22:29:12.968+0000] {task_command.py:426} INFO - Running <TaskInstance: nba_etl_to_staging.fetch_teams_and_load_to_stage manual__2025-06-21T22:29:10.438133+00:00 [running]> on host 5ea278fdf3a6
+[2025-06-21T22:29:13.207+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='nba_etl_to_staging' AIRFLOW_CTX_TASK_ID='fetch_teams_and_load_to_stage' AIRFLOW_CTX_EXECUTION_DATE='2025-06-21T22:29:10.438133+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-21T22:29:10.438133+00:00'
+[2025-06-21T22:29:13.208+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-06-21T22:29:13.304+0000] {etl_pipeline.py:328} INFO - Loading data from /opt/***/include/data/nba_teams_info_no_header.csv into stgteam...
+[2025-06-21T22:29:13.337+0000] {etl_pipeline.py:330} INFO - Team data loaded successfully.
+[2025-06-21T22:29:13.338+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-06-21T22:29:13.341+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-06-21T22:29:13.366+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=nba_etl_to_staging, task_id=fetch_teams_and_load_to_stage, run_id=manual__2025-06-21T22:29:10.438133+00:00, execution_date=20250621T222910, start_date=20250621T222912, end_date=20250621T222913
+[2025-06-21T22:29:13.475+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-06-21T22:29:13.505+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-06-21T22:29:13.533+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

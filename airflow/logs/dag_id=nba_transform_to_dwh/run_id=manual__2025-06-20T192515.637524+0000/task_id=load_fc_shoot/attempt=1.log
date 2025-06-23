@@ -1,0 +1,20 @@
+[2025-06-20T19:25:24.459+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-06-20T19:25:24.485+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: nba_transform_to_dwh.load_fc_shoot manual__2025-06-20T19:25:15.637524+00:00 [queued]>
+[2025-06-20T19:25:24.493+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: nba_transform_to_dwh.load_fc_shoot manual__2025-06-20T19:25:15.637524+00:00 [queued]>
+[2025-06-20T19:25:24.493+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-06-20T19:25:24.555+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): load_fc_shoot> on 2025-06-20 19:25:15.637524+00:00
+[2025-06-20T19:25:24.565+0000] {standard_task_runner.py:63} INFO - Started process 4898 to run task
+[2025-06-20T19:25:24.571+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'nba_transform_to_dwh', 'load_fc_shoot', 'manual__2025-06-20T19:25:15.637524+00:00', '--job-id', '340', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/tmp/tmpuj0oxomy']
+[2025-06-20T19:25:24.574+0000] {standard_task_runner.py:91} INFO - Job 340: Subtask load_fc_shoot
+[2025-06-20T19:25:24.684+0000] {task_command.py:426} INFO - Running <TaskInstance: nba_transform_to_dwh.load_fc_shoot manual__2025-06-20T19:25:15.637524+00:00 [running]> on host 5ea278fdf3a6
+[2025-06-20T19:25:24.840+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='nba_transform_to_dwh' AIRFLOW_CTX_TASK_ID='load_fc_shoot' AIRFLOW_CTX_EXECUTION_DATE='2025-06-20T19:25:15.637524+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-20T19:25:15.637524+00:00'
+[2025-06-20T19:25:24.841+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-06-20T19:25:24.857+0000] {etl_pipeline.py:565} INFO - Ensuring dimension table 'fcshoot' exists...
+[2025-06-20T19:25:24.983+0000] {etl_pipeline.py:567} INFO - Loading/updating data into 'fcshoot'...
+[2025-06-20T19:25:25.033+0000] {etl_pipeline.py:569} INFO - Operation complete. 1557 new rows inserted into fcshoot.
+[2025-06-20T19:25:25.889+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-06-20T19:25:25.895+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-06-20T19:25:25.926+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=nba_transform_to_dwh, task_id=load_fc_shoot, run_id=manual__2025-06-20T19:25:15.637524+00:00, execution_date=20250620T192515, start_date=20250620T192524, end_date=20250620T192525
+[2025-06-20T19:25:26.031+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-06-20T19:25:26.047+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-06-20T19:25:26.075+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

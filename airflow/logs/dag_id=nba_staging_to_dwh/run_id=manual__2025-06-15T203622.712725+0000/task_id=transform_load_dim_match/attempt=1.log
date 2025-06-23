@@ -1,0 +1,142 @@
+[2025-06-15T20:36:26.253+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-06-15T20:36:26.312+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: nba_staging_to_dwh.transform_load_dim_match manual__2025-06-15T20:36:22.712725+00:00 [queued]>
+[2025-06-15T20:36:26.327+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: nba_staging_to_dwh.transform_load_dim_match manual__2025-06-15T20:36:22.712725+00:00 [queued]>
+[2025-06-15T20:36:26.327+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-06-15T20:36:26.390+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): transform_load_dim_match> on 2025-06-15 20:36:22.712725+00:00
+[2025-06-15T20:36:26.397+0000] {standard_task_runner.py:63} INFO - Started process 614 to run task
+[2025-06-15T20:36:26.404+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'nba_staging_to_dwh', 'transform_load_dim_match', 'manual__2025-06-15T20:36:22.712725+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/tmp/tmpngsc_29d']
+[2025-06-15T20:36:26.406+0000] {standard_task_runner.py:91} INFO - Job 2: Subtask transform_load_dim_match
+[2025-06-15T20:36:26.592+0000] {task_command.py:426} INFO - Running <TaskInstance: nba_staging_to_dwh.transform_load_dim_match manual__2025-06-15T20:36:22.712725+00:00 [running]> on host 1c61638087f1
+[2025-06-15T20:36:26.864+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='nba_staging_to_dwh' AIRFLOW_CTX_TASK_ID='transform_load_dim_match' AIRFLOW_CTX_EXECUTION_DATE='2025-06-15T20:36:22.712725+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-15T20:36:22.712725+00:00'
+[2025-06-15T20:36:26.867+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-06-15T20:36:26.986+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/etl_pipeline.py:313 UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+[2025-06-15T20:36:26.988+0000] {logging_mixin.py:188} INFO - Failed to fetch schedule data from database: Execution failed on sql '
+                            SELECT 
+                    CASE 
+                        WHEN home_team IS NULL THEN 'Not added yet' 
+                        ELSE home_team 
+                    END AS HomeTeam,
+                    CASE 
+                        WHEN away_team IS NULL THEN 'Not added yet' 
+                        ELSE away_team 
+                    END AS AwayTeam,
+                    date,
+                    CASE 
+                        WHEN arena IS NULL THEN 'Not added yet' 
+                        ELSE arena 
+                    END AS Arena,
+                    CASE 
+                        WHEN city IS NULL THEN 'Not added yet' 
+                        ELSE city 
+                    END AS City,
+                    CASE 
+                        WHEN state IS NULL THEN 'Not added yet' 
+                        ELSE state 
+                    END AS State,
+                    CASE 
+                        WHEN game_type IS NULL THEN 'Not added yet' 
+                        ELSE game_type 
+                    END AS GameType
+                FROM StgSchedule
+            ': relation "stgschedule" does not exist
+LINE 28:                 FROM StgSchedule
+                              ^
+[2025-06-15T20:36:26.988+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-06-15T20:36:26.989+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/io/sql.py", line 2262, in execute
+    cur.execute(sql, *args)
+psycopg2.errors.UndefinedTable: relation "stgschedule" does not exist
+LINE 28:                 FROM StgSchedule
+                              ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/etl_pipeline.py", line 313, in dim_match_transform_load
+    df = pd.read_sql("""
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/io/sql.py", line 654, in read_sql
+    return pandas_sql.read_query(
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/io/sql.py", line 2326, in read_query
+    cursor = self.execute(sql, params)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/io/sql.py", line 2274, in execute
+    raise ex from exc
+pandas.errors.DatabaseError: Execution failed on sql '
+                            SELECT 
+                    CASE 
+                        WHEN home_team IS NULL THEN 'Not added yet' 
+                        ELSE home_team 
+                    END AS HomeTeam,
+                    CASE 
+                        WHEN away_team IS NULL THEN 'Not added yet' 
+                        ELSE away_team 
+                    END AS AwayTeam,
+                    date,
+                    CASE 
+                        WHEN arena IS NULL THEN 'Not added yet' 
+                        ELSE arena 
+                    END AS Arena,
+                    CASE 
+                        WHEN city IS NULL THEN 'Not added yet' 
+                        ELSE city 
+                    END AS City,
+                    CASE 
+                        WHEN state IS NULL THEN 'Not added yet' 
+                        ELSE state 
+                    END AS State,
+                    CASE 
+                        WHEN game_type IS NULL THEN 'Not added yet' 
+                        ELSE game_type 
+                    END AS GameType
+                FROM StgSchedule
+            ': relation "stgschedule" does not exist
+LINE 28:                 FROM StgSchedule
+                              ^
+
+[2025-06-15T20:36:27.004+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=nba_staging_to_dwh, task_id=transform_load_dim_match, run_id=manual__2025-06-15T20:36:22.712725+00:00, execution_date=20250615T203622, start_date=20250615T203626, end_date=20250615T203627
+[2025-06-15T20:36:27.041+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 2 for task transform_load_dim_match (Execution failed on sql '
+                            SELECT 
+                    CASE 
+                        WHEN home_team IS NULL THEN 'Not added yet' 
+                        ELSE home_team 
+                    END AS HomeTeam,
+                    CASE 
+                        WHEN away_team IS NULL THEN 'Not added yet' 
+                        ELSE away_team 
+                    END AS AwayTeam,
+                    date,
+                    CASE 
+                        WHEN arena IS NULL THEN 'Not added yet' 
+                        ELSE arena 
+                    END AS Arena,
+                    CASE 
+                        WHEN city IS NULL THEN 'Not added yet' 
+                        ELSE city 
+                    END AS City,
+                    CASE 
+                        WHEN state IS NULL THEN 'Not added yet' 
+                        ELSE state 
+                    END AS State,
+                    CASE 
+                        WHEN game_type IS NULL THEN 'Not added yet' 
+                        ELSE game_type 
+                    END AS GameType
+                FROM StgSchedule
+            ': relation "stgschedule" does not exist
+LINE 28:                 FROM StgSchedule
+                              ^
+; 614)
+[2025-06-15T20:36:27.060+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2025-06-15T20:36:27.092+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-06-15T20:36:27.147+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

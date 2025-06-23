@@ -1,0 +1,32 @@
+[2025-06-19T09:24:07.969+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-06-19T09:24:08.120+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: nba_staging_to_transform.fetch_pbp_from_stg_and_transform manual__2025-06-19T09:23:57.796812+00:00 [queued]>
+[2025-06-19T09:24:08.195+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: nba_staging_to_transform.fetch_pbp_from_stg_and_transform manual__2025-06-19T09:23:57.796812+00:00 [queued]>
+[2025-06-19T09:24:08.199+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-06-19T09:24:09.102+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): fetch_pbp_from_stg_and_transform> on 2025-06-19 09:23:57.796812+00:00
+[2025-06-19T09:24:09.131+0000] {standard_task_runner.py:63} INFO - Started process 1133 to run task
+[2025-06-19T09:24:09.144+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'nba_staging_to_transform', 'fetch_pbp_from_stg_and_transform', 'manual__2025-06-19T09:23:57.796812+00:00', '--job-id', '80', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/tmp/tmpo1gy1m2l']
+[2025-06-19T09:24:09.152+0000] {standard_task_runner.py:91} INFO - Job 80: Subtask fetch_pbp_from_stg_and_transform
+[2025-06-19T09:24:09.440+0000] {task_command.py:426} INFO - Running <TaskInstance: nba_staging_to_transform.fetch_pbp_from_stg_and_transform manual__2025-06-19T09:23:57.796812+00:00 [running]> on host 11d91b3c2b82
+[2025-06-19T09:24:09.658+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='nba_staging_to_transform' AIRFLOW_CTX_TASK_ID='fetch_pbp_from_stg_and_transform' AIRFLOW_CTX_EXECUTION_DATE='2025-06-19T09:23:57.796812+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-19T09:23:57.796812+00:00'
+[2025-06-19T09:24:09.660+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-06-19T09:24:09.691+0000] {logging_mixin.py:188} INFO - Failed to fetch play-by-play data from database: read_sql() missing 1 required positional argument: 'con'
+[2025-06-19T09:24:09.692+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-06-19T09:24:09.693+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/etl_pipeline.py", line 560, in fetch_transform_pbp
+    df = pd.read_sql("""
+TypeError: read_sql() missing 1 required positional argument: 'con'
+[2025-06-19T09:24:09.717+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=nba_staging_to_transform, task_id=fetch_pbp_from_stg_and_transform, run_id=manual__2025-06-19T09:23:57.796812+00:00, execution_date=20250619T092357, start_date=20250619T092408, end_date=20250619T092409
+[2025-06-19T09:24:09.761+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 80 for task fetch_pbp_from_stg_and_transform (read_sql() missing 1 required positional argument: 'con'; 1133)
+[2025-06-19T09:24:09.808+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2025-06-19T09:24:09.839+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

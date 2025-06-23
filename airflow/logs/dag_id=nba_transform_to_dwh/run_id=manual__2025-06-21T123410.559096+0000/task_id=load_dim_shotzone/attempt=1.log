@@ -1,0 +1,20 @@
+[2025-06-21T12:34:19.548+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-06-21T12:34:19.712+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: nba_transform_to_dwh.load_dim_shotzone manual__2025-06-21T12:34:10.559096+00:00 [queued]>
+[2025-06-21T12:34:19.722+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: nba_transform_to_dwh.load_dim_shotzone manual__2025-06-21T12:34:10.559096+00:00 [queued]>
+[2025-06-21T12:34:19.723+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-06-21T12:34:19.768+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): load_dim_shotzone> on 2025-06-21 12:34:10.559096+00:00
+[2025-06-21T12:34:19.776+0000] {standard_task_runner.py:63} INFO - Started process 2580 to run task
+[2025-06-21T12:34:19.779+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'nba_transform_to_dwh', 'load_dim_shotzone', 'manual__2025-06-21T12:34:10.559096+00:00', '--job-id', '430', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/tmp/tmpwwc17nan']
+[2025-06-21T12:34:19.781+0000] {standard_task_runner.py:91} INFO - Job 430: Subtask load_dim_shotzone
+[2025-06-21T12:34:19.868+0000] {task_command.py:426} INFO - Running <TaskInstance: nba_transform_to_dwh.load_dim_shotzone manual__2025-06-21T12:34:10.559096+00:00 [running]> on host 5ea278fdf3a6
+[2025-06-21T12:34:20.018+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='nba_transform_to_dwh' AIRFLOW_CTX_TASK_ID='load_dim_shotzone' AIRFLOW_CTX_EXECUTION_DATE='2025-06-21T12:34:10.559096+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-21T12:34:10.559096+00:00'
+[2025-06-21T12:34:20.019+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-06-21T12:34:20.044+0000] {etl_pipeline.py:551} INFO - Ensuring dimension table 'dimshotzone' exists...
+[2025-06-21T12:34:20.046+0000] {etl_pipeline.py:553} INFO - Populating dimension table 'dimshotzone' with unique zones...
+[2025-06-21T12:34:20.049+0000] {etl_pipeline.py:555} INFO - Operation complete for dimshotzone. 0 new zones inserted.
+[2025-06-21T12:34:20.106+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-06-21T12:34:20.108+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-06-21T12:34:20.120+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=nba_transform_to_dwh, task_id=load_dim_shotzone, run_id=manual__2025-06-21T12:34:10.559096+00:00, execution_date=20250621T123410, start_date=20250621T123419, end_date=20250621T123420
+[2025-06-21T12:34:20.193+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-06-21T12:34:20.225+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-06-21T12:34:20.255+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

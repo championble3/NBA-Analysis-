@@ -1,0 +1,47 @@
+[2025-06-20T18:47:38.298+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-06-20T18:47:38.366+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: nba_transform_to_dwh.load_fc_shoot manual__2025-06-20T18:47:28.416575+00:00 [queued]>
+[2025-06-20T18:47:38.387+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: nba_transform_to_dwh.load_fc_shoot manual__2025-06-20T18:47:28.416575+00:00 [queued]>
+[2025-06-20T18:47:38.388+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-06-20T18:47:38.448+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): load_fc_shoot> on 2025-06-20 18:47:28.416575+00:00
+[2025-06-20T18:47:38.462+0000] {standard_task_runner.py:63} INFO - Started process 4456 to run task
+[2025-06-20T18:47:38.470+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'nba_transform_to_dwh', 'load_fc_shoot', 'manual__2025-06-20T18:47:28.416575+00:00', '--job-id', '314', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/tmp/tmpgf7sa_p4']
+[2025-06-20T18:47:38.475+0000] {standard_task_runner.py:91} INFO - Job 314: Subtask load_fc_shoot
+[2025-06-20T18:47:38.683+0000] {task_command.py:426} INFO - Running <TaskInstance: nba_transform_to_dwh.load_fc_shoot manual__2025-06-20T18:47:28.416575+00:00 [running]> on host 5ea278fdf3a6
+[2025-06-20T18:47:38.861+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='nba_transform_to_dwh' AIRFLOW_CTX_TASK_ID='load_fc_shoot' AIRFLOW_CTX_EXECUTION_DATE='2025-06-20T18:47:28.416575+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-20T18:47:28.416575+00:00'
+[2025-06-20T18:47:38.864+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-06-20T18:47:38.883+0000] {etl_pipeline.py:564} INFO - Ensuring dimension table 'fcshoot' exists...
+[2025-06-20T18:47:38.960+0000] {etl_pipeline.py:566} INFO - Loading/updating data into 'fcshoot'...
+[2025-06-20T18:47:38.984+0000] {etl_pipeline.py:570} ERROR - Failed to create or load dimension 'fcshoot'. Error: column tsc.gamedate does not exist
+LINE 14: ... = dm.hometeam AND tsc.awayteam = dm.awayteam AND tsc.gameda...
+                                                              ^
+HINT:  Perhaps you meant to reference the column "dm.gamedate".
+
+[2025-06-20T18:47:38.985+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-06-20T18:47:38.986+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/etl_pipeline.py", line 567, in create_fc_shoot
+    cursor.execute(insert_query)
+psycopg2.errors.UndefinedColumn: column tsc.gamedate does not exist
+LINE 14: ... = dm.hometeam AND tsc.awayteam = dm.awayteam AND tsc.gameda...
+                                                              ^
+HINT:  Perhaps you meant to reference the column "dm.gamedate".
+
+[2025-06-20T18:47:39.012+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=nba_transform_to_dwh, task_id=load_fc_shoot, run_id=manual__2025-06-20T18:47:28.416575+00:00, execution_date=20250620T184728, start_date=20250620T184738, end_date=20250620T184739
+[2025-06-20T18:47:39.068+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 314 for task load_fc_shoot (column tsc.gamedate does not exist
+LINE 14: ... = dm.hometeam AND tsc.awayteam = dm.awayteam AND tsc.gameda...
+                                                              ^
+HINT:  Perhaps you meant to reference the column "dm.gamedate".
+; 4456)
+[2025-06-20T18:47:39.086+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2025-06-20T18:47:39.116+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-06-20T18:47:39.147+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

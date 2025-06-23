@@ -1,0 +1,16 @@
+# airflow/requirements.txt
+
+# Pakiety dla Twojego projektu
+pandas
+numpy
+requests
+matplotlib
+seaborn
+selenium
+python-dotenv
+
+# Sterownik do bazy PostgreSQL
+psycopg2-binary
+
+# Zależność Twojej niestandardowej biblioteki nba_lib
+basketball_reference_scraper

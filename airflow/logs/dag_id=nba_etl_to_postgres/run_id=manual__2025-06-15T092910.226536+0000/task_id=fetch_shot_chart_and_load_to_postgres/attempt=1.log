@@ -1,0 +1,435 @@
+[2025-06-15T09:29:27.686+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-06-15T09:29:27.716+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: nba_etl_to_postgres.fetch_shot_chart_and_load_to_postgres manual__2025-06-15T09:29:10.226536+00:00 [queued]>
+[2025-06-15T09:29:27.855+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: nba_etl_to_postgres.fetch_shot_chart_and_load_to_postgres manual__2025-06-15T09:29:10.226536+00:00 [queued]>
+[2025-06-15T09:29:27.856+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-06-15T09:29:27.911+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): fetch_shot_chart_and_load_to_postgres> on 2025-06-15 09:29:10.226536+00:00
+[2025-06-15T09:29:27.916+0000] {standard_task_runner.py:63} INFO - Started process 526 to run task
+[2025-06-15T09:29:27.920+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'nba_etl_to_postgres', 'fetch_shot_chart_and_load_to_postgres', 'manual__2025-06-15T09:29:10.226536+00:00', '--job-id', '15', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/tmp/tmppmkuem65']
+[2025-06-15T09:29:27.921+0000] {standard_task_runner.py:91} INFO - Job 15: Subtask fetch_shot_chart_and_load_to_postgres
+[2025-06-15T09:29:28.007+0000] {task_command.py:426} INFO - Running <TaskInstance: nba_etl_to_postgres.fetch_shot_chart_and_load_to_postgres manual__2025-06-15T09:29:10.226536+00:00 [running]> on host 2381ae9906a5
+[2025-06-15T09:29:28.158+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='nba_etl_to_postgres' AIRFLOW_CTX_TASK_ID='fetch_shot_chart_and_load_to_postgres' AIRFLOW_CTX_EXECUTION_DATE='2025-06-15T09:29:10.226536+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-15T09:29:10.226536+00:00'
+[2025-06-15T09:29:28.159+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-06-15T09:29:28.188+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/etl_pipeline.py:161 UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+[2025-06-15T09:29:29.561+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-22 between 2024-10-22 and NYK: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:29:33.052+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-22 between 2024-10-22 and MIN: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:29:36.794+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-23 between 2024-10-23 and IND: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:29:40.199+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-23 between 2024-10-23 and BRK: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:29:43.661+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-23 between 2024-10-23 and ORL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:29:47.122+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-23 between 2024-10-23 and MIL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:29:50.749+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-23 between 2024-10-23 and CLE: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:29:54.152+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-23 between 2024-10-23 and CHO: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:29:57.572+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-23 between 2024-10-23 and CHI: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:30:00.892+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-23 between 2024-10-23 and MEM: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:30:04.350+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-23 between 2024-10-23 and PHO: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:30:07.736+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-23 between 2024-10-23 and GSW: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:30:11.432+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-24 between 2024-10-24 and BOS: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:30:14.818+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-24 between 2024-10-24 and SAS: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:30:18.362+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-24 between 2024-10-24 and OKC: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:30:21.858+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-24 between 2024-10-24 and MIN: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:30:25.488+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-25 between 2024-10-25 and BRK: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:30:28.874+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-25 between 2024-10-25 and PHI: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:30:32.258+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-25 between 2024-10-25 and CHO: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:30:35.680+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-25 between 2024-10-25 and DET: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:30:39.066+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-25 between 2024-10-25 and IND: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:30:42.603+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-25 between 2024-10-25 and MEM: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:30:45.992+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-25 between 2024-10-25 and CHI: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:30:49.363+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-25 between 2024-10-25 and GSW: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:30:52.757+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-25 between 2024-10-25 and PHO: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:30:56.235+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-25 between 2024-10-25 and NOP: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:30:59.852+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-26 between 2024-10-26 and LAC: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:31:03.199+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-26 between 2024-10-26 and MIA: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:31:06.753+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-26 between 2024-10-26 and BOS: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:31:10.161+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-26 between 2024-10-26 and CLE: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:31:13.494+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-26 between 2024-10-26 and OKC: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:31:16.910+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-26 between 2024-10-26 and ORL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:31:20.369+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-26 between 2024-10-26 and TOR: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:31:23.761+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-26 between 2024-10-26 and HOU: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:31:27.254+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-26 between 2024-10-26 and DAL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:31:30.631+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-26 between 2024-10-26 and SAC: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:31:34.218+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-27 between 2024-10-27 and PHI: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:31:37.624+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-27 between 2024-10-27 and MIL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:31:41.050+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-27 between 2024-10-27 and NOP: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:31:44.487+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-27 between 2024-10-27 and ATL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:31:47.916+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-27 between 2024-10-27 and LAC: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:31:51.486+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-28 between 2024-10-28 and IND: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:31:54.978+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-28 between 2024-10-28 and WAS: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:31:58.360+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-28 between 2024-10-28 and MIL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:32:01.774+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-28 between 2024-10-28 and DET: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:32:05.092+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-28 between 2024-10-28 and CLE: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:32:08.450+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-28 between 2024-10-28 and DEN: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:32:11.827+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-28 between 2024-10-28 and CHI: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:32:15.288+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-28 between 2024-10-28 and HOU: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:32:18.757+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-28 between 2024-10-28 and UTA: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:32:22.096+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-28 between 2024-10-28 and LAL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:32:25.560+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-28 between 2024-10-28 and POR: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:32:29.038+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-29 between 2024-10-29 and DEN: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:32:32.346+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-29 between 2024-10-29 and DAL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:32:35.745+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-29 between 2024-10-29 and SAC: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:32:39.047+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-29 between 2024-10-29 and NOP: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:32:42.793+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-30 between 2024-10-30 and TOR: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:32:46.151+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-30 between 2024-10-30 and LAL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:32:49.778+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-30 between 2024-10-30 and BOS: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:32:53.149+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-30 between 2024-10-30 and DET: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:32:56.638+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-30 between 2024-10-30 and ATL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:33:00.141+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-30 between 2024-10-30 and NYK: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:33:03.474+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-30 between 2024-10-30 and ORL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:33:07.053+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-30 between 2024-10-30 and BRK: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:33:10.557+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-30 between 2024-10-30 and SAS: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:33:13.912+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-30 between 2024-10-30 and NOP: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:33:17.266+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-30 between 2024-10-30 and POR: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:33:20.851+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-31 between 2024-10-31 and MIL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:33:24.193+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-31 between 2024-10-31 and HOU: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:33:27.559+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-31 between 2024-10-31 and SAS: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:33:30.985+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-10-31 between 2024-10-31 and PHO: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:33:34.598+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-01 between 2024-11-01 and BOS: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:33:38.035+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-01 between 2024-11-01 and ORL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:33:41.393+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-01 between 2024-11-01 and NYK: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:33:44.747+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-01 between 2024-11-01 and SAC: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:33:48.082+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-01 between 2024-11-01 and CHI: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:33:51.655+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-01 between 2024-11-01 and LAL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:33:55.258+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-01 between 2024-11-01 and IND: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:33:58.651+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-01 between 2024-11-01 and DEN: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:34:02.116+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-01 between 2024-11-01 and OKC: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:34:05.777+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-02 between 2024-11-02 and BOS: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:34:09.210+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-02 between 2024-11-02 and MEM: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:34:12.597+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-02 between 2024-11-02 and SAC: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:34:16.290+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-02 between 2024-11-02 and GSW: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:34:19.768+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-02 between 2024-11-02 and CLE: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:34:23.263+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-02 between 2024-11-02 and MIN: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:34:28.598+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-02 between 2024-11-02 and MIA: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:34:35.054+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-02 between 2024-11-02 and UTA: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:34:36.306+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-02 between 2024-11-02 and POR: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:34:41.009+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-02 between 2024-11-02 and OKC: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:34:48.800+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-03 between 2024-11-03 and DET: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:34:49.328+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-03 between 2024-11-03 and ATL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:35:06.419+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-03 between 2024-11-03 and ORL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:35:22.414+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-04 between 2024-11-04 and MIL: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2025-06-15T09:35:45.003+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-04 between 2024-11-04 and GSW: HTTPSConnectionPool(host='www.basketball-reference.com', port=443): Max retries exceeded with url: /boxscores/?month=11&year=2024&day=4 (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:1133)')))
+[2025-06-15T09:35:53.730+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-04 between 2024-11-04 and LAL: HTTPSConnectionPool(host='www.basketball-reference.com', port=443): Max retries exceeded with url: /boxscores/?month=11&year=2024&day=4 (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:1133)')))
+[2025-06-15T09:36:01.744+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-04 between 2024-11-04 and BOS: HTTPSConnectionPool(host='www.basketball-reference.com', port=443): Max retries exceeded with url: /boxscores/?month=11&year=2024&day=4 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x79812d163e20>: Failed to resolve 'www.basketball-reference.com' ([Errno -3] Temporary failure in name resolution)"))
+[2025-06-15T09:36:05.222+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-04 between 2024-11-04 and MEM: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:36:05.565+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-04 between 2024-11-04 and SAC: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:36:08.880+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-04 between 2024-11-04 and UTA: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:36:12.230+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-04 between 2024-11-04 and NYK: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:36:15.675+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-04 between 2024-11-04 and CHO: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:36:18.090+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-04 between 2024-11-04 and ORL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:36:21.443+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-04 between 2024-11-04 and POR: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:36:24.784+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-04 between 2024-11-04 and IND: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:36:28.206+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-04 between 2024-11-04 and TOR: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:36:31.557+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-04 between 2024-11-04 and PHI: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:36:34.980+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-04 between 2024-11-04 and SAS: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:36:38.535+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-06 between 2024-11-06 and DET: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:36:41.976+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-06 between 2024-11-06 and ORL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:36:45.311+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-06 between 2024-11-06 and NYK: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:36:48.853+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-06 between 2024-11-06 and GSW: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:36:52.199+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-06 between 2024-11-06 and SAS: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:36:55.612+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-06 between 2024-11-06 and LAL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:36:58.953+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-06 between 2024-11-06 and CLE: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:37:02.250+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-06 between 2024-11-06 and CHI: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:37:05.547+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-06 between 2024-11-06 and OKC: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:37:08.853+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-06 between 2024-11-06 and MIA: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:37:12.175+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-06 between 2024-11-06 and PHI: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:37:15.496+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-06 between 2024-11-06 and TOR: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:37:19.347+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-07 between 2024-11-07 and MIN: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:37:22.669+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-07 between 2024-11-07 and UTA: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:37:25.963+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-07 between 2024-11-07 and POR: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:37:29.502+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-08 between 2024-11-08 and IND: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:37:32.817+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-08 between 2024-11-08 and ATL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:37:36.167+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-08 between 2024-11-08 and NOP: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:37:39.509+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-08 between 2024-11-08 and BRK: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:37:42.941+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-08 between 2024-11-08 and GSW: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:37:46.294+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-08 between 2024-11-08 and MIL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:37:49.601+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-08 between 2024-11-08 and PHO: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:37:52.913+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-08 between 2024-11-08 and WAS: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:37:56.332+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-08 between 2024-11-08 and HOU: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:37:59.662+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-08 between 2024-11-08 and POR: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:38:03.108+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-08 between 2024-11-08 and MIA: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:38:06.430+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-08 between 2024-11-08 and PHI: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:38:09.768+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-08 between 2024-11-08 and LAC: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:38:13.211+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-09 between 2024-11-09 and UTA: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:38:16.600+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-09 between 2024-11-09 and CHI: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:38:19.929+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-09 between 2024-11-09 and BRK: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:38:23.216+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-09 between 2024-11-09 and TOR: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:38:26.848+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-10 between 2024-11-10 and HOU: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:38:30.202+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-10 between 2024-11-10 and BOS: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:38:33.486+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-10 between 2024-11-10 and NYK: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:38:36.779+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-10 between 2024-11-10 and WAS: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:38:40.094+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-10 between 2024-11-10 and CHO: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:38:43.411+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-10 between 2024-11-10 and MIA: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:38:46.760+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-10 between 2024-11-10 and GSW: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:38:50.199+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-10 between 2024-11-10 and DAL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:38:53.503+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-10 between 2024-11-10 and SAC: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:38:56.819+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-10 between 2024-11-10 and MEM: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:39:00.120+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-10 between 2024-11-10 and TOR: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:39:03.613+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-11 between 2024-11-11 and CLE: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:39:06.937+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-11 between 2024-11-11 and WAS: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:39:10.265+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-11 between 2024-11-11 and BRK: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:39:13.652+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-11 between 2024-11-11 and LAC: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:39:16.993+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-11 between 2024-11-11 and SAC: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:39:20.493+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-12 between 2024-11-12 and ATL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:39:23.829+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-12 between 2024-11-12 and MIA: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:39:27.167+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-12 between 2024-11-12 and CHO: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:39:30.516+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-12 between 2024-11-12 and NYK: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:39:33.804+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-12 between 2024-11-12 and TOR: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:39:37.129+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-12 between 2024-11-12 and PHO: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:39:40.539+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-12 between 2024-11-12 and DAL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:39:43.884+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-12 between 2024-11-12 and MIN: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:39:47.507+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-13 between 2024-11-13 and IND: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:39:50.961+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-13 between 2024-11-13 and BOS: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:39:54.306+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-13 between 2024-11-13 and CHI: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:39:57.633+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-13 between 2024-11-13 and CLE: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:40:01.110+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-13 between 2024-11-13 and NOP: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:40:04.427+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-13 between 2024-11-13 and LAC: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:40:07.735+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-13 between 2024-11-13 and DET: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:40:11.020+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-13 between 2024-11-13 and WAS: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:40:14.332+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-13 between 2024-11-13 and MEM: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:40:17.658+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-13 between 2024-11-13 and MIN: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:40:20.979+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-13 between 2024-11-13 and PHO: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:40:24.570+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-14 between 2024-11-14 and DAL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:40:28.158+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-15 between 2024-11-15 and MIA: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:40:31.446+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-15 between 2024-11-15 and PHI: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:40:34.730+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-15 between 2024-11-15 and DET: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:40:38.111+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-15 between 2024-11-15 and WAS: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:40:41.440+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-15 between 2024-11-15 and CHI: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:40:44.841+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-15 between 2024-11-15 and BRK: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:40:48.309+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-15 between 2024-11-15 and LAL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:40:51.645+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-15 between 2024-11-15 and LAC: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:40:54.980+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-15 between 2024-11-15 and DEN: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:40:58.331+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-15 between 2024-11-15 and PHO: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:41:01.692+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-15 between 2024-11-15 and MEM: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:41:05.018+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-15 between 2024-11-15 and MIN: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:41:08.669+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-16 between 2024-11-16 and MIL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:41:12.016+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-16 between 2024-11-16 and TOR: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:41:15.372+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-16 between 2024-11-16 and LAL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:41:18.788+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-16 between 2024-11-16 and SAS: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:41:22.083+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-16 between 2024-11-16 and UTA: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:41:25.608+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-17 between 2024-11-17 and PHO: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:41:28.988+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-17 between 2024-11-17 and MIA: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:41:32.396+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-17 between 2024-11-17 and CHO: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:41:35.752+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-17 between 2024-11-17 and DET: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:41:39.064+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-17 between 2024-11-17 and DEN: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:41:42.428+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-17 between 2024-11-17 and ATL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:41:45.742+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-17 between 2024-11-17 and BRK: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:41:49.244+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-17 between 2024-11-17 and HOU: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:41:52.558+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-17 between 2024-11-17 and DAL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:41:55.994+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-17 between 2024-11-17 and UTA: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:41:59.589+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-18 between 2024-11-18 and CHI: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:42:02.893+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-18 between 2024-11-18 and PHI: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:42:06.240+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-18 between 2024-11-18 and WAS: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:42:09.558+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-18 between 2024-11-18 and IND: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:42:12.902+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-18 between 2024-11-18 and HOU: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:42:16.250+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-18 between 2024-11-18 and ORL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:42:19.846+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-18 between 2024-11-18 and ATL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:42:23.286+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-18 between 2024-11-18 and GSW: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:42:26.868+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-19 between 2024-11-19 and CLE: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:42:30.185+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-19 between 2024-11-19 and CHO: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:42:33.497+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-19 between 2024-11-19 and DEN: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:42:36.828+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-19 between 2024-11-19 and NOP: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:42:40.148+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-19 between 2024-11-19 and OKC: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:42:43.435+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-19 between 2024-11-19 and UTA: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:42:47.282+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-20 between 2024-11-20 and NOP: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:42:50.664+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-20 between 2024-11-20 and CHI: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:42:54.031+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-20 between 2024-11-20 and IND: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:42:57.355+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-20 between 2024-11-20 and PHI: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:43:00.692+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-20 between 2024-11-20 and POR: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:43:04.048+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-20 between 2024-11-20 and NYK: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:43:07.466+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-20 between 2024-11-20 and ATL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:43:10.780+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-20 between 2024-11-20 and ORL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:43:14.371+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-21 between 2024-11-21 and DET: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:43:17.796+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-21 between 2024-11-21 and MIN: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:43:21.117+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-21 between 2024-11-21 and UTA: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:43:24.418+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-21 between 2024-11-21 and ORL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:43:28.010+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-22 between 2024-11-22 and BRK: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:43:31.490+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-22 between 2024-11-22 and BOS: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:43:34.956+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-22 between 2024-11-22 and IND: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:43:38.494+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-22 between 2024-11-22 and ATL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:43:41.864+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-22 between 2024-11-22 and POR: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:43:45.204+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-22 between 2024-11-22 and GSW: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:43:48.725+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-22 between 2024-11-22 and DAL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:43:55.532+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-22 between 2024-11-22 and SAC: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T09:44:10.699+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-23 between 2024-11-23 and NYK: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2025-06-15T09:44:28.057+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-23 between 2024-11-23 and DET: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2025-06-15T09:44:43.952+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-23 between 2024-11-23 and MEM: HTTPSConnectionPool(host='www.basketball-reference.com', port=443): Max retries exceeded with url: /boxscores/?month=11&year=2024&day=23 (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:1133)')))
+[2025-06-15T09:45:00.174+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-23 between 2024-11-23 and POR: HTTPSConnectionPool(host='www.basketball-reference.com', port=443): Max retries exceeded with url: /boxscores/?month=11&year=2024&day=23 (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:1133)')))
+[2025-06-15T12:45:13.484+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-23 between 2024-11-23 and CHO: HTTPSConnectionPool(host='www.basketball-reference.com', port=443): Max retries exceeded with url: /boxscores/?month=11&year=2024&day=23 (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:1133)')))
+[2025-06-15T12:45:13.907+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-23 between 2024-11-23 and GSW: HTTPSConnectionPool(host='www.basketball-reference.com', port=443): Max retries exceeded with url: /boxscores/?month=11&year=2024&day=23 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x79812d29b5b0>: Failed to resolve 'www.basketball-reference.com' ([Errno -2] Name or service not known)"))
+[2025-06-15T12:45:17.204+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-23 between 2024-11-23 and DEN: HTTPSConnectionPool(host='www.basketball-reference.com', port=443): Max retries exceeded with url: /boxscores/?month=11&year=2024&day=23 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x79812d0936a0>: Failed to resolve 'www.basketball-reference.com' ([Errno -2] Name or service not known)"))
+[2025-06-15T12:45:22.297+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-24 between 2024-11-24 and MIN: HTTPSConnectionPool(host='www.basketball-reference.com', port=443): Max retries exceeded with url: /boxscores/?month=11&year=2024&day=24 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x79812d4438b0>: Failed to resolve 'www.basketball-reference.com' ([Errno -2] Name or service not known)"))
+[2025-06-15T12:45:25.407+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-24 between 2024-11-24 and WAS: HTTPSConnectionPool(host='www.basketball-reference.com', port=443): Max retries exceeded with url: /boxscores/?month=11&year=2024&day=24 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x79812d2b0280>: Failed to resolve 'www.basketball-reference.com' ([Errno -2] Name or service not known)"))
+[2025-06-15T13:16:04.697+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-24 between 2024-11-24 and DAL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:16:05.628+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-24 between 2024-11-24 and LAC: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:16:09.414+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-24 between 2024-11-24 and TOR: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:16:12.930+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-24 between 2024-11-24 and BRK: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:16:19.519+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-25 between 2024-11-25 and ORL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:17:27.932+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-25 between 2024-11-25 and TOR: HTTPSConnectionPool(host='www.basketball-reference.com', port=443): Max retries exceeded with url: /boxscores/?month=11&year=2024&day=25 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x79812d28f460>: Failed to resolve 'www.basketball-reference.com' ([Errno -2] Name or service not known)"))
+[2025-06-15T13:17:27.951+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-25 between 2024-11-25 and NOP: HTTPSConnectionPool(host='www.basketball-reference.com', port=443): Max retries exceeded with url: /boxscores/?month=11&year=2024&day=25 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x79812afdf460>: Failed to resolve 'www.basketball-reference.com' ([Errno -2] Name or service not known)"))
+[2025-06-15T13:17:31.728+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-25 between 2024-11-25 and DAL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:17:35.479+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-25 between 2024-11-25 and LAC: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:17:38.802+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-25 between 2024-11-25 and POR: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:17:42.240+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-25 between 2024-11-25 and NYK: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:17:45.559+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-25 between 2024-11-25 and BRK: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:17:48.509+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-25 between 2024-11-25 and OKC: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:17:55.135+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-26 between 2024-11-26 and CHI: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:17:55.499+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-26 between 2024-11-26 and MIL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:17:58.823+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-26 between 2024-11-26 and HOU: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:18:02.117+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-26 between 2024-11-26 and SAS: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:18:05.417+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-26 between 2024-11-26 and LAL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:18:12.487+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-27 between 2024-11-27 and MIA: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:18:13.023+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-27 between 2024-11-27 and ATL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:18:16.563+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-27 between 2024-11-27 and POR: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:18:20.235+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-27 between 2024-11-27 and CHI: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:18:23.557+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-27 between 2024-11-27 and HOU: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:18:27.046+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-27 between 2024-11-27 and LAC: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:18:31.084+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-27 between 2024-11-27 and NYK: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:18:34.626+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-27 between 2024-11-27 and DET: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:18:38.123+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-27 between 2024-11-27 and SAC: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:18:41.407+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-27 between 2024-11-27 and TOR: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:18:44.706+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-27 between 2024-11-27 and LAL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:18:48.081+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-27 between 2024-11-27 and BRK: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:18:51.371+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-27 between 2024-11-27 and DEN: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:18:54.805+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-27 between 2024-11-27 and OKC: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:19:00.554+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-29 between 2024-11-29 and NYK: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:19:00.966+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-29 between 2024-11-29 and CLE: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:19:04.270+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-29 between 2024-11-29 and NOP: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:19:07.694+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-29 between 2024-11-29 and ORL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:19:10.988+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-29 between 2024-11-29 and LAC: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:19:14.320+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-29 between 2024-11-29 and DET: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:19:17.884+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-29 between 2024-11-29 and TOR: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:19:21.519+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-29 between 2024-11-29 and BOS: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:19:24.944+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-29 between 2024-11-29 and OKC: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:19:27.793+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-29 between 2024-11-29 and SAC: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:21:11.472+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-30 between 2024-11-30 and ATL: 'NoneType' object has no attribute 'replace'
+[2025-06-15T13:22:51.840+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-30 between 2024-11-30 and PHI: 'NoneType' object has no attribute 'replace'
+[2025-06-15T13:23:03.093+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-30 between 2024-11-30 and WAS: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:23:03.482+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-30 between 2024-11-30 and GSW: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:23:06.843+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-11-30 between 2024-11-30 and DAL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:23:11.999+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-01 between 2024-12-01 and ORL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:23:15.532+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-01 between 2024-12-01 and IND: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:23:18.887+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-01 between 2024-12-01 and BOS: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:23:22.163+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-01 between 2024-12-01 and NOP: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:23:25.033+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-01 between 2024-12-01 and MIA: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:23:28.369+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-01 between 2024-12-01 and OKC: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:23:31.654+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-01 between 2024-12-01 and LAL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:23:35.185+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-01 between 2024-12-01 and DAL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:23:38.813+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-01 between 2024-12-01 and SAS: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:23:42.135+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-01 between 2024-12-01 and DEN: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:23:46.955+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-02 between 2024-12-02 and NOP: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:23:50.252+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-02 between 2024-12-02 and MIA: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:23:54.172+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-02 between 2024-12-02 and BRK: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:23:57.494+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-02 between 2024-12-02 and LAL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:24:01.916+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-03 between 2024-12-03 and PHI: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:24:05.481+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-03 between 2024-12-03 and WAS: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:24:08.864+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-03 between 2024-12-03 and MIL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:24:12.264+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-03 between 2024-12-03 and ORL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:24:15.642+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-03 between 2024-12-03 and IND: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:24:18.967+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-03 between 2024-12-03 and UTA: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:24:22.246+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-03 between 2024-12-03 and MEM: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:24:25.249+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-03 between 2024-12-03 and SAS: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:24:28.549+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-03 between 2024-12-03 and GSW: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:24:31.861+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-03 between 2024-12-03 and HOU: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:24:35.136+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-03 between 2024-12-03 and POR: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:24:41.229+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-04 between 2024-12-04 and DET: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:24:41.493+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-04 between 2024-12-04 and IND: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:24:44.910+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-04 between 2024-12-04 and LAL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:24:49.499+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-04 between 2024-12-04 and ORL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:24:52.283+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-04 between 2024-12-04 and ATL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:24:55.714+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-04 between 2024-12-04 and MIN: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:25:17.712+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-05 between 2024-12-05 and DEN: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:25:17.977+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-05 between 2024-12-05 and DAL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:25:21.384+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-05 between 2024-12-05 and CHO: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:25:24.090+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-05 between 2024-12-05 and OKC: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:25:27.364+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-05 between 2024-12-05 and SAC: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:25:30.786+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-05 between 2024-12-05 and PHO: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:25:34.059+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-05 between 2024-12-05 and CHI: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:25:37.357+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-05 between 2024-12-05 and HOU: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:25:43.110+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-06 between 2024-12-06 and ORL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:25:46.394+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-06 between 2024-12-06 and LAL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:25:49.687+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-06 between 2024-12-06 and MIL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:25:52.664+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-06 between 2024-12-06 and IND: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:25:56.087+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-06 between 2024-12-06 and SAC: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:25:59.374+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-06 between 2024-12-06 and MIN: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:26:02.643+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-06 between 2024-12-06 and UTA: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:26:10.077+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-07 between 2024-12-07 and CLE: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:26:10.925+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-07 between 2024-12-07 and DEN: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:26:14.431+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-07 between 2024-12-07 and OKC: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:26:17.776+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-07 between 2024-12-07 and DET: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:26:20.607+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-07 between 2024-12-07 and DAL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:26:23.989+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-07 between 2024-12-07 and MEM: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:26:27.303+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-07 between 2024-12-07 and PHO: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:26:33.413+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-08 between 2024-12-08 and PHI: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:26:33.674+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-08 between 2024-12-08 and MIL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:26:36.959+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-08 between 2024-12-08 and CHO: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:26:40.265+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-08 between 2024-12-08 and DEN: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:26:43.619+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-08 between 2024-12-08 and CLE: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:26:47.175+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-08 between 2024-12-08 and PHO: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:26:49.949+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-08 between 2024-12-08 and MEM: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:26:53.265+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-08 between 2024-12-08 and NOP: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:26:56.582+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-08 between 2024-12-08 and MIN: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:26:59.915+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-08 between 2024-12-08 and HOU: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:27:03.180+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-08 between 2024-12-08 and UTA: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:27:06.637+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-08 between 2024-12-08 and POR: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:27:12.958+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-09 between 2024-12-09 and NYK: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:27:14.747+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-10 between 2024-12-10 and ORL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:27:17.994+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-10 between 2024-12-10 and DAL: 'in <string>' requires string as left operand, not datetime.date
+[2025-06-15T13:29:01.122+0000] {logging_mixin.py:188} INFO - Error processing game on 2024-12-11 between 2024-12-11 and ATL: 'NoneType' object has no attribute 'replace'
+[2025-06-15T13:29:38.896+0000] {local_task_job_runner.py:124} ERROR - Received SIGTERM. Terminating subprocesses
+[2025-06-15T13:29:38.911+0000] {process_utils.py:132} INFO - Sending 15 to group 526. PIDs of all processes in the group: [526]
+[2025-06-15T13:29:38.935+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 526
+[2025-06-15T13:29:38.956+0000] {taskinstance.py:2611} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-06-15T13:29:38.996+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-06-15T13:29:39.008+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/etl_pipeline.py", line 169, in fetch_and_load_shot_chart_to_stage
+    CREATE TABLE IF NOT EXISTS table_name (
+  File "/opt/airflow/plugins/nba_lib/shot_charts.py", line 38, in get_shot_chart
+    suffix = get_game_suffix(date, team1, team2).replace('/boxscores', '')
+  File "/opt/airflow/plugins/nba_lib/utils.py", line 12, in get_game_suffix
+    r = get_wrapper(f'https://www.basketball-reference.com/boxscores/?month={date.month}&year={date.year}&day={date.day}')
+  File "/opt/airflow/plugins/nba_lib/request_utils.py", line 34, in get_wrapper
+    r = get(url)
+  File "/home/airflow/.local/lib/python3.9/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/requests/adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "/home/airflow/.local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/home/airflow/.local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/home/airflow/.local/lib/python3.9/site-packages/urllib3/connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "/usr/local/lib/python3.9/http/client.py", line 1377, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.9/http/client.py", line 320, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.9/http/client.py", line 281, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "/usr/local/lib/python3.9/ssl.py", line 1275, in recv_into
+    return self.read(nbytes, buffer)
+  File "/usr/local/lib/python3.9/ssl.py", line 1133, in read
+    return self._sslobj.read(len, buffer)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 2613, in signal_handler
+    raise AirflowTaskTerminated("Task received SIGTERM signal")
+airflow.exceptions.AirflowTaskTerminated: Task received SIGTERM signal
+[2025-06-15T13:29:39.610+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=nba_etl_to_postgres, task_id=fetch_shot_chart_and_load_to_postgres, run_id=manual__2025-06-15T09:29:10.226536+00:00, execution_date=20250615T092910, start_date=20250615T092927, end_date=20250615T132939
+[2025-06-15T13:29:39.749+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=526, status='terminated', exitcode=2, started='09:29:27') (526) terminated with exit code 2
+[2025-06-15T13:29:39.751+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 143
+[2025-06-15T13:29:39.772+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-06-15T13:29:41.265+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

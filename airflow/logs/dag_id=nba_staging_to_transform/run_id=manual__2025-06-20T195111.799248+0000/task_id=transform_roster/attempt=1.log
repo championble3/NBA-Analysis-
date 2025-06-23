@@ -1,0 +1,113 @@
+[2025-06-20T19:51:17.386+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-06-20T19:51:17.419+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: nba_staging_to_transform.transform_roster manual__2025-06-20T19:51:11.799248+00:00 [queued]>
+[2025-06-20T19:51:17.428+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: nba_staging_to_transform.transform_roster manual__2025-06-20T19:51:11.799248+00:00 [queued]>
+[2025-06-20T19:51:17.429+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-06-20T19:51:17.513+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): transform_roster> on 2025-06-20 19:51:11.799248+00:00
+[2025-06-20T19:51:17.520+0000] {standard_task_runner.py:63} INFO - Started process 5259 to run task
+[2025-06-20T19:51:17.525+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'nba_staging_to_transform', 'transform_roster', 'manual__2025-06-20T19:51:11.799248+00:00', '--job-id', '383', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/tmp/tmp687ykns8']
+[2025-06-20T19:51:17.526+0000] {standard_task_runner.py:91} INFO - Job 383: Subtask transform_roster
+[2025-06-20T19:51:17.719+0000] {task_command.py:426} INFO - Running <TaskInstance: nba_staging_to_transform.transform_roster manual__2025-06-20T19:51:11.799248+00:00 [running]> on host 5ea278fdf3a6
+[2025-06-20T19:51:18.012+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='nba_staging_to_transform' AIRFLOW_CTX_TASK_ID='transform_roster' AIRFLOW_CTX_EXECUTION_DATE='2025-06-20T19:51:11.799248+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-20T19:51:11.799248+00:00'
+[2025-06-20T19:51:18.015+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-06-20T19:51:18.044+0000] {etl_pipeline.py:290} INFO - Fetching data for transformation: transformroster
+[2025-06-20T19:51:18.055+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/etl_pipeline.py:291 UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+[2025-06-20T19:51:18.057+0000] {etl_pipeline.py:294} ERROR - Failed to fetch data for transformroster from database: Execution failed on sql '
+            SELECT 
+                CASE WHEN number IS NULL OR number = 'NaN' THEN 'No Data' ELSE number END AS number,
+                CASE WHEN player IS NULL OR player = 'NaN' THEN 'No Data' ELSE player END AS player,
+                CASE WHEN pos IS NULL OR pos = 'NaN' THEN 'No Data' ELSE pos END AS position,
+                CASE WHEN height IS NULL OR height = 'NaN' THEN 'No Data' ELSE height END AS height,
+                CASE WHEN weight IS NULL OR weight = 'NaN' THEN -1 ELSE CAST(NULLIF(regexp_replace(weight, '[^0-9.]', '', 'g'), '') AS DECIMAL(5, 2)) AS weight END AS weight,
+                birth_date AS birthdate,
+                CASE WHEN nationality IS NULL OR nationality = 'NaN' THEN 'ND' ELSE LEFT(nationality, 2) END AS nationality,
+                CASE 
+                    WHEN experience = 'R' THEN 0
+                    WHEN experience ~ '^[0-9]+$' THEN CAST(experience AS INT)
+                    ELSE -1
+                END AS experience,
+                CASE WHEN college IS NULL OR college = 'NaN' THEN 'No Data' ELSE college END AS college,
+                CASE WHEN team IS NULL OR team = 'NaN' THEN 'No Data' ELSE team END AS team,
+                (number IS NOT NULL AND number != 'NaN') AS didplayed
+            FROM stgroster;': syntax error at or near "AS"
+LINE 7: ...eight, '[^0-9.]', '', 'g'), '') AS DECIMAL(5, 2)) AS weight ...
+                                                             ^
+
+[2025-06-20T19:51:18.057+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-06-20T19:51:18.058+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/io/sql.py", line 2262, in execute
+    cur.execute(sql, *args)
+psycopg2.errors.SyntaxError: syntax error at or near "AS"
+LINE 7: ...eight, '[^0-9.]', '', 'g'), '') AS DECIMAL(5, 2)) AS weight ...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/etl_pipeline.py", line 321, in fetch_transform_roster
+    run_transform_query(
+  File "/opt/airflow/dags/etl_pipeline.py", line 291, in run_transform_query
+    df = pd.read_sql(select_query, conn)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/io/sql.py", line 654, in read_sql
+    return pandas_sql.read_query(
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/io/sql.py", line 2326, in read_query
+    cursor = self.execute(sql, params)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/io/sql.py", line 2274, in execute
+    raise ex from exc
+pandas.errors.DatabaseError: Execution failed on sql '
+            SELECT 
+                CASE WHEN number IS NULL OR number = 'NaN' THEN 'No Data' ELSE number END AS number,
+                CASE WHEN player IS NULL OR player = 'NaN' THEN 'No Data' ELSE player END AS player,
+                CASE WHEN pos IS NULL OR pos = 'NaN' THEN 'No Data' ELSE pos END AS position,
+                CASE WHEN height IS NULL OR height = 'NaN' THEN 'No Data' ELSE height END AS height,
+                CASE WHEN weight IS NULL OR weight = 'NaN' THEN -1 ELSE CAST(NULLIF(regexp_replace(weight, '[^0-9.]', '', 'g'), '') AS DECIMAL(5, 2)) AS weight END AS weight,
+                birth_date AS birthdate,
+                CASE WHEN nationality IS NULL OR nationality = 'NaN' THEN 'ND' ELSE LEFT(nationality, 2) END AS nationality,
+                CASE 
+                    WHEN experience = 'R' THEN 0
+                    WHEN experience ~ '^[0-9]+$' THEN CAST(experience AS INT)
+                    ELSE -1
+                END AS experience,
+                CASE WHEN college IS NULL OR college = 'NaN' THEN 'No Data' ELSE college END AS college,
+                CASE WHEN team IS NULL OR team = 'NaN' THEN 'No Data' ELSE team END AS team,
+                (number IS NOT NULL AND number != 'NaN') AS didplayed
+            FROM stgroster;': syntax error at or near "AS"
+LINE 7: ...eight, '[^0-9.]', '', 'g'), '') AS DECIMAL(5, 2)) AS weight ...
+                                                             ^
+
+[2025-06-20T19:51:18.075+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=nba_staging_to_transform, task_id=transform_roster, run_id=manual__2025-06-20T19:51:11.799248+00:00, execution_date=20250620T195111, start_date=20250620T195117, end_date=20250620T195118
+[2025-06-20T19:51:18.140+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 383 for task transform_roster (Execution failed on sql '
+            SELECT 
+                CASE WHEN number IS NULL OR number = 'NaN' THEN 'No Data' ELSE number END AS number,
+                CASE WHEN player IS NULL OR player = 'NaN' THEN 'No Data' ELSE player END AS player,
+                CASE WHEN pos IS NULL OR pos = 'NaN' THEN 'No Data' ELSE pos END AS position,
+                CASE WHEN height IS NULL OR height = 'NaN' THEN 'No Data' ELSE height END AS height,
+                CASE WHEN weight IS NULL OR weight = 'NaN' THEN -1 ELSE CAST(NULLIF(regexp_replace(weight, '[^0-9.]', '', 'g'), '') AS DECIMAL(5, 2)) AS weight END AS weight,
+                birth_date AS birthdate,
+                CASE WHEN nationality IS NULL OR nationality = 'NaN' THEN 'ND' ELSE LEFT(nationality, 2) END AS nationality,
+                CASE 
+                    WHEN experience = 'R' THEN 0
+                    WHEN experience ~ '^[0-9]+$' THEN CAST(experience AS INT)
+                    ELSE -1
+                END AS experience,
+                CASE WHEN college IS NULL OR college = 'NaN' THEN 'No Data' ELSE college END AS college,
+                CASE WHEN team IS NULL OR team = 'NaN' THEN 'No Data' ELSE team END AS team,
+                (number IS NOT NULL AND number != 'NaN') AS didplayed
+            FROM stgroster;': syntax error at or near "AS"
+LINE 7: ...eight, '[^0-9.]', '', 'g'), '') AS DECIMAL(5, 2)) AS weight ...
+                                                             ^
+; 5259)
+[2025-06-20T19:51:18.178+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2025-06-20T19:51:18.202+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-06-20T19:51:18.269+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

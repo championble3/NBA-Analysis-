@@ -1,0 +1,36 @@
+[2025-06-19T11:58:22.589+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-06-19T11:58:22.649+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: nba_etl_to_postgres.fetch_schedule_and_load_to_postgres manual__2025-06-19T11:58:20.407487+00:00 [queued]>
+[2025-06-19T11:58:22.871+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: nba_etl_to_postgres.fetch_schedule_and_load_to_postgres manual__2025-06-19T11:58:20.407487+00:00 [queued]>
+[2025-06-19T11:58:22.872+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-06-19T11:58:22.956+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): fetch_schedule_and_load_to_postgres> on 2025-06-19 11:58:20.407487+00:00
+[2025-06-19T11:58:22.968+0000] {standard_task_runner.py:63} INFO - Started process 2785 to run task
+[2025-06-19T11:58:22.979+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'nba_etl_to_postgres', 'fetch_schedule_and_load_to_postgres', 'manual__2025-06-19T11:58:20.407487+00:00', '--job-id', '126', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/tmp/tmpu55tijj6']
+[2025-06-19T11:58:22.981+0000] {standard_task_runner.py:91} INFO - Job 126: Subtask fetch_schedule_and_load_to_postgres
+[2025-06-19T11:58:23.129+0000] {task_command.py:426} INFO - Running <TaskInstance: nba_etl_to_postgres.fetch_schedule_and_load_to_postgres manual__2025-06-19T11:58:20.407487+00:00 [running]> on host 11d91b3c2b82
+[2025-06-19T11:58:23.319+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='nba_etl_to_postgres' AIRFLOW_CTX_TASK_ID='fetch_schedule_and_load_to_postgres' AIRFLOW_CTX_EXECUTION_DATE='2025-06-19T11:58:20.407487+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-19T11:58:20.407487+00:00'
+[2025-06-19T11:58:23.320+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-06-19T11:58:23.335+0000] {logging_mixin.py:188} INFO - Fetching schedule from NBA API...
+[2025-06-19T11:58:23.821+0000] {logging_mixin.py:188} INFO - Failed to fetch data from NBA API: 403 Client Error: Forbidden for url: https://cdn.nba.com/static/json/staticData/scheduleLeague+V2.json
+[2025-06-19T11:58:23.822+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-06-19T11:58:23.822+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/etl_pipeline.py", line 101, in fetch_and_load_schedule_to_stage
+    res.raise_for_status()
+  File "/home/airflow/.local/lib/python3.9/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://cdn.nba.com/static/json/staticData/scheduleLeague+V2.json
+[2025-06-19T11:58:23.844+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=nba_etl_to_postgres, task_id=fetch_schedule_and_load_to_postgres, run_id=manual__2025-06-19T11:58:20.407487+00:00, execution_date=20250619T115820, start_date=20250619T115822, end_date=20250619T115823
+[2025-06-19T11:58:23.898+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 126 for task fetch_schedule_and_load_to_postgres (403 Client Error: Forbidden for url: https://cdn.nba.com/static/json/staticData/scheduleLeague+V2.json; 2785)
+[2025-06-19T11:58:23.937+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2025-06-19T11:58:24.049+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-06-19T11:58:24.089+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

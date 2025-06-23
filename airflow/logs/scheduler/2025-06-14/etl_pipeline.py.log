@@ -1,0 +1,1326 @@
+[2025-06-14T16:00:48.825+0000] {processor.py:161} INFO - Started process (PID=168) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:00:48.826+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:00:48.828+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:00:48.827+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:00:50.466+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:00:50.458+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/etl_pipeline.py
+Traceback (most recent call last):
+  File "/opt/airflow/plugins/nba_lib/shot_charts.py", line 8, in <module>
+    from utils import get_game_suffix
+ModuleNotFoundError: No module named 'utils'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_pipeline.py", line 18, in <module>
+    from nba_lib.shot_charts import get_shot_chart
+  File "/opt/airflow/plugins/nba_lib/shot_charts.py", line 11, in <module>
+    from basketball_reference_scraper.utils import get_game_suffix
+ModuleNotFoundError: No module named 'basketball_reference_scraper'
+[2025-06-14T16:00:50.484+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:00:50.543+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 1.726 seconds
+[2025-06-14T16:01:20.705+0000] {processor.py:161} INFO - Started process (PID=174) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:01:20.706+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:01:20.709+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:01:20.708+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:01:21.615+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:01:21.599+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/etl_pipeline.py
+Traceback (most recent call last):
+  File "/opt/airflow/plugins/nba_lib/shot_charts.py", line 8, in <module>
+    from utils import get_game_suffix
+ModuleNotFoundError: No module named 'utils'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_pipeline.py", line 18, in <module>
+    from nba_lib.shot_charts import get_shot_chart
+  File "/opt/airflow/plugins/nba_lib/shot_charts.py", line 11, in <module>
+    from basketball_reference_scraper.utils import get_game_suffix
+ModuleNotFoundError: No module named 'basketball_reference_scraper'
+[2025-06-14T16:01:21.619+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:01:21.682+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.985 seconds
+[2025-06-14T16:01:51.826+0000] {processor.py:161} INFO - Started process (PID=180) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:01:51.827+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:01:51.830+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:01:51.829+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:01:52.530+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:01:52.520+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/etl_pipeline.py
+Traceback (most recent call last):
+  File "/opt/airflow/plugins/nba_lib/shot_charts.py", line 8, in <module>
+    from utils import get_game_suffix
+ModuleNotFoundError: No module named 'utils'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_pipeline.py", line 18, in <module>
+    from nba_lib.shot_charts import get_shot_chart
+  File "/opt/airflow/plugins/nba_lib/shot_charts.py", line 11, in <module>
+    from basketball_reference_scraper.utils import get_game_suffix
+ModuleNotFoundError: No module named 'basketball_reference_scraper'
+[2025-06-14T16:01:52.535+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:01:52.589+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.771 seconds
+[2025-06-14T16:02:22.730+0000] {processor.py:161} INFO - Started process (PID=186) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:02:22.731+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:02:22.733+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:02:22.733+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:02:23.426+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:02:23.416+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/etl_pipeline.py
+Traceback (most recent call last):
+  File "/opt/airflow/plugins/nba_lib/shot_charts.py", line 8, in <module>
+    from utils import get_game_suffix
+ModuleNotFoundError: No module named 'utils'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_pipeline.py", line 18, in <module>
+    from nba_lib.shot_charts import get_shot_chart
+  File "/opt/airflow/plugins/nba_lib/shot_charts.py", line 11, in <module>
+    from basketball_reference_scraper.utils import get_game_suffix
+ModuleNotFoundError: No module named 'basketball_reference_scraper'
+[2025-06-14T16:02:23.431+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:02:23.548+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.826 seconds
+[2025-06-14T16:02:53.659+0000] {processor.py:161} INFO - Started process (PID=192) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:02:53.661+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:02:53.664+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:02:53.663+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:02:54.159+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:02:54.151+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/etl_pipeline.py
+Traceback (most recent call last):
+  File "/opt/airflow/plugins/nba_lib/shot_charts.py", line 8, in <module>
+    from utils import get_game_suffix
+ModuleNotFoundError: No module named 'utils'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_pipeline.py", line 18, in <module>
+    from nba_lib.shot_charts import get_shot_chart
+  File "/opt/airflow/plugins/nba_lib/shot_charts.py", line 11, in <module>
+    from basketball_reference_scraper.utils import get_game_suffix
+ModuleNotFoundError: No module named 'basketball_reference_scraper'
+[2025-06-14T16:02:54.163+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:02:54.223+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.573 seconds
+[2025-06-14T16:03:24.322+0000] {processor.py:161} INFO - Started process (PID=198) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:03:24.323+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:03:24.326+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:03:24.325+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:03:24.985+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:03:24.974+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/etl_pipeline.py
+Traceback (most recent call last):
+  File "/opt/airflow/plugins/nba_lib/shot_charts.py", line 8, in <module>
+    from utils import get_game_suffix
+ModuleNotFoundError: No module named 'utils'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_pipeline.py", line 18, in <module>
+    from nba_lib.shot_charts import get_shot_chart
+  File "/opt/airflow/plugins/nba_lib/shot_charts.py", line 11, in <module>
+    from basketball_reference_scraper.utils import get_game_suffix
+ModuleNotFoundError: No module named 'basketball_reference_scraper'
+[2025-06-14T16:03:24.989+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:03:25.047+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.733 seconds
+[2025-06-14T16:03:55.138+0000] {processor.py:161} INFO - Started process (PID=204) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:03:55.139+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:03:55.142+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:03:55.141+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:03:55.803+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:03:55.796+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/etl_pipeline.py
+Traceback (most recent call last):
+  File "/opt/airflow/plugins/nba_lib/shot_charts.py", line 8, in <module>
+    from utils import get_game_suffix
+ModuleNotFoundError: No module named 'utils'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_pipeline.py", line 18, in <module>
+    from nba_lib.shot_charts import get_shot_chart
+  File "/opt/airflow/plugins/nba_lib/shot_charts.py", line 11, in <module>
+    from basketball_reference_scraper.utils import get_game_suffix
+ModuleNotFoundError: No module named 'basketball_reference_scraper'
+[2025-06-14T16:03:55.807+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:03:55.898+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.769 seconds
+[2025-06-14T16:04:26.029+0000] {processor.py:161} INFO - Started process (PID=210) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:04:26.031+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:04:26.033+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:04:26.033+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:04:26.674+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:04:26.665+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/etl_pipeline.py
+Traceback (most recent call last):
+  File "/opt/airflow/plugins/nba_lib/shot_charts.py", line 8, in <module>
+    from utils import get_game_suffix
+ModuleNotFoundError: No module named 'utils'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_pipeline.py", line 18, in <module>
+    from nba_lib.shot_charts import get_shot_chart
+  File "/opt/airflow/plugins/nba_lib/shot_charts.py", line 11, in <module>
+    from basketball_reference_scraper.utils import get_game_suffix
+ModuleNotFoundError: No module named 'basketball_reference_scraper'
+[2025-06-14T16:04:26.677+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:04:26.727+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.706 seconds
+[2025-06-14T16:04:56.838+0000] {processor.py:161} INFO - Started process (PID=216) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:04:56.839+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:04:56.842+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:04:56.841+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:04:57.308+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:04:57.298+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/etl_pipeline.py
+Traceback (most recent call last):
+  File "/opt/airflow/plugins/nba_lib/shot_charts.py", line 8, in <module>
+    from utils import get_game_suffix
+ModuleNotFoundError: No module named 'utils'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_pipeline.py", line 18, in <module>
+    from nba_lib.shot_charts import get_shot_chart
+  File "/opt/airflow/plugins/nba_lib/shot_charts.py", line 11, in <module>
+    from basketball_reference_scraper.utils import get_game_suffix
+ModuleNotFoundError: No module named 'basketball_reference_scraper'
+[2025-06-14T16:04:57.311+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:04:57.364+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.533 seconds
+[2025-06-14T16:05:27.462+0000] {processor.py:161} INFO - Started process (PID=222) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:05:27.464+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:05:27.467+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:05:27.466+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:05:28.288+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:05:28.277+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/etl_pipeline.py
+Traceback (most recent call last):
+  File "/opt/airflow/plugins/nba_lib/shot_charts.py", line 8, in <module>
+    from utils import get_game_suffix
+ModuleNotFoundError: No module named 'utils'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_pipeline.py", line 18, in <module>
+    from nba_lib.shot_charts import get_shot_chart
+  File "/opt/airflow/plugins/nba_lib/shot_charts.py", line 11, in <module>
+    from basketball_reference_scraper.utils import get_game_suffix
+ModuleNotFoundError: No module named 'basketball_reference_scraper'
+[2025-06-14T16:05:28.292+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:05:28.360+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.906 seconds
+[2025-06-14T16:05:58.472+0000] {processor.py:161} INFO - Started process (PID=228) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:05:58.473+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:05:58.476+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:05:58.475+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:05:59.157+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:05:59.141+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/etl_pipeline.py
+Traceback (most recent call last):
+  File "/opt/airflow/plugins/nba_lib/shot_charts.py", line 8, in <module>
+    from utils import get_game_suffix
+ModuleNotFoundError: No module named 'utils'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_pipeline.py", line 18, in <module>
+    from nba_lib.shot_charts import get_shot_chart
+  File "/opt/airflow/plugins/nba_lib/shot_charts.py", line 11, in <module>
+    from basketball_reference_scraper.utils import get_game_suffix
+ModuleNotFoundError: No module named 'basketball_reference_scraper'
+[2025-06-14T16:05:59.163+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:05:59.255+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.790 seconds
+[2025-06-14T16:06:29.404+0000] {processor.py:161} INFO - Started process (PID=234) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:06:29.406+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:06:29.409+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:06:29.408+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:06:30.301+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:06:30.287+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/etl_pipeline.py
+Traceback (most recent call last):
+  File "/opt/airflow/plugins/nba_lib/shot_charts.py", line 8, in <module>
+    from utils import get_game_suffix
+ModuleNotFoundError: No module named 'utils'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_pipeline.py", line 18, in <module>
+    from nba_lib.shot_charts import get_shot_chart
+  File "/opt/airflow/plugins/nba_lib/shot_charts.py", line 11, in <module>
+    from basketball_reference_scraper.utils import get_game_suffix
+ModuleNotFoundError: No module named 'basketball_reference_scraper'
+[2025-06-14T16:06:30.309+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:06:30.428+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 1.031 seconds
+[2025-06-14T16:07:00.696+0000] {processor.py:161} INFO - Started process (PID=240) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:07:00.704+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:07:00.713+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:07:00.709+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:07:02.397+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:07:02.355+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/etl_pipeline.py
+Traceback (most recent call last):
+  File "/opt/airflow/plugins/nba_lib/shot_charts.py", line 8, in <module>
+    from utils import get_game_suffix
+ModuleNotFoundError: No module named 'utils'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_pipeline.py", line 18, in <module>
+    from nba_lib.shot_charts import get_shot_chart
+  File "/opt/airflow/plugins/nba_lib/shot_charts.py", line 11, in <module>
+    from basketball_reference_scraper.utils import get_game_suffix
+ModuleNotFoundError: No module named 'basketball_reference_scraper'
+[2025-06-14T16:07:02.409+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:07:02.502+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 1.894 seconds
+[2025-06-14T16:07:32.869+0000] {processor.py:161} INFO - Started process (PID=246) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:07:32.870+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:07:32.873+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:07:32.872+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:07:33.396+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:07:33.386+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/etl_pipeline.py
+Traceback (most recent call last):
+  File "/opt/airflow/plugins/nba_lib/shot_charts.py", line 8, in <module>
+    from utils import get_game_suffix
+ModuleNotFoundError: No module named 'utils'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_pipeline.py", line 18, in <module>
+    from nba_lib.shot_charts import get_shot_chart
+  File "/opt/airflow/plugins/nba_lib/shot_charts.py", line 11, in <module>
+    from basketball_reference_scraper.utils import get_game_suffix
+ModuleNotFoundError: No module named 'basketball_reference_scraper'
+[2025-06-14T16:07:33.400+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:07:33.446+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.583 seconds
+[2025-06-14T16:08:03.557+0000] {processor.py:161} INFO - Started process (PID=252) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:08:03.558+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:08:03.560+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:08:03.560+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:08:04.170+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:08:04.161+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/etl_pipeline.py
+Traceback (most recent call last):
+  File "/opt/airflow/plugins/nba_lib/shot_charts.py", line 8, in <module>
+    from utils import get_game_suffix
+ModuleNotFoundError: No module named 'utils'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_pipeline.py", line 18, in <module>
+    from nba_lib.shot_charts import get_shot_chart
+  File "/opt/airflow/plugins/nba_lib/shot_charts.py", line 11, in <module>
+    from basketball_reference_scraper.utils import get_game_suffix
+ModuleNotFoundError: No module named 'basketball_reference_scraper'
+[2025-06-14T16:08:04.174+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:08:04.254+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.705 seconds
+[2025-06-14T16:08:34.346+0000] {processor.py:161} INFO - Started process (PID=258) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:08:34.348+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:08:34.351+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:08:34.350+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:08:34.967+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:08:34.959+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/etl_pipeline.py
+Traceback (most recent call last):
+  File "/opt/airflow/plugins/nba_lib/shot_charts.py", line 8, in <module>
+    from utils import get_game_suffix
+ModuleNotFoundError: No module named 'utils'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_pipeline.py", line 18, in <module>
+    from nba_lib.shot_charts import get_shot_chart
+  File "/opt/airflow/plugins/nba_lib/shot_charts.py", line 11, in <module>
+    from basketball_reference_scraper.utils import get_game_suffix
+ModuleNotFoundError: No module named 'basketball_reference_scraper'
+[2025-06-14T16:08:34.971+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:08:35.074+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.736 seconds
+[2025-06-14T16:09:05.181+0000] {processor.py:161} INFO - Started process (PID=264) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:09:05.182+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:09:05.184+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:09:05.184+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:09:05.643+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:09:05.635+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/etl_pipeline.py
+Traceback (most recent call last):
+  File "/opt/airflow/plugins/nba_lib/shot_charts.py", line 8, in <module>
+    from utils import get_game_suffix
+ModuleNotFoundError: No module named 'utils'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_pipeline.py", line 18, in <module>
+    from nba_lib.shot_charts import get_shot_chart
+  File "/opt/airflow/plugins/nba_lib/shot_charts.py", line 11, in <module>
+    from basketball_reference_scraper.utils import get_game_suffix
+ModuleNotFoundError: No module named 'basketball_reference_scraper'
+[2025-06-14T16:09:05.647+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:09:05.711+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.537 seconds
+[2025-06-14T16:17:26.573+0000] {processor.py:161} INFO - Started process (PID=485) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:17:26.575+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:17:26.578+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:17:26.577+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:17:26.662+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:17:27.555+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:17:27.554+0000] {override.py:1829} INFO - Created Permission View: can delete on DAG:nba_etl_to_postgres
+[2025-06-14T16:17:27.629+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:17:27.628+0000] {override.py:1829} INFO - Created Permission View: can edit on DAG:nba_etl_to_postgres
+[2025-06-14T16:17:27.679+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:17:27.678+0000] {override.py:1829} INFO - Created Permission View: can read on DAG:nba_etl_to_postgres
+[2025-06-14T16:17:27.680+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:17:27.680+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:17:27.693+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:17:27.693+0000] {dag.py:3118} INFO - Creating ORM DAG for nba_etl_to_postgres
+[2025-06-14T16:17:27.704+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:17:27.704+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-01 00:00:00+00:00, run_after=2025-06-08 00:00:00+00:00
+[2025-06-14T16:17:27.981+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 1.418 seconds
+[2025-06-14T16:17:58.096+0000] {processor.py:161} INFO - Started process (PID=493) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:17:58.098+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:17:58.102+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:17:58.101+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:17:58.176+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:17:58.210+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:17:58.210+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:17:58.238+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:17:58.238+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-01 00:00:00+00:00, run_after=2025-06-08 00:00:00+00:00
+[2025-06-14T16:17:58.300+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.214 seconds
+[2025-06-14T16:18:28.524+0000] {processor.py:161} INFO - Started process (PID=510) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:18:28.526+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:18:28.531+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:18:28.530+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:18:28.627+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:18:28.666+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:18:28.666+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:18:28.703+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:18:28.702+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:18:28.765+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.261 seconds
+[2025-06-14T16:18:58.897+0000] {processor.py:161} INFO - Started process (PID=647) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:18:58.899+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:18:58.903+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:18:58.902+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:18:58.979+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:18:59.027+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:18:59.027+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:18:59.059+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:18:59.058+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:18:59.135+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.250 seconds
+[2025-06-14T16:19:40.463+0000] {processor.py:161} INFO - Started process (PID=707) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:19:40.465+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:19:40.469+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:19:40.468+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:19:40.914+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:19:42.596+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:19:42.595+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:19:43.476+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:19:43.476+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:19:43.661+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 3.210 seconds
+[2025-06-14T16:20:13.795+0000] {processor.py:161} INFO - Started process (PID=737) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:20:13.797+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:20:13.800+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:20:13.799+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:20:13.853+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:20:13.983+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:20:13.982+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:20:14.007+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:20:14.006+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:20:14.109+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.320 seconds
+[2025-06-14T16:20:44.231+0000] {processor.py:161} INFO - Started process (PID=778) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:20:44.233+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:20:44.235+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:20:44.235+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:20:44.293+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:20:44.325+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:20:44.325+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:20:44.352+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:20:44.352+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:20:44.428+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.205 seconds
+[2025-06-14T16:21:14.541+0000] {processor.py:161} INFO - Started process (PID=789) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:21:14.543+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:21:14.550+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:21:14.548+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:21:14.637+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:21:14.684+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:21:14.683+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:21:14.721+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:21:14.720+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:21:14.794+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.263 seconds
+[2025-06-14T16:21:45.086+0000] {processor.py:161} INFO - Started process (PID=800) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:21:45.087+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:21:45.090+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:21:45.090+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:21:45.145+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:21:45.179+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:21:45.179+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:21:45.207+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:21:45.206+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:21:45.281+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.208 seconds
+[2025-06-14T16:22:15.392+0000] {processor.py:161} INFO - Started process (PID=817) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:22:15.393+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:22:15.395+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:22:15.395+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:22:15.448+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:22:15.482+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:22:15.482+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:22:15.507+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:22:15.507+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:22:15.594+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.210 seconds
+[2025-06-14T16:22:45.655+0000] {processor.py:161} INFO - Started process (PID=834) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:22:45.657+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:22:45.660+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:22:45.660+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:22:45.752+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:22:45.784+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:22:45.783+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:22:45.808+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:22:45.808+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:22:45.873+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.225 seconds
+[2025-06-14T16:23:15.930+0000] {processor.py:161} INFO - Started process (PID=851) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:23:15.931+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:23:15.933+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:23:15.933+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:23:15.994+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:23:16.035+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:23:16.034+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:23:16.067+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:23:16.067+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:23:16.149+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.226 seconds
+[2025-06-14T16:23:46.230+0000] {processor.py:161} INFO - Started process (PID=862) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:23:46.231+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:23:46.234+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:23:46.234+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:23:46.294+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:23:46.327+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:23:46.327+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:23:46.351+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:23:46.351+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:23:46.391+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.170 seconds
+[2025-06-14T16:24:17.152+0000] {processor.py:161} INFO - Started process (PID=885) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:24:17.153+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:24:17.155+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:24:17.155+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:24:17.205+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:24:17.236+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:24:17.236+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:24:17.261+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:24:17.260+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:24:17.368+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.224 seconds
+[2025-06-14T16:24:35.376+0000] {processor.py:161} INFO - Started process (PID=890) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:24:35.377+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:24:35.381+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:24:35.381+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:24:35.557+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:24:35.590+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:24:35.590+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:24:35.618+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:24:35.617+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:24:35.702+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.335 seconds
+[2025-06-14T16:24:43.490+0000] {processor.py:161} INFO - Started process (PID=901) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:24:43.492+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:24:43.495+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:24:43.495+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:24:43.572+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:24:43.609+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:24:43.609+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:24:43.638+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:24:43.638+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:24:43.727+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.245 seconds
+[2025-06-14T16:26:11.915+0000] {processor.py:161} INFO - Started process (PID=485) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:26:11.916+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:26:11.919+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:26:11.918+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:26:12.062+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:26:12.552+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:26:12.552+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:26:12.572+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:26:12.572+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:26:13.009+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 1.103 seconds
+[2025-06-14T16:26:43.106+0000] {processor.py:161} INFO - Started process (PID=493) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:26:43.108+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:26:43.111+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:26:43.110+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:26:43.163+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:26:43.196+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:26:43.196+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:26:43.222+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:26:43.222+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:26:43.356+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.260 seconds
+[2025-06-14T16:27:13.635+0000] {processor.py:161} INFO - Started process (PID=566) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:27:13.643+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:27:13.654+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:27:13.653+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:27:13.771+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:27:13.821+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:27:13.820+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:27:13.938+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:27:13.934+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:27:14.233+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.660 seconds
+[2025-06-14T16:27:44.874+0000] {processor.py:161} INFO - Started process (PID=872) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:27:44.883+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:27:44.897+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:27:44.895+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:27:45.063+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:27:45.146+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:27:45.145+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:27:45.179+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:27:45.179+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:27:45.277+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.462 seconds
+[2025-06-14T16:28:15.411+0000] {processor.py:161} INFO - Started process (PID=980) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:28:15.414+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:28:15.418+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:28:15.417+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:28:15.490+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:28:15.539+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:28:15.539+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:28:15.576+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:28:15.576+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:28:15.683+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.283 seconds
+[2025-06-14T16:28:45.787+0000] {processor.py:161} INFO - Started process (PID=985) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:28:45.789+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:28:45.792+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:28:45.791+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:28:45.852+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:28:45.885+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:28:45.885+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:28:45.915+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:28:45.914+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:28:45.969+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.191 seconds
+[2025-06-14T16:29:16.100+0000] {processor.py:161} INFO - Started process (PID=1004) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:29:16.102+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:29:16.108+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:29:16.107+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:29:16.253+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:29:16.304+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:29:16.304+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:29:16.351+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:29:16.351+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:29:16.405+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.321 seconds
+[2025-06-14T16:29:46.506+0000] {processor.py:161} INFO - Started process (PID=1009) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:29:46.508+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:29:46.511+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:29:46.510+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:29:46.566+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:29:46.599+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:29:46.598+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:29:46.623+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:29:46.622+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:29:46.681+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.184 seconds
+[2025-06-14T16:30:16.794+0000] {processor.py:161} INFO - Started process (PID=1014) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:30:16.796+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:30:16.803+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:30:16.802+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:30:16.899+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:30:16.939+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:30:16.939+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:30:16.966+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:30:16.966+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:30:17.031+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.255 seconds
+[2025-06-14T16:30:47.137+0000] {processor.py:161} INFO - Started process (PID=1019) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:30:47.138+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:30:47.141+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:30:47.141+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:30:47.192+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:30:47.225+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:30:47.224+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:30:47.250+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:30:47.249+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:30:47.311+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.182 seconds
+[2025-06-14T16:31:17.401+0000] {processor.py:161} INFO - Started process (PID=1024) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:31:17.402+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:31:17.405+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:31:17.405+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:31:17.464+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:31:17.504+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:31:17.504+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:31:17.532+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:31:17.532+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:31:17.580+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.188 seconds
+[2025-06-14T16:31:47.665+0000] {processor.py:161} INFO - Started process (PID=1029) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:31:47.667+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:31:47.669+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:31:47.669+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:31:47.719+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:31:47.751+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:31:47.751+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:31:47.775+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:31:47.775+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:31:47.823+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.167 seconds
+[2025-06-14T16:32:17.919+0000] {processor.py:161} INFO - Started process (PID=1034) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:32:17.920+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:32:17.923+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:32:17.922+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:32:17.974+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:32:18.006+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:32:18.005+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:32:18.030+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:32:18.030+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:32:18.107+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.195 seconds
+[2025-06-14T16:32:48.195+0000] {processor.py:161} INFO - Started process (PID=1039) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:32:48.197+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:32:48.199+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:32:48.199+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:32:48.250+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:32:48.282+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:32:48.282+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:32:48.308+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:32:48.307+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:32:48.411+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.223 seconds
+[2025-06-14T16:33:18.523+0000] {processor.py:161} INFO - Started process (PID=1044) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:33:18.524+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:33:18.526+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:33:18.526+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:33:18.581+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:33:18.613+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:33:18.613+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:33:18.638+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:33:18.638+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:33:18.714+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.199 seconds
+[2025-06-14T16:33:48.840+0000] {processor.py:161} INFO - Started process (PID=1049) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:33:48.841+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:33:48.844+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:33:48.844+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:33:48.896+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:33:48.928+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:33:48.928+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:33:48.952+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:33:48.952+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:33:49.028+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.196 seconds
+[2025-06-14T16:34:19.144+0000] {processor.py:161} INFO - Started process (PID=1054) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:34:19.146+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:34:19.148+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:34:19.148+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:34:19.204+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:34:19.236+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:34:19.236+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:34:19.260+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:34:19.260+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:34:19.339+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.202 seconds
+[2025-06-14T16:34:49.475+0000] {processor.py:161} INFO - Started process (PID=1059) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:34:49.476+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:34:49.479+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:34:49.479+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:34:49.535+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:34:49.567+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:34:49.567+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:34:49.592+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:34:49.592+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:34:49.659+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.192 seconds
+[2025-06-14T16:35:19.739+0000] {processor.py:161} INFO - Started process (PID=1064) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:35:19.741+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:35:19.744+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:35:19.743+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:35:19.803+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:35:19.835+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:35:19.834+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:35:19.860+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:35:19.860+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:35:19.939+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.207 seconds
+[2025-06-14T16:35:50.009+0000] {processor.py:161} INFO - Started process (PID=1069) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:35:50.010+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:35:50.012+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:35:50.012+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:35:50.070+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:35:50.103+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:35:50.102+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:35:50.129+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:35:50.129+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:35:50.194+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.193 seconds
+[2025-06-14T16:36:20.348+0000] {processor.py:161} INFO - Started process (PID=1074) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:36:20.349+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:36:20.351+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:36:20.351+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:36:20.411+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:36:20.443+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:36:20.443+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:36:20.467+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:36:20.467+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:36:20.546+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.205 seconds
+[2025-06-14T16:36:50.670+0000] {processor.py:161} INFO - Started process (PID=1079) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:36:50.672+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:36:50.675+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:36:50.675+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:36:50.753+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:36:50.838+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:36:50.837+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:36:50.876+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:36:50.876+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:36:50.949+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.290 seconds
+[2025-06-14T16:37:21.048+0000] {processor.py:161} INFO - Started process (PID=1084) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:37:21.050+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:37:21.052+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:37:21.052+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:37:21.119+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:37:21.157+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:37:21.157+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:37:21.187+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:37:21.186+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:37:21.260+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.223 seconds
+[2025-06-14T16:37:51.416+0000] {processor.py:161} INFO - Started process (PID=1089) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:37:51.418+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:37:51.421+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:37:51.420+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:37:51.482+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:37:51.515+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:37:51.514+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:37:51.540+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:37:51.540+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:37:51.621+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.213 seconds
+[2025-06-14T16:38:21.725+0000] {processor.py:161} INFO - Started process (PID=1094) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:38:21.726+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:38:21.728+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:38:21.728+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:38:21.783+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:38:21.816+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:38:21.816+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:38:21.840+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:38:21.840+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:38:21.898+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.181 seconds
+[2025-06-14T16:38:52.036+0000] {processor.py:161} INFO - Started process (PID=1099) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:38:52.038+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:38:52.041+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:38:52.041+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:38:52.103+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:38:52.137+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:38:52.136+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:38:52.163+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:38:52.163+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:38:52.224+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.197 seconds
+[2025-06-14T16:39:22.301+0000] {processor.py:161} INFO - Started process (PID=1104) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:39:22.302+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:39:22.305+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:39:22.304+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:39:22.358+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:39:22.392+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:39:22.392+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:39:22.417+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:39:22.416+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:39:22.500+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.206 seconds
+[2025-06-14T16:39:52.613+0000] {processor.py:161} INFO - Started process (PID=1109) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:39:52.614+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:39:52.616+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:39:52.616+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:39:52.670+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:39:52.716+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:39:52.715+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:39:52.766+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:39:52.765+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:39:52.847+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.241 seconds
+[2025-06-14T16:40:22.964+0000] {processor.py:161} INFO - Started process (PID=1114) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:40:22.966+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:40:22.970+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:40:22.969+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:40:23.033+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:40:23.067+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:40:23.066+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:40:23.093+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:40:23.093+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:40:23.159+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.208 seconds
+[2025-06-14T16:40:53.285+0000] {processor.py:161} INFO - Started process (PID=1119) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:40:53.288+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:40:53.292+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:40:53.291+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:40:53.365+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:40:53.429+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:40:53.428+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:40:53.465+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:40:53.464+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:40:53.558+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.286 seconds
+[2025-06-14T16:41:23.687+0000] {processor.py:161} INFO - Started process (PID=1124) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:41:23.688+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:41:23.691+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:41:23.691+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:41:23.754+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:41:23.789+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:41:23.789+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:41:23.816+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:41:23.816+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:41:23.865+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.186 seconds
+[2025-06-14T16:41:53.985+0000] {processor.py:161} INFO - Started process (PID=1129) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:41:53.987+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:41:53.992+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:41:53.991+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:41:54.083+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:41:54.120+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:41:54.119+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:41:54.148+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:41:54.147+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:41:54.212+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.237 seconds
+[2025-06-14T16:42:24.289+0000] {processor.py:161} INFO - Started process (PID=1134) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:42:24.290+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:42:24.293+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:42:24.293+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:42:24.347+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:42:24.383+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:42:24.383+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:42:24.416+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:42:24.416+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:42:24.484+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.202 seconds
+[2025-06-14T16:42:54.643+0000] {processor.py:161} INFO - Started process (PID=1139) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:42:54.645+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:42:54.647+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:42:54.647+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:42:54.714+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:42:54.753+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:42:54.752+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:42:54.782+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:42:54.781+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:42:54.846+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.211 seconds
+[2025-06-14T16:43:24.992+0000] {processor.py:161} INFO - Started process (PID=1144) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:43:24.995+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:43:25.000+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:43:24.999+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:43:25.100+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:43:25.176+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:43:25.175+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:43:25.238+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:43:25.238+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:43:25.301+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.323 seconds
+[2025-06-14T16:43:55.442+0000] {processor.py:161} INFO - Started process (PID=1149) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:43:55.444+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:43:55.446+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:43:55.446+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:43:55.502+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:43:55.534+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:43:55.534+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:43:55.558+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:43:55.558+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:43:55.615+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.180 seconds
+[2025-06-14T16:44:25.733+0000] {processor.py:161} INFO - Started process (PID=1154) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:44:25.735+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:44:25.737+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:44:25.736+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:44:25.793+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:44:25.827+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:44:25.826+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:44:25.852+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:44:25.852+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:44:25.899+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.173 seconds
+[2025-06-14T16:44:56.026+0000] {processor.py:161} INFO - Started process (PID=1159) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:44:56.028+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:44:56.031+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:44:56.030+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:44:56.090+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:44:56.125+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:44:56.125+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:44:56.159+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:44:56.158+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:44:56.241+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.224 seconds
+[2025-06-14T16:45:26.369+0000] {processor.py:161} INFO - Started process (PID=1164) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:45:26.370+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:45:26.373+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:45:26.372+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:45:26.424+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:45:26.458+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:45:26.457+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:45:26.482+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:45:26.482+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:45:26.526+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.164 seconds
+[2025-06-14T16:45:56.651+0000] {processor.py:161} INFO - Started process (PID=1174) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:45:56.653+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:45:56.656+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:45:56.655+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:45:56.717+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:45:56.749+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:45:56.749+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:45:56.773+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:45:56.773+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:45:56.824+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.180 seconds
+[2025-06-14T16:46:26.992+0000] {processor.py:161} INFO - Started process (PID=1179) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:46:26.994+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:46:26.996+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:46:26.996+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:46:27.055+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:46:27.090+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:46:27.090+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:46:27.115+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:46:27.115+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:46:27.158+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.174 seconds
+[2025-06-14T16:46:57.245+0000] {processor.py:161} INFO - Started process (PID=1184) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:46:57.246+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:46:57.248+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:46:57.248+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:46:57.300+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:46:57.334+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:46:57.334+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:46:57.360+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:46:57.360+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:46:57.419+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.182 seconds
+[2025-06-14T16:47:27.564+0000] {processor.py:161} INFO - Started process (PID=1189) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:47:27.565+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:47:27.567+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:47:27.567+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:47:27.620+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:47:27.511+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:47:27.511+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:47:27.536+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:47:27.536+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:47:27.615+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.200 seconds
+[2025-06-14T16:47:57.730+0000] {processor.py:161} INFO - Started process (PID=1194) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:47:57.732+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:47:57.734+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:47:57.734+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:47:57.790+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:47:57.824+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:47:57.824+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:47:57.848+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:47:57.848+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:47:57.900+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.177 seconds
+[2025-06-14T16:48:27.975+0000] {processor.py:161} INFO - Started process (PID=1199) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:48:27.976+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:48:27.979+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:48:27.978+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:48:28.035+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:48:28.064+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:48:28.064+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:48:28.087+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:48:28.087+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:48:28.145+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.178 seconds
+[2025-06-14T16:48:58.268+0000] {processor.py:161} INFO - Started process (PID=1204) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:48:58.270+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:48:58.273+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:48:58.273+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:48:58.331+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:48:58.366+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:48:58.365+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:48:58.393+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:48:58.393+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:48:58.493+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.233 seconds
+[2025-06-14T16:49:28.596+0000] {processor.py:161} INFO - Started process (PID=1209) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:49:28.598+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:49:28.600+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:49:28.599+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:49:28.710+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:49:28.748+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:49:28.748+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:49:28.773+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:49:28.773+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:49:28.837+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.248 seconds
+[2025-06-14T16:49:58.964+0000] {processor.py:161} INFO - Started process (PID=1214) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:49:58.965+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:49:58.968+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:49:58.968+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:49:59.025+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:49:59.061+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:49:59.061+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:49:59.087+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:49:59.087+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:49:59.139+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.183 seconds
+[2025-06-14T16:50:29.241+0000] {processor.py:161} INFO - Started process (PID=1219) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:50:29.242+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:50:29.244+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:50:29.244+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:50:29.294+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:50:29.329+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:50:29.329+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:50:29.353+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:50:29.353+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:50:29.455+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.221 seconds
+[2025-06-14T16:50:59.597+0000] {processor.py:161} INFO - Started process (PID=1224) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:50:59.599+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:50:59.601+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:50:59.600+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:50:59.656+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:50:59.690+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:50:59.689+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:50:59.717+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:50:59.717+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:50:59.817+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.227 seconds
+[2025-06-14T16:51:29.935+0000] {processor.py:161} INFO - Started process (PID=1229) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:51:29.936+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:51:29.939+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:51:29.939+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:51:29.998+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:51:30.031+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:51:30.031+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:51:30.057+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:51:30.057+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:51:30.142+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.214 seconds
+[2025-06-14T16:52:00.282+0000] {processor.py:161} INFO - Started process (PID=1234) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:52:00.286+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:52:00.295+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:52:00.294+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:52:00.471+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:52:00.592+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:52:00.591+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:52:00.635+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:52:00.635+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:52:00.726+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.470 seconds
+[2025-06-14T16:52:30.840+0000] {processor.py:161} INFO - Started process (PID=1239) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:52:30.842+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:52:30.844+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:52:30.844+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:52:30.896+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:52:30.927+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:52:30.926+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:52:30.954+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:52:30.953+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:52:31.034+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.200 seconds
+[2025-06-14T16:53:01.141+0000] {processor.py:161} INFO - Started process (PID=1244) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:53:01.142+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:53:01.145+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:53:01.145+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:53:01.201+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:53:01.233+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:53:01.233+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:53:01.259+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:53:01.258+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:53:01.308+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.175 seconds
+[2025-06-14T16:53:31.432+0000] {processor.py:161} INFO - Started process (PID=1249) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:53:31.433+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:53:31.436+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:53:31.435+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:53:31.510+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:53:31.554+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:53:31.553+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:53:31.594+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:53:31.594+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:53:31.760+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.336 seconds
+[2025-06-14T16:54:01.883+0000] {processor.py:161} INFO - Started process (PID=1254) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:54:01.885+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:54:01.888+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:54:01.887+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:54:01.952+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:54:01.993+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:54:01.993+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:54:02.022+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:54:02.022+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:54:02.084+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.211 seconds
+[2025-06-14T16:54:32.180+0000] {processor.py:161} INFO - Started process (PID=1259) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:54:32.182+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:54:32.184+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:54:32.184+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:54:32.236+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:54:32.268+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:54:32.268+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:54:32.292+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:54:32.291+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:54:32.367+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.197 seconds
+[2025-06-14T16:55:02.460+0000] {processor.py:161} INFO - Started process (PID=1264) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:55:02.461+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:55:02.464+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:55:02.464+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:55:02.521+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:55:02.551+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:55:02.551+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:55:02.575+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:55:02.575+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:55:02.670+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.219 seconds
+[2025-06-14T16:55:32.758+0000] {processor.py:161} INFO - Started process (PID=1269) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:55:32.759+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:55:32.762+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:55:32.762+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:55:32.831+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:55:32.865+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:55:32.865+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:55:32.890+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:55:32.889+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:55:32.976+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.228 seconds
+[2025-06-14T16:56:03.057+0000] {processor.py:161} INFO - Started process (PID=1274) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:56:03.058+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:56:03.061+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:56:03.060+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:56:03.126+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:56:03.158+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:56:03.158+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:56:03.182+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:56:03.182+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:56:03.252+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.204 seconds
+[2025-06-14T16:56:33.552+0000] {processor.py:161} INFO - Started process (PID=1279) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:56:33.553+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:56:33.556+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:56:33.556+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:56:33.612+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:56:33.648+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:56:33.648+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:56:33.673+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:56:33.673+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:56:33.728+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.182 seconds
+[2025-06-14T16:57:04.216+0000] {processor.py:161} INFO - Started process (PID=1284) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:57:04.217+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:57:04.220+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:57:04.220+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:57:04.276+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:57:04.307+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:57:04.307+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:57:04.332+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:57:04.331+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:57:04.437+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.229 seconds
+[2025-06-14T16:57:34.562+0000] {processor.py:161} INFO - Started process (PID=1289) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:57:34.563+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:57:34.566+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:57:34.566+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:57:34.624+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:57:34.655+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:57:34.655+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:57:34.680+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:57:34.680+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:57:34.755+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.202 seconds
+[2025-06-14T16:58:04.915+0000] {processor.py:161} INFO - Started process (PID=1294) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:58:04.917+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:58:04.919+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:58:04.919+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:58:04.973+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:58:05.004+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:58:05.004+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:58:05.029+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:58:05.029+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:58:05.117+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.208 seconds
+[2025-06-14T16:58:35.203+0000] {processor.py:161} INFO - Started process (PID=1299) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:58:35.204+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:58:35.207+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:58:35.206+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:58:35.258+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:58:35.290+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:58:35.289+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:58:35.314+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:58:35.313+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:58:35.367+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.171 seconds
+[2025-06-14T16:59:05.522+0000] {processor.py:161} INFO - Started process (PID=1304) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:59:05.525+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:59:05.529+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:59:05.529+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:59:05.615+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:59:05.660+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:59:05.659+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:59:05.694+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:59:05.693+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:59:05.745+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.236 seconds
+[2025-06-14T16:59:35.832+0000] {processor.py:161} INFO - Started process (PID=1309) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:59:35.833+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T16:59:35.836+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:59:35.836+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:59:35.889+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T16:59:35.922+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:59:35.921+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T16:59:35.946+0000] {logging_mixin.py:188} INFO - [2025-06-14T16:59:35.946+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T16:59:36.023+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.200 seconds
+[2025-06-14T17:00:06.132+0000] {processor.py:161} INFO - Started process (PID=1314) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:00:06.134+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T17:00:06.137+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:00:06.136+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:00:06.211+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:00:06.243+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:00:06.242+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T17:00:06.267+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:00:06.267+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T17:00:06.327+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.203 seconds
+[2025-06-14T17:00:36.448+0000] {processor.py:161} INFO - Started process (PID=1319) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:00:36.449+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T17:00:36.452+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:00:36.452+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:00:36.505+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:00:36.537+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:00:36.537+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T17:00:36.561+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:00:36.561+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T17:00:36.638+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.199 seconds
+[2025-06-14T17:01:06.735+0000] {processor.py:161} INFO - Started process (PID=1324) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:01:06.737+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T17:01:06.739+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:01:06.738+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:01:06.793+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:01:06.829+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:01:06.829+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T17:01:06.858+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:01:06.857+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T17:01:06.902+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.177 seconds
+[2025-06-14T17:01:37.073+0000] {processor.py:161} INFO - Started process (PID=1329) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:01:37.074+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T17:01:37.076+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:01:37.076+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:01:37.129+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:01:37.162+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:01:37.162+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T17:01:37.189+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:01:37.189+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T17:01:37.263+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.197 seconds
+[2025-06-14T17:02:07.386+0000] {processor.py:161} INFO - Started process (PID=1334) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:02:07.388+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T17:02:07.390+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:02:07.390+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:02:07.450+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:02:07.485+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:02:07.485+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T17:02:07.509+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:02:07.509+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T17:02:07.617+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.238 seconds
+[2025-06-14T17:02:37.700+0000] {processor.py:161} INFO - Started process (PID=1339) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:02:37.701+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T17:02:37.704+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:02:37.704+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:02:37.766+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:02:37.801+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:02:37.801+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T17:02:37.837+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:02:37.837+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T17:02:37.917+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.225 seconds
+[2025-06-14T17:03:07.985+0000] {processor.py:161} INFO - Started process (PID=1344) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:03:07.987+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T17:03:07.989+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:03:07.989+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:03:08.042+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:03:08.072+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:03:08.072+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T17:03:08.103+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:03:08.103+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T17:03:08.187+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.210 seconds
+[2025-06-14T17:03:38.309+0000] {processor.py:161} INFO - Started process (PID=1349) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:03:38.310+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T17:03:38.313+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:03:38.313+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:03:38.367+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:03:38.410+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:03:38.409+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T17:03:38.447+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:03:38.447+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T17:03:38.513+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.215 seconds
+[2025-06-14T17:04:08.893+0000] {processor.py:161} INFO - Started process (PID=1354) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:04:08.895+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T17:04:08.898+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:04:08.897+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:04:08.961+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:04:09.002+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:04:09.002+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T17:04:09.030+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:04:09.030+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T17:04:09.089+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.205 seconds
+[2025-06-14T17:04:39.198+0000] {processor.py:161} INFO - Started process (PID=1359) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:04:39.200+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T17:04:39.202+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:04:39.202+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:04:39.259+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:04:39.307+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:04:39.307+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T17:04:39.350+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:04:39.350+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T17:04:39.408+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.220 seconds
+[2025-06-14T17:05:09.511+0000] {processor.py:161} INFO - Started process (PID=1364) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:05:09.513+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T17:05:09.516+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:05:09.515+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:05:09.571+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:05:09.603+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:05:09.603+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T17:05:09.630+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:05:09.630+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T17:05:09.707+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.204 seconds
+[2025-06-14T17:05:39.812+0000] {processor.py:161} INFO - Started process (PID=1369) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:05:39.813+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T17:05:39.816+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:05:39.815+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:05:39.886+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:05:39.924+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:05:39.924+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T17:05:39.953+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:05:39.953+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T17:05:40.012+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.208 seconds
+[2025-06-14T17:05:44.967+0000] {processor.py:161} INFO - Started process (PID=1374) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:05:44.969+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T17:05:44.972+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:05:44.971+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:05:45.073+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:05:45.112+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:05:45.112+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T17:05:45.143+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:05:45.143+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T17:05:45.277+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.318 seconds
+[2025-06-14T17:06:15.378+0000] {processor.py:161} INFO - Started process (PID=1379) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:06:15.379+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T17:06:15.382+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:06:15.382+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:06:15.437+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:06:15.471+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:06:15.470+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T17:06:15.495+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:06:15.494+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T17:06:15.574+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.203 seconds
+[2025-06-14T17:06:45.661+0000] {processor.py:161} INFO - Started process (PID=1384) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:06:45.662+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T17:06:45.665+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:06:45.664+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:06:45.720+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:06:45.752+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:06:45.752+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T17:06:45.777+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:06:45.777+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T17:06:45.838+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.184 seconds
+[2025-06-14T17:07:15.939+0000] {processor.py:161} INFO - Started process (PID=1389) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:07:15.941+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T17:07:15.943+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:07:15.942+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:07:15.995+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:07:16.045+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:07:16.045+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T17:07:16.088+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:07:16.087+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T17:07:16.140+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.208 seconds
+[2025-06-14T17:07:46.262+0000] {processor.py:161} INFO - Started process (PID=1394) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:07:46.263+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T17:07:46.266+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:07:46.266+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:07:46.314+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:07:46.349+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:07:46.349+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T17:07:46.379+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:07:46.379+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T17:07:46.439+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.186 seconds
+[2025-06-14T17:08:16.581+0000] {processor.py:161} INFO - Started process (PID=1399) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:08:16.583+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T17:08:16.586+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:08:16.586+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:08:16.658+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:08:16.702+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:08:16.701+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T17:08:16.734+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:08:16.734+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T17:08:16.813+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.244 seconds
+[2025-06-14T17:08:32.836+0000] {processor.py:161} INFO - Started process (PID=1404) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:08:32.838+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T17:08:32.840+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:08:32.840+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:08:32.910+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:08:32.946+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:08:32.945+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T17:08:32.970+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:08:32.970+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T17:08:33.125+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.296 seconds
+[2025-06-14T17:09:03.285+0000] {processor.py:161} INFO - Started process (PID=1409) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:09:03.288+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T17:09:03.293+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:09:03.293+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:09:03.370+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:09:03.430+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:09:03.430+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T17:09:03.464+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:09:03.464+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T17:09:03.554+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.281 seconds
+[2025-06-14T17:09:33.749+0000] {processor.py:161} INFO - Started process (PID=1414) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:09:33.750+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T17:09:33.752+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:09:33.752+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:09:33.805+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:09:33.836+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:09:33.836+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T17:09:33.861+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:09:33.861+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T17:09:33.950+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.208 seconds
+[2025-06-14T17:10:04.073+0000] {processor.py:161} INFO - Started process (PID=1419) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:10:04.078+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T17:10:04.081+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:10:04.081+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:10:04.135+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:10:04.164+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:10:04.164+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T17:10:04.188+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:10:04.188+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T17:10:04.240+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.183 seconds
+[2025-06-14T17:10:34.391+0000] {processor.py:161} INFO - Started process (PID=1424) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:10:34.393+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T17:10:34.395+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:10:34.395+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:10:34.452+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:10:34.483+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:10:34.483+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T17:10:34.507+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:10:34.506+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T17:10:34.639+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.255 seconds
+[2025-06-14T17:11:04.842+0000] {processor.py:161} INFO - Started process (PID=1429) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:11:04.844+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T17:11:04.847+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:11:04.846+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:11:04.906+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:11:04.938+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:11:04.937+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T17:11:04.962+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:11:04.962+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T17:11:05.056+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.222 seconds
+[2025-06-14T17:11:35.228+0000] {processor.py:161} INFO - Started process (PID=1434) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:11:35.229+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T17:11:35.232+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:11:35.231+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:11:35.286+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:11:35.316+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:11:35.316+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T17:11:35.340+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:11:35.339+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T17:11:35.389+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.169 seconds
+[2025-06-14T17:12:05.522+0000] {processor.py:161} INFO - Started process (PID=1439) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:12:05.524+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T17:12:05.526+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:12:05.526+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:12:05.578+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:12:05.610+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:12:05.610+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T17:12:05.633+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:12:05.633+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T17:12:05.699+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.184 seconds
+[2025-06-14T17:12:35.852+0000] {processor.py:161} INFO - Started process (PID=1444) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:12:35.854+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T17:12:35.856+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:12:35.856+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:12:35.912+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:12:35.945+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:12:35.945+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T17:12:35.968+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:12:35.968+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T17:12:36.096+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.253 seconds
+[2025-06-14T17:13:06.258+0000] {processor.py:161} INFO - Started process (PID=1449) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:13:06.259+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T17:13:06.262+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:13:06.261+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:13:06.320+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:13:06.355+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:13:06.355+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T17:13:06.383+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:13:06.383+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T17:13:06.446+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.196 seconds
+[2025-06-14T17:13:36.546+0000] {processor.py:161} INFO - Started process (PID=1454) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:13:36.547+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T17:13:36.549+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:13:36.549+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:13:36.635+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:13:36.665+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:13:36.664+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T17:13:36.689+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:13:36.689+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T17:13:36.736+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.199 seconds
+[2025-06-14T17:14:06.828+0000] {processor.py:161} INFO - Started process (PID=1459) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:14:06.830+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T17:14:06.832+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:14:06.832+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:14:06.894+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:14:06.929+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:14:06.929+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T17:14:06.954+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:14:06.954+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T17:14:07.107+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.287 seconds
+[2025-06-14T17:14:37.273+0000] {processor.py:161} INFO - Started process (PID=1464) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:14:37.275+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T17:14:37.277+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:14:37.276+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:14:37.333+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:14:37.364+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:14:37.364+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T17:14:37.386+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:14:37.386+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T17:14:37.455+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.188 seconds
+[2025-06-14T17:15:07.596+0000] {processor.py:161} INFO - Started process (PID=1469) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:15:07.598+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T17:15:07.600+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:15:07.600+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:15:07.657+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:15:07.687+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:15:07.686+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T17:15:07.708+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:15:07.708+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T17:15:07.806+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.217 seconds
+[2025-06-14T17:15:37.940+0000] {processor.py:161} INFO - Started process (PID=1474) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:15:37.942+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T17:15:37.944+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:15:37.944+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:15:38.007+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:15:38.037+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:15:38.036+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T17:15:38.059+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:15:38.059+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T17:15:38.108+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.174 seconds
+[2025-06-14T17:16:08.315+0000] {processor.py:161} INFO - Started process (PID=1479) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:16:08.316+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T17:16:08.319+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:16:08.318+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:16:08.378+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:16:08.409+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:16:08.408+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T17:16:08.430+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:16:08.430+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T17:16:08.503+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.196 seconds
+[2025-06-14T17:16:38.653+0000] {processor.py:161} INFO - Started process (PID=1484) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:16:38.654+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T17:16:38.656+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:16:38.656+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:16:38.715+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:16:38.747+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:16:38.747+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T17:16:38.771+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:16:38.770+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T17:16:38.830+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.184 seconds
+[2025-06-14T17:17:08.951+0000] {processor.py:161} INFO - Started process (PID=1489) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:17:08.952+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T17:17:08.954+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:17:08.954+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:17:09.006+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:17:09.037+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:17:09.037+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T17:17:09.059+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:17:09.059+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T17:17:09.256+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.312 seconds
+[2025-06-14T17:17:39.422+0000] {processor.py:161} INFO - Started process (PID=1494) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:17:39.423+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T17:17:39.425+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:17:39.425+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:17:39.478+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:17:39.508+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:17:39.508+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T17:17:39.530+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:17:39.530+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T17:17:39.598+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.184 seconds
+[2025-06-14T17:18:09.766+0000] {processor.py:161} INFO - Started process (PID=1499) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:18:09.767+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T17:18:09.769+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:18:09.769+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:18:09.833+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:18:09.862+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:18:09.861+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T17:18:09.884+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:18:09.884+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T17:18:09.928+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.170 seconds
+[2025-06-14T17:18:40.039+0000] {processor.py:161} INFO - Started process (PID=1504) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:18:40.040+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T17:18:40.042+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:18:40.042+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:18:40.095+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:18:40.128+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:18:40.128+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T17:18:40.156+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:18:40.156+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T17:18:40.227+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.196 seconds
+[2025-06-14T17:19:49.866+0000] {processor.py:161} INFO - Started process (PID=1509) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:19:52.651+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T17:19:57.613+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:19:56.908+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:21:01.843+0000] {processor.py:161} INFO - Started process (PID=1512) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:21:02.921+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T17:21:07.596+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:21:07.596+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:21:17.948+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:22:10.503+0000] {processor.py:161} INFO - Started process (PID=1515) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:22:10.538+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T17:22:10.539+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:22:10.539+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:22:11.395+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:22:15.396+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:22:15.395+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T17:22:15.418+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:22:15.418+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T17:22:15.500+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 16.722 seconds
+[2025-06-14T17:22:45.765+0000] {processor.py:161} INFO - Started process (PID=1520) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:22:45.767+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T17:22:45.768+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:22:45.767+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:22:46.256+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:22:46.290+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:22:46.290+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T17:22:46.312+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:22:46.312+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T17:22:46.403+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.645 seconds
+[2025-06-14T17:23:16.620+0000] {processor.py:161} INFO - Started process (PID=1525) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:23:16.621+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T17:23:16.622+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:23:16.622+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:23:16.676+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:23:16.832+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:23:16.831+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T17:23:16.854+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:23:16.854+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T17:23:16.956+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.343 seconds
+[2025-06-14T17:23:47.779+0000] {processor.py:161} INFO - Started process (PID=1530) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:23:47.780+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T17:23:47.781+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:23:47.781+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:23:47.834+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:23:47.861+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:23:47.861+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T17:23:47.884+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:23:47.884+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T17:23:47.940+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.167 seconds
+[2025-06-14T17:24:18.495+0000] {processor.py:161} INFO - Started process (PID=1535) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:24:18.496+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T17:24:18.498+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:24:18.497+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:24:18.551+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:24:18.579+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:24:18.579+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T17:24:18.603+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:24:18.603+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T17:24:18.673+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.185 seconds
+[2025-06-14T17:24:48.781+0000] {processor.py:161} INFO - Started process (PID=1540) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:24:48.783+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T17:24:48.784+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:24:48.784+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:24:48.836+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:24:48.880+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:24:48.879+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T17:24:53.858+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:24:53.851+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T17:25:02.013+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 13.239 seconds
+[2025-06-14T17:25:32.829+0000] {processor.py:161} INFO - Started process (PID=1545) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:25:32.830+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T17:25:32.831+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:25:32.831+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:25:32.889+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:25:32.919+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:25:32.919+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T17:25:32.952+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:25:32.951+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T17:25:33.023+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.201 seconds
+[2025-06-14T17:26:03.487+0000] {processor.py:161} INFO - Started process (PID=1550) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:26:03.489+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T17:26:03.490+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:26:03.489+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:26:03.539+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:26:03.567+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:26:03.567+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T17:26:03.591+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:26:03.591+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T17:26:03.661+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.180 seconds
+[2025-06-14T17:26:34.336+0000] {processor.py:161} INFO - Started process (PID=1555) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:26:34.337+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T17:26:34.338+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:26:34.338+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:26:34.452+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:26:34.486+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:26:34.486+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T17:26:34.511+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:26:34.511+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T17:26:34.655+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.326 seconds
+[2025-06-14T17:27:05.581+0000] {processor.py:161} INFO - Started process (PID=1560) to work on /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:27:05.582+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2025-06-14T17:27:05.583+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:27:05.583+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:27:05.660+0000] {processor.py:840} INFO - DAG(s) 'nba_etl_to_postgres' retrieved from /opt/airflow/dags/etl_pipeline.py
+[2025-06-14T17:27:05.715+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:27:05.715+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-06-14T17:27:05.759+0000] {logging_mixin.py:188} INFO - [2025-06-14T17:27:05.757+0000] {dag.py:3954} INFO - Setting next_dagrun for nba_etl_to_postgres to 2025-06-08 00:00:00+00:00, run_after=2025-06-15 00:00:00+00:00
+[2025-06-14T17:27:05.863+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.291 seconds

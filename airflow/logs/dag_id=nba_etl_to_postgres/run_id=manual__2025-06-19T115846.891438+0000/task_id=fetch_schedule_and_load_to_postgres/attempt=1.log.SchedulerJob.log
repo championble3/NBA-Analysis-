@@ -1,0 +1,1 @@
+[2025-06-19T11:58:48.481+0000] {scheduler_job_runner.py:769} ERROR - Executor reports task instance <TaskInstance: nba_etl_to_postgres.fetch_schedule_and_load_to_postgres manual__2025-06-19T11:58:46.891438+00:00 [queued]> finished (failed) although the task says it's queued. (Info: None) Was the task killed externally?

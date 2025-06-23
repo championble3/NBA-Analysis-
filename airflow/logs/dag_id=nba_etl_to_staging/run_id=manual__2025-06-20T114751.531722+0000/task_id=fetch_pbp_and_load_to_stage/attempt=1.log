@@ -1,0 +1,44 @@
+[2025-06-20T11:47:53.906+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-06-20T11:47:53.940+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: nba_etl_to_staging.fetch_pbp_and_load_to_stage manual__2025-06-20T11:47:51.531722+00:00 [queued]>
+[2025-06-20T11:47:53.953+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: nba_etl_to_staging.fetch_pbp_and_load_to_stage manual__2025-06-20T11:47:51.531722+00:00 [queued]>
+[2025-06-20T11:47:53.954+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-06-20T11:47:54.025+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): fetch_pbp_and_load_to_stage> on 2025-06-20 11:47:51.531722+00:00
+[2025-06-20T11:47:54.033+0000] {standard_task_runner.py:63} INFO - Started process 351 to run task
+[2025-06-20T11:47:54.039+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'nba_etl_to_staging', 'fetch_pbp_and_load_to_stage', 'manual__2025-06-20T11:47:51.531722+00:00', '--job-id', '155', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/tmp/tmp78w78u4z']
+[2025-06-20T11:47:54.041+0000] {standard_task_runner.py:91} INFO - Job 155: Subtask fetch_pbp_and_load_to_stage
+[2025-06-20T11:47:54.161+0000] {task_command.py:426} INFO - Running <TaskInstance: nba_etl_to_staging.fetch_pbp_and_load_to_stage manual__2025-06-20T11:47:51.531722+00:00 [running]> on host b17e282ad947
+[2025-06-20T11:47:54.419+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='nba_etl_to_staging' AIRFLOW_CTX_TASK_ID='fetch_pbp_and_load_to_stage' AIRFLOW_CTX_EXECUTION_DATE='2025-06-20T11:47:51.531722+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-20T11:47:51.531722+00:00'
+[2025-06-20T11:47:54.421+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-06-20T11:47:54.501+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/etl_pipeline.py:208 UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+[2025-06-20T11:47:54.510+0000] {logging_mixin.py:188} INFO - Fetching PBP for game on 2024-10-22 between BOS and NYK...
+[2025-06-20T11:47:54.867+0000] {logging_mixin.py:188} INFO - Rate limiting: waiting for 2.65 seconds.
+[2025-06-20T11:47:58.266+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-20T11:47:58.639+0000] {logging_mixin.py:188} INFO - Empty DataFrame
+Columns: [QUARTER, TIME_REMAINING, HOME_ACTION, AWAY_ACTION, HOME_SCORE, AWAY_SCORE, date, team]
+Index: []
+[2025-06-20T11:47:58.643+0000] {etl_pipeline.py:222} INFO - Processed game on 2024-10-22 between BOS and NYK.
+[2025-06-20T11:47:58.646+0000] {logging_mixin.py:188} INFO - Fetching PBP for game on 2024-10-22 between LAL and MIN...
+[2025-06-20T11:47:58.650+0000] {logging_mixin.py:188} INFO - Rate limiting: waiting for 1.87 seconds.
+[2025-06-20T11:48:00.794+0000] {logging_mixin.py:188} INFO - Rate limiting: waiting for 2.73 seconds.
+[2025-06-20T11:48:04.129+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-20T11:48:04.193+0000] {logging_mixin.py:188} INFO - Empty DataFrame
+Columns: [QUARTER, TIME_REMAINING, HOME_ACTION, AWAY_ACTION, HOME_SCORE, AWAY_SCORE, date, team]
+Index: []
+[2025-06-20T11:48:04.193+0000] {etl_pipeline.py:222} INFO - Processed game on 2024-10-22 between LAL and MIN.
+[2025-06-20T11:48:04.194+0000] {logging_mixin.py:188} INFO - Fetching PBP for game on 2024-10-23 between DET and IND...
+[2025-06-20T11:48:04.195+0000] {logging_mixin.py:188} INFO - Rate limiting: waiting for 2.33 seconds.
+[2025-06-20T11:48:06.827+0000] {logging_mixin.py:188} INFO - Rate limiting: waiting for 2.70 seconds.
+[2025-06-20T11:48:09.943+0000] {logging_mixin.py:188} WARNING - /opt/***/plugins/nba_lib/pbp.py:19 FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-06-20T11:48:10.005+0000] {logging_mixin.py:188} INFO - Empty DataFrame
+Columns: [QUARTER, TIME_REMAINING, HOME_ACTION, AWAY_ACTION, HOME_SCORE, AWAY_SCORE, date, team]
+Index: []
+[2025-06-20T11:48:10.005+0000] {etl_pipeline.py:222} INFO - Processed game on 2024-10-23 between DET and IND.
+[2025-06-20T11:48:10.011+0000] {etl_pipeline.py:98} INFO - Ensuring table 'stgpbp' exists...
+[2025-06-20T11:48:10.013+0000] {etl_pipeline.py:100} INFO - Table 'stgpbp' is ready.
+[2025-06-20T11:48:10.013+0000] {etl_pipeline.py:103} WARNING - DataFrame is empty. No data to load into stgpbp.
+[2025-06-20T11:48:10.014+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-06-20T11:48:10.015+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-06-20T11:48:10.026+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=nba_etl_to_staging, task_id=fetch_pbp_and_load_to_stage, run_id=manual__2025-06-20T11:47:51.531722+00:00, execution_date=20250620T114751, start_date=20250620T114753, end_date=20250620T114810
+[2025-06-20T11:48:10.152+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-06-20T11:48:10.166+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-06-20T11:48:10.248+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
