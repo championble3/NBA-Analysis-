@@ -50,8 +50,15 @@ Use `docker-compose` to build and run all containers in detached mode:
 Wait some time and then run:
   ``` docker ps```
 
+Then you can check localhost:8080 for airflow GUI 
+   login: admin
+   password: admin
 3. **Accessing Services**
    Database: PostgreSQL is available at localhost:5432 (credentials configurable in .env)
+
+   Database: nbadatabase
+   login: airflow
+   password: airflow
    
    ETL Scripts: Automatically triggered on container startup or can be run manually
    
