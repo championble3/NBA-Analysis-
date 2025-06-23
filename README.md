@@ -50,7 +50,7 @@ Use `docker-compose` to build and run all containers in detached mode:
 Wait some time and then run:
   ``` docker ps```
 
-Then you can check localhost:8080 for airflow GUI 
+###Then you can check localhost:8080 for airflow GUI 
    login: admin
    password: admin
 3. **Accessing Services**
