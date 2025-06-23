@@ -50,3 +50,23 @@ Use `docker-compose` to build and run all containers in detached mode:
 Wait some time and then run:
   ``` docker ps```
 
+3. **Accessing Services**
+   Database: PostgreSQL is available at localhost:5432 (credentials configurable in .env)
+   
+   ETL Scripts: Automatically triggered on container startup or can be run manually
+   
+   BI Tool (optional): Available at http://localhost:3000 if Metabase is included in the setup
+
+4. **Project Structure**
+   nba-analysis/
+├── docker-compose.yml
+├── .env
+├── data/
+├── etl/
+│   ├── extract/
+│   ├── transform/
+│   └── load/
+├── notebooks/
+├── requirements.txt
+└── README.md
+
